@@ -1,0 +1,915 @@
+:root {
+  /* Light theme variables */
+  --light-bg-primary: #ffffff;
+  --light-bg-secondary: #f3f4f6;
+  --light-text-primary: #111827;
+  --light-text-secondary: #374151;
+  --light-border: #e5e7eb;
+  --light-hover: #f9fafb;
+  
+  /* Dark theme variables */
+  --dark-bg-primary: #1f2937;
+  --dark-bg-secondary: #374151;
+  --dark-text-primary: #f9fafb;
+  --dark-text-secondary: #d1d5db;
+  --dark-border: #4b5563;
+  --dark-hover: #4b5563;
+  
+  /* Common variables */
+  --primary-color: #29B5E8;
+  --primary-hover: #1a8bb8;
+  --primary-border: #1a8bb8;
+  
+  /* Spacing scale - 8px grid system */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  
+  /* Typography scale */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  
+  /* Card styling */
+  --card-border-radius: 12px;
+  --card-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --card-shadow-dark: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --card-border: 1px solid var(--border);
+  
+  /* Accessibility variables */
+  --focus-ring-color: #005fcc;
+  --focus-ring-width: 3px;
+  --high-contrast-outline: 3px solid var(--focus-ring-color);
+  
+  /* High contrast mode variables */
+  --hc-bg-primary: #000000;
+  --hc-bg-secondary: #1a1a1a;
+  --hc-text-primary: #ffffff;
+  --hc-text-secondary: #e5e5e5;
+  --hc-border: #ffffff;
+  --hc-accent: #00d4ff;
+  
+  /* WCAG AA compliant color contrast ratios */
+  --contrast-ratio-normal: 4.5; /* For normal text */
+  --contrast-ratio-large: 3.0;  /* For large text and UI components */
+}
+
+/* Base styles */
+.stApp {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.stMarkdown {
+  color: var(--text-primary);
+}
+
+.stDataFrame {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Typography hierarchy */
+.heading-primary {
+  font-size: var(--font-size-3xl) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: var(--space-lg) !important;
+  color: var(--text-primary) !important;
+}
+
+.heading-secondary {
+  font-size: var(--font-size-2xl) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  margin-bottom: var(--space-md) !important;
+  color: var(--text-primary) !important;
+}
+
+.heading-tertiary {
+  font-size: var(--font-size-xl) !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-bottom: var(--space-sm) !important;
+  color: var(--text-primary) !important;
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+  font-size: var(--font-size-sm) !important;
+}
+
+/* Card components */
+.card-primary {
+  background: var(--bg-primary) !important;
+  border: var(--card-border) !important;
+  border-radius: var(--card-border-radius) !important;
+  padding: var(--space-lg) !important;
+  margin-bottom: var(--space-md) !important;
+  box-shadow: var(--card-shadow-light) !important;
+}
+
+[data-theme="dark"] .card-primary {
+  box-shadow: var(--card-shadow-dark) !important;
+}
+
+.card-section {
+  background: var(--bg-secondary) !important;
+  border: var(--card-border) !important;
+  border-radius: var(--card-border-radius) !important;
+  padding: var(--space-md) !important;
+  margin-bottom: var(--space-md) !important;
+  box-shadow: var(--card-shadow-light) !important;
+}
+
+[data-theme="dark"] .card-section {
+  box-shadow: var(--card-shadow-dark) !important;
+}
+
+.card-outline {
+  background: transparent !important;
+  border: var(--card-border) !important;
+  border-radius: var(--card-border-radius) !important;
+  padding: var(--space-md) !important;
+  margin-bottom: var(--space-sm) !important;
+}
+
+/* Spacing utilities */
+.mt-xs { margin-top: var(--space-xs) !important; }
+.mt-sm { margin-top: var(--space-sm) !important; }
+.mt-md { margin-top: var(--space-md) !important; }
+.mt-lg { margin-top: var(--space-lg) !important; }
+.mt-xl { margin-top: var(--space-xl) !important; }
+
+.mb-xs { margin-bottom: var(--space-xs) !important; }
+.mb-sm { margin-bottom: var(--space-sm) !important; }
+.mb-md { margin-bottom: var(--space-md) !important; }
+.mb-lg { margin-bottom: var(--space-lg) !important; }
+.mb-xl { margin-bottom: var(--space-xl) !important; }
+
+.p-xs { padding: var(--space-xs) !important; }
+.p-sm { padding: var(--space-sm) !important; }
+.p-md { padding: var(--space-md) !important; }
+.p-lg { padding: var(--space-lg) !important; }
+.p-xl { padding: var(--space-xl) !important; }
+
+/* Button group styling */
+.button-group {
+  display: flex !important;
+  gap: var(--space-sm) !important;
+  align-items: center !important;
+}
+
+.button-group-vertical {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--space-xs) !important;
+}
+
+/* Sample question styling */
+.sample-questions-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: var(--space-sm) !important;
+  margin-bottom: var(--space-md) !important;
+}
+
+.sample-question-btn {
+  text-align: left !important;
+  padding: var(--space-sm) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  transition: all 0.2s ease !important;
+}
+
+.sample-question-btn:hover {
+  background: var(--hover) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Input styling */
+.stTextInput>div>div>input,
+.stNumberInput>div>div>input,
+.stSelectbox>div>div>select {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+/* Enhanced text area styling */
+.stTextArea textarea {
+  border-radius: 8px !important;
+  border: 2px solid var(--border) !important;
+  padding: var(--space-sm) !important;
+  font-size: var(--font-size-base) !important;
+  line-height: 1.5 !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.stTextArea textarea:focus {
+  border-color: var(--primary-color) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(41, 181, 232, 0.1) !important;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+  background-color: transparent !important;
+}
+
+section[data-testid="stSidebar"] .stMarkdown {
+  color: var(--text-primary) !important;
+}
+
+section[data-testid="stSidebar"] .stButton>button {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
+}
+
+section[data-testid="stSidebar"] .stButton>button:hover {
+  background-color: var(--hover) !important;
+}
+
+/* Button styling with higher specificity - removed to avoid conflicts */
+
+/* Ultra-specific button styling to override Streamlit defaults */
+.stButton button,
+.stButton > button,
+.stButton > div > button,
+div[data-testid="stVerticalBlock"] .stButton button,
+div[data-testid="stVerticalBlock"] .stButton > button,
+div[data-testid="stVerticalBlock"] .stButton > div > button,
+.element-container .stButton button,
+.element-container .stButton > button,
+.element-container .stButton > div > button,
+button[kind="secondary"],
+button[data-testid*="button"],
+[data-baseweb="button"] button {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Nuclear option - force all text content to be visible */
+.stButton *,
+div[data-testid="stVerticalBlock"] .stButton *,
+.element-container .stButton * {
+  color: #111827 !important;
+  background: transparent !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Emergency fallback - target any button that might be invisible */
+button {
+  color: #111827 !important;
+}
+
+/* Super nuclear option for any Streamlit button */
+div[data-testid="column"] button,
+div[class*="stButton"] button,
+div[class*="element-container"] button {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+div[data-testid="column"] button *,
+div[class*="stButton"] button *,
+div[class*="element-container"] button * {
+  color: #111827 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Force text color on all text elements inside buttons */
+.stButton button *,
+.stButton > button *,
+.stButton > div > button *,
+div[data-testid="stVerticalBlock"] .stButton button *,
+div[data-testid="stVerticalBlock"] .stButton > button *,
+div[data-testid="stVerticalBlock"] .stButton > div > button *,
+.element-container .stButton button *,
+.element-container .stButton > button *,
+.element-container .stButton > div > button *,
+button[kind="secondary"] *,
+button[data-testid*="button"] *,
+[data-baseweb="button"] button * {
+  color: #111827 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.stButton button:hover,
+.stButton > button:hover,
+.stButton > div > button:hover,
+div[data-testid="stVerticalBlock"] .stButton button:hover,
+div[data-testid="stVerticalBlock"] .stButton > button:hover,
+div[data-testid="stVerticalBlock"] .stButton > div > button:hover,
+.element-container .stButton button:hover,
+.element-container .stButton > button:hover,
+.element-container .stButton > div > button:hover,
+button[kind="secondary"]:hover,
+button[data-testid*="button"]:hover,
+[data-baseweb="button"] button:hover {
+  background-color: #f9fafb !important;
+  border-color: #29B5E8 !important;
+  color: #111827 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Force text color on hover for all text elements inside buttons */
+.stButton button:hover *,
+.stButton > button:hover *,
+.stButton > div > button:hover *,
+div[data-testid="stVerticalBlock"] .stButton button:hover *,
+div[data-testid="stVerticalBlock"] .stButton > button:hover *,
+div[data-testid="stVerticalBlock"] .stButton > div > button:hover *,
+.element-container .stButton button:hover *,
+.element-container .stButton > button:hover *,
+.element-container .stButton > div > button:hover *,
+button[kind="secondary"]:hover *,
+button[data-testid*="button"]:hover *,
+[data-baseweb="button"] button:hover * {
+  color: #111827 !important;
+}
+
+/* Force text color for light theme specifically */
+[data-theme="light"] .stButton>button,
+[data-theme="light"] .stButton > div > button,
+[data-theme="light"] div[data-testid="stVerticalBlock"] .stButton>button {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+[data-theme="light"] .stButton>button:hover,
+[data-theme="light"] .stButton > div > button:hover,
+[data-theme="light"] div[data-testid="stVerticalBlock"] .stButton>button:hover {
+  background-color: #f9fafb !important;
+  border-color: #29B5E8 !important;
+  color: #111827 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Force text color for dark theme specifically */
+[data-theme="dark"] .stButton>button,
+[data-theme="dark"] .stButton > div > button,
+[data-theme="dark"] div[data-testid="stVerticalBlock"] .stButton>button {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+  border: 1px solid #4b5563 !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+[data-theme="dark"] .stButton>button:hover,
+[data-theme="dark"] .stButton > div > button:hover,
+[data-theme="dark"] div[data-testid="stVerticalBlock"] .stButton>button:hover {
+  background-color: #4b5563 !important;
+  border-color: #29B5E8 !important;
+  color: #f9fafb !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Primary button variant */
+.stButton[data-baseweb="button"] button[kind="primary"] {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-color: var(--primary-color) !important;
+}
+
+.stButton button[kind="primary"] {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-color: var(--primary-color) !important;
+}
+
+.stButton button[kind="primary"]:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+/* Secondary button variant */
+.stButton button[kind="secondary"] {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.stButton button[kind="secondary"]:hover {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Tag styling */
+[data-baseweb="tag"] {
+  background-color: var(--primary-color) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--primary-border) !important;
+}
+
+[data-baseweb="tag"]:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+  background-color: var(--bg-primary) !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+  color: var(--text-primary) !important;
+}
+
+.stTabs [aria-selected="true"] {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Alert and expander styling */
+.stAlert {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.stExpander {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--border) !important;
+}
+
+/* Expandable section styling */
+.expandable-section {
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  margin-bottom: var(--space-sm) !important;
+}
+
+.expandable-header {
+  background: var(--bg-secondary) !important;
+  padding: var(--space-sm) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.expandable-header:hover {
+  background: var(--hover) !important;
+}
+
+.expandable-content {
+  padding: var(--space-sm) !important;
+  background: var(--bg-primary) !important;
+}
+
+/* Checkbox and radio styling */
+.stCheckbox>div>div>label,
+.stRadio>div>div>label,
+.stToggle>div>div>label {
+  color: var(--text-primary) !important;
+}
+
+/* Header styling */
+header[data-testid="stHeader"] {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+/* Response section styling */
+.response-section {
+  background: var(--bg-primary) !important;
+  border: var(--card-border) !important;
+  border-radius: var(--card-border-radius) !important;
+  padding: var(--space-lg) !important;
+  margin-top: var(--space-md) !important;
+  box-shadow: var(--card-shadow-light) !important;
+}
+
+[data-theme="dark"] .response-section {
+  box-shadow: var(--card-shadow-dark) !important;
+}
+
+/* Theme-specific overrides */
+[data-theme="light"] {
+  --bg-primary: var(--light-bg-primary);
+  --bg-secondary: var(--light-bg-secondary);
+  --text-primary: var(--light-text-primary);
+  --text-secondary: var(--light-text-secondary);
+  --border: var(--light-border);
+  --hover: var(--light-hover);
+}
+
+[data-theme="dark"] {
+  --bg-primary: var(--dark-bg-primary);
+  --bg-secondary: var(--dark-bg-secondary);
+  --text-primary: var(--dark-text-primary);
+  --text-secondary: var(--dark-text-secondary);
+  --border: var(--dark-border);
+  --hover: var(--dark-hover);
+}
+
+/* Tooltip styling */
+.tooltip {
+  position: relative !important;
+  display: inline-block !important;
+  cursor: pointer !important;
+}
+
+.help-icon {
+  display: inline-block !important;
+  background: var(--primary-color) !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  text-align: center !important;
+  line-height: 20px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  margin-left: 4px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.help-icon:hover {
+  background: var(--secondary-color) !important;
+  transform: scale(1.1) !important;
+}
+
+.tooltiptext {
+  visibility: hidden !important;
+  width: 280px !important;
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+  text-align: left !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+  position: absolute !important;
+  z-index: 9999 !important;
+  left: 50% !important;
+  top: 125% !important;
+  transform: translateX(-50%) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  pointer-events: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Dark theme tooltip */
+[data-theme="dark"] .tooltiptext {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Light theme tooltip */
+[data-theme="light"] .tooltiptext {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext {
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Tooltip arrow */
+.tooltiptext::after {
+  content: "" !important;
+  position: absolute !important;
+  top: -8px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  border-width: 0 8px 8px 8px !important;
+  border-style: solid !important;
+  border-color: transparent transparent #1f2937 transparent !important;
+}
+
+/* Arrow colors for different themes */
+[data-theme="dark"] .tooltiptext::after {
+  border-color: transparent transparent #1f2937 transparent !important;
+}
+
+[data-theme="light"] .tooltiptext::after {
+  border-color: transparent transparent #374151 transparent !important;
+}
+
+/* Responsive tooltip */
+@media (max-width: 768px) {
+  .tooltiptext {
+    width: 240px !important;
+    font-size: 13px !important;
+    padding: 10px 12px !important;
+  }
+}
+
+/* Screen reader accessibility */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Accessibility enhancements */
+
+/* Focus management */
+*:focus {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color) !important;
+  outline-offset: 2px !important;
+}
+
+/* Focus-visible for better keyboard navigation */
+*:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+*:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color) !important;
+  outline-offset: 2px !important;
+}
+
+/* Skip links for keyboard navigation */
+.skip-link {
+  position: absolute !important;
+  top: -40px !important;
+  left: 8px !important;
+  z-index: 100000 !important;
+  background: var(--focus-ring-color) !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  transition: top 0.2s ease !important;
+}
+
+.skip-link:focus {
+  top: 8px !important;
+}
+
+/* Accessible button styles */
+.accessible-button {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 8px !important;
+  padding: var(--space-sm) var(--space-md) !important;
+  font-size: var(--font-size-base) !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  min-height: 44px !important; /* WCAG minimum touch target size */
+  min-width: 44px !important;
+}
+
+.accessible-button:hover,
+.accessible-button:focus {
+  background: var(--primary-hover) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.accessible-button:active {
+  transform: translateY(0) !important;
+}
+
+.accessible-button:disabled {
+  background: #6b7280 !important;
+  border-color: #6b7280 !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+/* Form field accessibility */
+.form-field-container {
+  margin-bottom: var(--space-md) !important;
+}
+
+.form-label {
+  display: block !important;
+  font-weight: 600 !important;
+  margin-bottom: var(--space-xs) !important;
+  color: var(--text-primary) !important;
+}
+
+.form-field {
+  width: 100% !important;
+  padding: var(--space-sm) !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 8px !important;
+  font-size: var(--font-size-base) !important;
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  transition: border-color 0.2s ease !important;
+  min-height: 44px !important; /* WCAG minimum touch target */
+}
+
+.form-field:focus {
+  border-color: var(--focus-ring-color) !important;
+  box-shadow: 0 0 0 3px rgba(0, 95, 204, 0.1) !important;
+}
+
+.form-field[aria-invalid="true"] {
+  border-color: #ef4444 !important;
+  background-color: rgba(239, 68, 68, 0.05) !important;
+}
+
+/* Expandable section accessibility */
+.expandable-section {
+  margin-bottom: var(--space-md) !important;
+}
+
+.expandable-trigger {
+  background: transparent !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 8px !important;
+  padding: var(--space-sm) var(--space-md) !important;
+  font-size: var(--font-size-base) !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  text-align: left !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: var(--space-xs) !important;
+  transition: all 0.2s ease !important;
+  min-height: 44px !important;
+}
+
+.expandable-trigger:hover,
+.expandable-trigger:focus {
+  background: var(--hover) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.expandable-trigger[aria-expanded="true"] {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-color: transparent !important;
+}
+
+.expandable-content {
+  border: 2px solid var(--border) !important;
+  border-top: none !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  padding: var(--space-md) !important;
+  background: var(--bg-primary) !important;
+}
+
+/* Announcement regions */
+.loading-announcement,
+.error-announcement,
+.success-announcement {
+  padding: var(--space-sm) var(--space-md) !important;
+  border-radius: 8px !important;
+  margin-bottom: var(--space-sm) !important;
+  font-weight: 600 !important;
+}
+
+.error-announcement {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border: 2px solid #ef4444 !important;
+  color: #dc2626 !important;
+}
+
+.success-announcement {
+  background: rgba(34, 197, 94, 0.1) !important;
+  border: 2px solid #22c55e !important;
+  color: #16a34a !important;
+}
+
+/* Keyboard help section */
+.keyboard-help {
+  margin: var(--space-md) 0 !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 8px !important;
+  background: var(--bg-secondary) !important;
+}
+
+.keyboard-help summary {
+  padding: var(--space-sm) var(--space-md) !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+  background: var(--bg-primary) !important;
+  border-radius: 6px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.keyboard-help summary:hover,
+.keyboard-help summary:focus {
+  background: var(--hover) !important;
+}
+
+.keyboard-help-content {
+  padding: var(--space-md) !important;
+  border-top: 1px solid var(--border) !important;
+}
+
+.keyboard-help-content pre {
+  background: transparent !important;
+  margin: 0 !important;
+  font-family: inherit !important;
+  white-space: pre-wrap !important;
+  color: var(--text-secondary) !important;
+}
+
+/* High contrast mode */
+[data-accessibility="high-contrast"] {
+  --bg-primary: var(--hc-bg-primary) !important;
+  --bg-secondary: var(--hc-bg-secondary) !important;
+  --text-primary: var(--hc-text-primary) !important;
+  --text-secondary: var(--hc-text-secondary) !important;
+  --border: var(--hc-border) !important;
+  --primary-color: var(--hc-accent) !important;
+}
+
+[data-accessibility="high-contrast"] * {
+  border-color: var(--hc-border) !important;
+}
+
+[data-accessibility="high-contrast"] .card-primary,
+[data-accessibility="high-contrast"] .card-section,
+[data-accessibility="high-contrast"] .card-outline {
+  background: var(--hc-bg-primary) !important;
+  border: 3px solid var(--hc-border) !important;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Enhanced touch targets for mobile */
+@media (max-width: 768px) {
+  .accessible-button,
+  .expandable-trigger,
+  .form-field {
+    min-height: 48px !important; /* Larger touch targets on mobile */
+    min-width: 48px !important;
+  }
+  
+  .skip-link {
+    font-size: var(--font-size-lg) !important;
+    padding: 12px 20px !important;
+  }
+} 

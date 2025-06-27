@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DBT_CORTEX_LLMS
+    schema: STAGE
+    tables:
+      - name: customer_interactions
+        description: "Raw customer interactions data in JSON format"
+        columns:
+          - name: data
+            description: "JSON data containing customer interaction details"
+            tests:
+              - not_null
+      
+      - name: product_reviews
+        description: "Raw product reviews data in JSON format"
+        columns:
+          - name: data
+            description: "JSON data containing product review details"
+            tests:
+              - not_null
+      
+      - name: support_tickets
+        description: "Raw support tickets data in JSON format"
+        columns:
+          - name: data
+            description: "JSON data containing support ticket details"
+            tests:
+              - not_null
+      
+      - name: customers
+        description: "Raw customer data in JSON format"
+        columns:
+          - name: data
+            description: "JSON data containing customer details"
+            tests:
+              - not_null 

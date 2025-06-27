@@ -1,0 +1,380 @@
+name: CustomerAnalytics
+description: |-
+  Semantic model for analyzing customer interactions, reviews, support tickets, and personas.
+tables:
+  - name: Customers_Source
+    baseTable:
+      database: DBT_CORTEX_LLMS
+      schema: ANALYTICS
+      table: CUSTOMER_PERSONA_SIGNALS
+    description: |-
+      Core customer information including demographics and lifetime value.
+    primaryKey:
+      columns:
+        - customer_id
+    dimensions:
+      - name: customer_id
+        expr: customer_id
+        data_type: TEXT
+        description: |-
+          Unique identifier for the customer.
+      - name: persona
+        expr: persona
+        data_type: TEXT
+        description: |-
+          Customer persona classification from source data (e.g., Tech Enthusiast, Budget Shopper).
+      - name: sign_up_date
+        expr: sign_up_date
+        data_type: DATE
+        description: |-
+          Date when the customer first registered.
+      - name: products_owned
+        expr: products_owned
+        data_type: NUMBER
+        description: |-
+          Number of products owned by the customer.
+      - name: lifetime_value
+        expr: lifetime_value
+        data_type: NUMBER
+        description: |-
+          Total historical or predicted lifetime value of the customer.
+    measures: []
+  - name: Interactions_Source
+    baseTable:
+      database: DBT_CORTEX_LLMS
+      schema: ANALYTICS
+      table: FACT_CUSTOMER_INTERACTIONS
+    description: |-
+      Records of customer interactions with agents, including notes and sentiment scores.
+    primaryKey:
+      columns:
+        - interaction_id
+    dimensions:
+      - name: interaction_id
+        expr: interaction_id
+        data_type: TEXT
+        description: |-
+          Unique identifier for the customer interaction.
+      - name: interaction_date
+        expr: interaction_date
+        data_type: TIMESTAMP_NTZ
+        description: |-
+          Timestamp when the interaction occurred.
+      - name: agent_id
+        expr: agent_id
+        data_type: TEXT
+        description: |-
+          Unique identifier for the customer service agent involved.
+      - name: interaction_type
+        expr: interaction_type
+        data_type: TEXT
+        description: |-
+          Type of customer interaction (e.g., call, email, chat).
+      - name: interaction_notes
+        expr: interaction_notes
+        data_type: TEXT
+        description: |-
+          Detailed notes or transcript of the interaction.
+      - name: sentiment_score
+        expr: sentiment_score
+        data_type: NUMBER
+        description: "Sentiment score of the customer interaction (-1 to 1)."
+    measures:
+      - name: total_interactions
+        expr: interaction_id
+        data_type: TEXT
+        default_aggregation: count
+        description: |-
+          Total number of customer interactions.
+      - name: avg_interaction_sentiment
+        expr: sentiment_score
+        data_type: NUMBER
+        default_aggregation: avg
+        description: |-
+          Average sentiment score of customer interactions (-1 to 1).
+  - name: Reviews_Source
+    baseTable:
+      database: DBT_CORTEX_LLMS
+      schema: ANALYTICS
+      table: FACT_PRODUCT_REVIEWS
+    description: |-
+      Product reviews submitted by customers, including ratings, text, language, and sentiment.
+    primaryKey:
+      columns:
+        - review_id
+    dimensions:
+      - name: review_id
+        expr: review_id
+        data_type: TEXT
+        description: |-
+          Unique identifier for each product review.
+      - name: product_id
+        expr: product_id
+        data_type: TEXT
+        description: |-
+          Unique identifier for the reviewed product.
+      - name: review_date
+        expr: review_date
+        data_type: TIMESTAMP_NTZ
+        description: |-
+          Timestamp when the review was posted.
+      - name: review_language
+        expr: review_language
+        data_type: TEXT
+        description: |-
+          Language code of the review text (e.g., en, es, fr).
+      - name: review_text
+        expr: review_text
+        data_type: TEXT
+        description: |-
+          Text content of the product review.
+      - name: review_text_english
+        expr: review_text_english
+        data_type: TEXT
+        description: |-
+          English translation of the review text, if applicable.
+      - name: review_rating
+        expr: review_rating
+        data_type: NUMBER
+        description: "Individual rating given in a product review (e.g., 1-5)."
+      - name: sentiment_score
+        expr: sentiment_score
+        data_type: NUMBER
+        description: "Sentiment score of the product review (-1 to 1)."
+    measures:
+      - name: total_reviews
+        expr: review_id
+        data_type: TEXT
+        default_aggregation: count
+        description: |-
+          Total number of product reviews.
+      - name: avg_review_rating
+        expr: review_rating
+        data_type: NUMBER
+        default_aggregation: avg
+        description: |-
+          Average rating given in product reviews (e.g., 1-5).
+      - name: avg_review_sentiment
+        expr: sentiment_score
+        data_type: NUMBER
+        default_aggregation: avg
+        description: |-
+          Average sentiment score of product reviews (-1 to 1).
+  - name: Tickets_Source
+    baseTable:
+      database: DBT_CORTEX_LLMS
+      schema: ANALYTICS
+      table: FACT_SUPPORT_TICKETS
+    description: |-
+      Support tickets raised by customers, including category, status, description, priority, and sentiment.
+    primaryKey:
+      columns:
+        - ticket_id
+    dimensions:
+      - name: ticket_id
+        expr: ticket_id
+        data_type: TEXT
+        description: |-
+          Unique identifier for each support ticket.
+      - name: customer_id
+        expr: customer_id
+        data_type: TEXT
+        description: "Unique identifier for the customer associated with the ticket."
+      - name: ticket_date
+        expr: ticket_date
+        data_type: TIMESTAMP_NTZ
+        description: |-
+          Timestamp when the ticket was created.
+      - name: ticket_status
+        expr: ticket_status
+        data_type: TEXT
+        description: |-
+          Current status of the support ticket (e.g., Open, Closed, Pending).
+      - name: ticket_category
+        expr: ticket_category
+        data_type: TEXT
+        description: |-
+          Category classification of the support ticket (e.g., Billing, Technical, Account).
+      - name: ticket_description
+        expr: ticket_description
+        data_type: TEXT
+        description: |-
+          Detailed description of the support issue.
+      - name: priority_level
+        expr: priority_level
+        data_type: TEXT
+        description: |-
+          Cortex-classified priority level of the ticket (e.g., Critical, High, Medium, Low).
+      - name: expected_resolution_timeframe
+        expr: expected_resolution_timeframe
+        data_type: TEXT
+        description: |-
+          Cortex-extracted customer expected resolution timeframe for the ticket.
+      - name: requested_remedy
+        expr: requested_remedy
+        data_type: TEXT
+        description: |-
+          Cortex-extracted customer requested compensation or remedy for the issue.
+      - name: sentiment_score
+        expr: sentiment_score
+        data_type: NUMBER
+        description: "Sentiment score of the support ticket (-1 to 1)."
+    measures:
+      - name: total_support_tickets
+        expr: ticket_id
+        data_type: TEXT
+        default_aggregation: count
+        description: |-
+          Total number of support tickets.
+      - name: avg_ticket_sentiment
+        expr: sentiment_score
+        data_type: NUMBER
+        default_aggregation: avg
+        description: |-
+          Average sentiment score of support tickets (-1 to 1).
+  - name: PersonaSignals_Source
+    baseTable:
+      database: DBT_CORTEX_LLMS
+      schema: ANALYTICS
+      table: CUSTOMER_PERSONA_SIGNALS
+    description: |-
+      Aggregated customer signals including derived personas, churn risk, upsell opportunities, and summaries.
+    primaryKey:
+      columns:
+        - customer_id
+    dimensions:
+      - name: customer_id
+        expr: customer_id
+        data_type: TEXT
+        description: |-
+          Unique identifier for the customer, used for joining to the Customer dimension.
+      - name: avg_sentiment
+        expr: avg_sentiment
+        data_type: NUMBER
+        description: |-
+          Average sentiment score for the customer based on all interactions, reviews, and tickets.
+      - name: sentiment_trend
+        expr: sentiment_trend
+        data_type: NUMBER
+        description: |-
+          Trend of the customer's sentiment over time (e.g., improving, deteriorating).
+      - name: sentiment_volatility
+        expr: sentiment_volatility
+        data_type: NUMBER
+        description: |-
+          Degree of variation in a customer's sentiment scores.
+      - name: overall_sentiment_category
+        expr: overall_sentiment_category
+        data_type: TEXT
+        description: |-
+          Categorized overall sentiment for the customer (e.g., Positive, Neutral, Negative).
+      - name: ticket_count
+        expr: ticket_count
+        data_type: NUMBER
+        description: |-
+          Total number of support tickets associated with the customer from the signals table.
+      - name: avg_rating
+        expr: avg_rating
+        data_type: NUMBER
+        description: |-
+          Average product review rating given by the customer from the signals table.
+      - name: customer_summary
+        expr: customer_summary
+        data_type: TEXT
+        description: |-
+          AI-generated textual summary of the customer's interactions and feedback.
+      - name: derived_persona
+        expr: derived_persona
+        data_type: TEXT
+        description: |-
+          Customer persona derived from behavioral data and AI analysis (e.g., Satisfied, Frustrated).
+      - name: churn_risk
+        expr: churn_risk
+        data_type: TEXT
+        description: |-
+          Predicted likelihood of the customer churning (e.g., High, Medium, Low).
+      - name: upsell_opportunity
+        expr: upsell_opportunity
+        data_type: TEXT
+        description: |-
+          Assessed potential for upselling additional products or services (e.g., High, Medium, Low).
+    measures:
+      - name: total_customers_from_signals
+        expr: customer_id
+        data_type: TEXT
+        default_aggregation: count_distinct
+        description: |-
+          Total number of unique customers present in the persona signals data.
+      - name: sum_ticket_count_from_signals
+        expr: ticket_count
+        data_type: NUMBER
+        default_aggregation: sum
+        description: |-
+          Sum of all ticket counts from the customer signals table. This reflects total tickets across customers with signal data.
+relationships:
+  - name: Interactions_Source_to_Customer_0
+    leftTable: Interactions_Source
+    rightTable: Customers_Source
+    expr: Interactions_Source.customer_id = Customers_Source.customer_id
+    joinType: inner
+    relationshipType: many_to_one
+  - name: Reviews_Source_to_Customer_1
+    leftTable: Reviews_Source
+    rightTable: Customers_Source
+    expr: Reviews_Source.customer_id = Customers_Source.customer_id
+    joinType: inner
+    relationshipType: many_to_one
+  - name: Tickets_Source_to_Customer_2
+    leftTable: Tickets_Source
+    rightTable: Customers_Source
+    expr: Tickets_Source.customer_id = Customers_Source.customer_id
+    joinType: inner
+    relationshipType: many_to_one
+  - name: PersonaSignals_Source_to_Customer_3
+    leftTable: PersonaSignals_Source
+    rightTable: Customers_Source
+    expr: PersonaSignals_Source.customer_id = Customers_Source.customer_id
+    joinType: inner
+    relationshipType: many_to_one
+
+verifiedQueries:
+  - name: Customer Churn Risk Summary
+    semanticModelName: CustomerAnalytics
+    question: |-
+      Provides a count of customers and their average sentiment score, grouped by predicted churn risk level.
+    sql: |-
+      SELECT churn_risk, COUNT(DISTINCT customer_id) AS number_of_customers, ROUND(AVG(avg_sentiment), 2) AS average_customer_sentiment FROM __personasignals_source WHERE NOT churn_risk IS NULL GROUP BY churn_risk ORDER BY CASE churn_risk WHEN 'High' THEN 1 WHEN 'Medium' THEN 2 WHEN 'Low' THEN 3 ELSE 4 END
+  - name: High-Value Customers At Risk with Deteriorating Sentiment
+    semanticModelName: CustomerAnalytics
+    question: |-
+      Lists top 20 high LTV customers with 'High' churn_risk and a significantly negative sentiment trend, showing key persona signals.
+    sql: |-
+      SELECT cb.customer_id, cb.lifetime_value, cps.avg_sentiment, cps.sentiment_trend, cps.churn_risk, cps.derived_persona, cps.ticket_count FROM __customers_source AS cb JOIN __personasignals_source AS cps ON cb.customer_id = cps.customer_id WHERE cps.churn_risk = 'High' AND cps.sentiment_trend < -0.2 ORDER BY cb.lifetime_value DESC, cps.sentiment_trend ASC LIMIT 20
+  - name: Product Performance Hotspots (Low Rating/Negative Sentiment)
+    semanticModelName: CustomerAnalytics
+    question: |-
+      Identifies products with an average rating below 3.0 or average review sentiment below -0.1, highlighting potential problem areas.
+    sql: |-
+      SELECT r.product_id, COUNT(DISTINCT r.review_id) AS total_reviews, ROUND(AVG(r.review_rating), 2) AS avg_product_rating, ROUND(AVG(r.sentiment_score), 2) AS avg_review_sentiment, COUNT(CASE WHEN r.sentiment_score < -0.3 THEN 1 END) AS negative_review_count FROM __reviews_source AS r GROUP BY r.product_id HAVING AVG(r.review_rating) < 3.0 OR AVG(r.sentiment_score) < -0.1 ORDER BY avg_product_rating ASC, avg_review_sentiment ASC
+  - name: High-Priority Support Tickets by Persona and Category
+    semanticModelName: CustomerAnalytics
+    question: |-
+      Analyzes critical and high priority support tickets, grouped by derived customer persona and ticket category.
+    sql: |-
+      SELECT cps.derived_persona, st.ticket_category, st.priority_level, COUNT(st.ticket_id) AS total_tickets, ROUND(AVG(st.sentiment_score), 2) AS avg_ticket_sentiment FROM __tickets_source AS st JOIN __personasignals_source AS cps ON st.customer_id = cps.customer_id WHERE st.priority_level IN ('Critical', 'High') GROUP BY cps.derived_persona, st.ticket_category, st.priority_level ORDER BY total_tickets DESC, cps.derived_persona, st.priority_level
+  - name: Upsell Candidates (Satisfied/Improving Personas)
+    semanticModelName: CustomerAnalytics
+    question: |-
+      Lists top 50 customers with 'High' upsell opportunity who are 'Satisfied' or 'Improving' with positive sentiment.
+    sql: |-
+      SELECT cb.customer_id, cb.persona AS original_persona, cps.derived_persona, cps.upsell_opportunity, cps.avg_sentiment, cps.sentiment_trend, cb.products_owned, cb.lifetime_value FROM __customers_source AS cb JOIN __personasignals_source AS cps ON cb.customer_id = cps.customer_id WHERE cps.upsell_opportunity = 'High' AND (cps.derived_persona = 'Satisfied' OR (cps.derived_persona = 'Improving' AND cps.avg_sentiment > 0.3)) ORDER BY cb.lifetime_value DESC, cps.avg_sentiment DESC LIMIT 50
+  - name: Interaction Types Leading to Negative Sentiment
+    semanticModelName: CustomerAnalytics
+    question: |-
+      Analyzes interaction types by their association with negative sentiment scores, highlighting channels or processes needing review.
+    sql: |-
+      SELECT i.interaction_type, COUNT(i.interaction_id) AS total_interactions, COUNT(CASE WHEN i.sentiment_score < -0.3 THEN i.interaction_id END) AS negative_sentiment_interactions, ROUND(CAST(COUNT(CASE WHEN i.sentiment_score < -0.3 THEN i.interaction_id END) AS DECIMAL(38, 0)) * 100 / COUNT(i.interaction_id), 2) AS pct_negative_interactions, ROUND(AVG(i.sentiment_score), 2) AS avg_sentiment_for_type FROM __interactions_source AS i GROUP BY i.interaction_type ORDER BY pct_negative_interactions DESC, total_interactions DESC
+
+module_custom_instructions:
+  sql_generation: |
+    "When looking for upsell opportunities, pay special attention to customers who are categorized as 'Satisfied' in their derived_persona and have a 'High' or 'Medium' upsell_opportunity score. Also consider their lifetime_value."

@@ -1,0 +1,8 @@
+-- Rating Trend Over Time
+SELECT
+    DATE_TRUNC('day', review_date) AS DATE,
+    CAST(AVG(review_rating) AS FLOAT) AS AVG_RATING,
+    COUNT(*) AS REVIEW_COUNT
+FROM ANALYTICS.FACT_PRODUCT_REVIEWS
+GROUP BY 1
+ORDER BY 1; 

@@ -1,0 +1,7002 @@
+[
+  {
+    "customer_id": "CUST-001",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-16",
+    "products_owned": 3,
+    "lifetime_value": 7619
+  },
+  {
+    "customer_id": "CUST-002",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-27",
+    "products_owned": 2,
+    "lifetime_value": 3515
+  },
+  {
+    "customer_id": "CUST-003",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-12",
+    "products_owned": 5,
+    "lifetime_value": 6896
+  },
+  {
+    "customer_id": "CUST-004",
+    "persona": "satisfied",
+    "sign_up_date": "2025-02-11",
+    "products_owned": 4,
+    "lifetime_value": 3841
+  },
+  {
+    "customer_id": "CUST-005",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-16",
+    "products_owned": 3,
+    "lifetime_value": 6657
+  },
+  {
+    "customer_id": "CUST-006",
+    "persona": "new",
+    "sign_up_date": "2022-08-08",
+    "products_owned": 4,
+    "lifetime_value": 7514
+  },
+  {
+    "customer_id": "CUST-007",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-01",
+    "products_owned": 1,
+    "lifetime_value": 5515
+  },
+  {
+    "customer_id": "CUST-008",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-04",
+    "products_owned": 5,
+    "lifetime_value": 4720
+  },
+  {
+    "customer_id": "CUST-009",
+    "persona": "mixed",
+    "sign_up_date": "2023-04-05",
+    "products_owned": 1,
+    "lifetime_value": 4268
+  },
+  {
+    "customer_id": "CUST-010",
+    "persona": "frustrated",
+    "sign_up_date": "2022-04-15",
+    "products_owned": 1,
+    "lifetime_value": 8600
+  },
+  {
+    "customer_id": "CUST-011",
+    "persona": "satisfied",
+    "sign_up_date": "2024-08-06",
+    "products_owned": 2,
+    "lifetime_value": 3778
+  },
+  {
+    "customer_id": "CUST-012",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-13",
+    "products_owned": 3,
+    "lifetime_value": 4760
+  },
+  {
+    "customer_id": "CUST-013",
+    "persona": "neutral",
+    "sign_up_date": "2024-05-22",
+    "products_owned": 2,
+    "lifetime_value": 8511
+  },
+  {
+    "customer_id": "CUST-014",
+    "persona": "new",
+    "sign_up_date": "2024-10-28",
+    "products_owned": 3,
+    "lifetime_value": 9440
+  },
+  {
+    "customer_id": "CUST-015",
+    "persona": "frustrated",
+    "sign_up_date": "2024-10-15",
+    "products_owned": 4,
+    "lifetime_value": 1793
+  },
+  {
+    "customer_id": "CUST-016",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-02",
+    "products_owned": 3,
+    "lifetime_value": 2321
+  },
+  {
+    "customer_id": "CUST-017",
+    "persona": "neutral",
+    "sign_up_date": "2022-05-16",
+    "products_owned": 3,
+    "lifetime_value": 7295
+  },
+  {
+    "customer_id": "CUST-018",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-13",
+    "products_owned": 4,
+    "lifetime_value": 7260
+  },
+  {
+    "customer_id": "CUST-019",
+    "persona": "frustrated",
+    "sign_up_date": "2022-11-29",
+    "products_owned": 2,
+    "lifetime_value": 7065
+  },
+  {
+    "customer_id": "CUST-020",
+    "persona": "new",
+    "sign_up_date": "2022-05-24",
+    "products_owned": 4,
+    "lifetime_value": 9455
+  },
+  {
+    "customer_id": "CUST-021",
+    "persona": "frustrated",
+    "sign_up_date": "2022-06-11",
+    "products_owned": 4,
+    "lifetime_value": 8969
+  },
+  {
+    "customer_id": "CUST-022",
+    "persona": "new",
+    "sign_up_date": "2025-02-05",
+    "products_owned": 5,
+    "lifetime_value": 350
+  },
+  {
+    "customer_id": "CUST-023",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-23",
+    "products_owned": 5,
+    "lifetime_value": 729
+  },
+  {
+    "customer_id": "CUST-024",
+    "persona": "new",
+    "sign_up_date": "2022-12-03",
+    "products_owned": 1,
+    "lifetime_value": 946
+  },
+  {
+    "customer_id": "CUST-025",
+    "persona": "neutral",
+    "sign_up_date": "2024-03-16",
+    "products_owned": 1,
+    "lifetime_value": 8852
+  },
+  {
+    "customer_id": "CUST-026",
+    "persona": "neutral",
+    "sign_up_date": "2023-10-11",
+    "products_owned": 1,
+    "lifetime_value": 3732
+  },
+  {
+    "customer_id": "CUST-027",
+    "persona": "neutral",
+    "sign_up_date": "2023-10-07",
+    "products_owned": 4,
+    "lifetime_value": 1890
+  },
+  {
+    "customer_id": "CUST-028",
+    "persona": "new",
+    "sign_up_date": "2024-10-26",
+    "products_owned": 1,
+    "lifetime_value": 5646
+  },
+  {
+    "customer_id": "CUST-029",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-20",
+    "products_owned": 1,
+    "lifetime_value": 2854
+  },
+  {
+    "customer_id": "CUST-030",
+    "persona": "mixed",
+    "sign_up_date": "2022-07-06",
+    "products_owned": 3,
+    "lifetime_value": 8253
+  },
+  {
+    "customer_id": "CUST-031",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-02",
+    "products_owned": 1,
+    "lifetime_value": 9905
+  },
+  {
+    "customer_id": "CUST-032",
+    "persona": "satisfied",
+    "sign_up_date": "2024-08-20",
+    "products_owned": 4,
+    "lifetime_value": 8222
+  },
+  {
+    "customer_id": "CUST-033",
+    "persona": "frustrated",
+    "sign_up_date": "2024-05-12",
+    "products_owned": 5,
+    "lifetime_value": 397
+  },
+  {
+    "customer_id": "CUST-034",
+    "persona": "new",
+    "sign_up_date": "2023-05-31",
+    "products_owned": 5,
+    "lifetime_value": 8040
+  },
+  {
+    "customer_id": "CUST-035",
+    "persona": "neutral",
+    "sign_up_date": "2023-02-22",
+    "products_owned": 3,
+    "lifetime_value": 560
+  },
+  {
+    "customer_id": "CUST-036",
+    "persona": "frustrated",
+    "sign_up_date": "2022-06-22",
+    "products_owned": 1,
+    "lifetime_value": 8333
+  },
+  {
+    "customer_id": "CUST-037",
+    "persona": "new",
+    "sign_up_date": "2024-03-10",
+    "products_owned": 5,
+    "lifetime_value": 1845
+  },
+  {
+    "customer_id": "CUST-038",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-21",
+    "products_owned": 5,
+    "lifetime_value": 2993
+  },
+  {
+    "customer_id": "CUST-039",
+    "persona": "frustrated",
+    "sign_up_date": "2022-10-14",
+    "products_owned": 4,
+    "lifetime_value": 6077
+  },
+  {
+    "customer_id": "CUST-040",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-27",
+    "products_owned": 4,
+    "lifetime_value": 9003
+  },
+  {
+    "customer_id": "CUST-041",
+    "persona": "satisfied",
+    "sign_up_date": "2025-01-11",
+    "products_owned": 4,
+    "lifetime_value": 2224
+  },
+  {
+    "customer_id": "CUST-042",
+    "persona": "new",
+    "sign_up_date": "2022-07-20",
+    "products_owned": 4,
+    "lifetime_value": 8761
+  },
+  {
+    "customer_id": "CUST-043",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-10",
+    "products_owned": 3,
+    "lifetime_value": 4504
+  },
+  {
+    "customer_id": "CUST-044",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-11",
+    "products_owned": 3,
+    "lifetime_value": 8864
+  },
+  {
+    "customer_id": "CUST-045",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-22",
+    "products_owned": 5,
+    "lifetime_value": 3737
+  },
+  {
+    "customer_id": "CUST-046",
+    "persona": "mixed",
+    "sign_up_date": "2025-01-14",
+    "products_owned": 4,
+    "lifetime_value": 3080
+  },
+  {
+    "customer_id": "CUST-047",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-14",
+    "products_owned": 5,
+    "lifetime_value": 1030
+  },
+  {
+    "customer_id": "CUST-048",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-06",
+    "products_owned": 2,
+    "lifetime_value": 7556
+  },
+  {
+    "customer_id": "CUST-049",
+    "persona": "neutral",
+    "sign_up_date": "2023-05-25",
+    "products_owned": 4,
+    "lifetime_value": 5908
+  },
+  {
+    "customer_id": "CUST-050",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-23",
+    "products_owned": 5,
+    "lifetime_value": 2509
+  },
+  {
+    "customer_id": "CUST-051",
+    "persona": "satisfied",
+    "sign_up_date": "2022-06-30",
+    "products_owned": 4,
+    "lifetime_value": 5084
+  },
+  {
+    "customer_id": "CUST-052",
+    "persona": "new",
+    "sign_up_date": "2023-08-07",
+    "products_owned": 3,
+    "lifetime_value": 2813
+  },
+  {
+    "customer_id": "CUST-053",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-09",
+    "products_owned": 3,
+    "lifetime_value": 2590
+  },
+  {
+    "customer_id": "CUST-054",
+    "persona": "frustrated",
+    "sign_up_date": "2024-02-15",
+    "products_owned": 5,
+    "lifetime_value": 2414
+  },
+  {
+    "customer_id": "CUST-055",
+    "persona": "mixed",
+    "sign_up_date": "2024-02-28",
+    "products_owned": 4,
+    "lifetime_value": 8910
+  },
+  {
+    "customer_id": "CUST-056",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-03",
+    "products_owned": 1,
+    "lifetime_value": 3838
+  },
+  {
+    "customer_id": "CUST-057",
+    "persona": "new",
+    "sign_up_date": "2023-08-22",
+    "products_owned": 3,
+    "lifetime_value": 5446
+  },
+  {
+    "customer_id": "CUST-058",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-21",
+    "products_owned": 5,
+    "lifetime_value": 1103
+  },
+  {
+    "customer_id": "CUST-059",
+    "persona": "neutral",
+    "sign_up_date": "2023-08-10",
+    "products_owned": 5,
+    "lifetime_value": 2304
+  },
+  {
+    "customer_id": "CUST-060",
+    "persona": "mixed",
+    "sign_up_date": "2024-02-12",
+    "products_owned": 5,
+    "lifetime_value": 7301
+  },
+  {
+    "customer_id": "CUST-061",
+    "persona": "satisfied",
+    "sign_up_date": "2024-11-27",
+    "products_owned": 1,
+    "lifetime_value": 3923
+  },
+  {
+    "customer_id": "CUST-062",
+    "persona": "new",
+    "sign_up_date": "2022-05-31",
+    "products_owned": 3,
+    "lifetime_value": 2481
+  },
+  {
+    "customer_id": "CUST-063",
+    "persona": "new",
+    "sign_up_date": "2024-12-28",
+    "products_owned": 3,
+    "lifetime_value": 3661
+  },
+  {
+    "customer_id": "CUST-064",
+    "persona": "neutral",
+    "sign_up_date": "2023-11-26",
+    "products_owned": 4,
+    "lifetime_value": 8060
+  },
+  {
+    "customer_id": "CUST-065",
+    "persona": "mixed",
+    "sign_up_date": "2023-05-05",
+    "products_owned": 1,
+    "lifetime_value": 809
+  },
+  {
+    "customer_id": "CUST-066",
+    "persona": "new",
+    "sign_up_date": "2022-07-17",
+    "products_owned": 2,
+    "lifetime_value": 5831
+  },
+  {
+    "customer_id": "CUST-067",
+    "persona": "new",
+    "sign_up_date": "2022-07-23",
+    "products_owned": 4,
+    "lifetime_value": 4767
+  },
+  {
+    "customer_id": "CUST-068",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-21",
+    "products_owned": 4,
+    "lifetime_value": 6406
+  },
+  {
+    "customer_id": "CUST-069",
+    "persona": "frustrated",
+    "sign_up_date": "2022-06-27",
+    "products_owned": 1,
+    "lifetime_value": 5298
+  },
+  {
+    "customer_id": "CUST-070",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-26",
+    "products_owned": 4,
+    "lifetime_value": 350
+  },
+  {
+    "customer_id": "CUST-071",
+    "persona": "frustrated",
+    "sign_up_date": "2024-07-21",
+    "products_owned": 2,
+    "lifetime_value": 8492
+  },
+  {
+    "customer_id": "CUST-072",
+    "persona": "frustrated",
+    "sign_up_date": "2022-08-18",
+    "products_owned": 5,
+    "lifetime_value": 3850
+  },
+  {
+    "customer_id": "CUST-073",
+    "persona": "satisfied",
+    "sign_up_date": "2024-11-25",
+    "products_owned": 1,
+    "lifetime_value": 1955
+  },
+  {
+    "customer_id": "CUST-074",
+    "persona": "mixed",
+    "sign_up_date": "2023-07-16",
+    "products_owned": 4,
+    "lifetime_value": 7783
+  },
+  {
+    "customer_id": "CUST-075",
+    "persona": "frustrated",
+    "sign_up_date": "2022-11-03",
+    "products_owned": 5,
+    "lifetime_value": 4363
+  },
+  {
+    "customer_id": "CUST-076",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-28",
+    "products_owned": 4,
+    "lifetime_value": 9498
+  },
+  {
+    "customer_id": "CUST-077",
+    "persona": "mixed",
+    "sign_up_date": "2024-02-11",
+    "products_owned": 2,
+    "lifetime_value": 7579
+  },
+  {
+    "customer_id": "CUST-078",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-30",
+    "products_owned": 2,
+    "lifetime_value": 4340
+  },
+  {
+    "customer_id": "CUST-079",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-12",
+    "products_owned": 1,
+    "lifetime_value": 5217
+  },
+  {
+    "customer_id": "CUST-080",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-18",
+    "products_owned": 5,
+    "lifetime_value": 8691
+  },
+  {
+    "customer_id": "CUST-081",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-23",
+    "products_owned": 1,
+    "lifetime_value": 5745
+  },
+  {
+    "customer_id": "CUST-082",
+    "persona": "frustrated",
+    "sign_up_date": "2022-11-26",
+    "products_owned": 3,
+    "lifetime_value": 2864
+  },
+  {
+    "customer_id": "CUST-083",
+    "persona": "frustrated",
+    "sign_up_date": "2023-04-10",
+    "products_owned": 2,
+    "lifetime_value": 8814
+  },
+  {
+    "customer_id": "CUST-084",
+    "persona": "new",
+    "sign_up_date": "2022-06-27",
+    "products_owned": 5,
+    "lifetime_value": 5724
+  },
+  {
+    "customer_id": "CUST-085",
+    "persona": "mixed",
+    "sign_up_date": "2024-07-30",
+    "products_owned": 2,
+    "lifetime_value": 4251
+  },
+  {
+    "customer_id": "CUST-086",
+    "persona": "new",
+    "sign_up_date": "2024-02-04",
+    "products_owned": 3,
+    "lifetime_value": 3303
+  },
+  {
+    "customer_id": "CUST-087",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-31",
+    "products_owned": 1,
+    "lifetime_value": 5303
+  },
+  {
+    "customer_id": "CUST-088",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-14",
+    "products_owned": 1,
+    "lifetime_value": 5964
+  },
+  {
+    "customer_id": "CUST-089",
+    "persona": "mixed",
+    "sign_up_date": "2025-02-06",
+    "products_owned": 1,
+    "lifetime_value": 8436
+  },
+  {
+    "customer_id": "CUST-090",
+    "persona": "neutral",
+    "sign_up_date": "2023-10-27",
+    "products_owned": 2,
+    "lifetime_value": 6685
+  },
+  {
+    "customer_id": "CUST-091",
+    "persona": "new",
+    "sign_up_date": "2022-11-05",
+    "products_owned": 4,
+    "lifetime_value": 920
+  },
+  {
+    "customer_id": "CUST-092",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-30",
+    "products_owned": 3,
+    "lifetime_value": 2588
+  },
+  {
+    "customer_id": "CUST-093",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-02",
+    "products_owned": 3,
+    "lifetime_value": 4659
+  },
+  {
+    "customer_id": "CUST-094",
+    "persona": "new",
+    "sign_up_date": "2023-06-26",
+    "products_owned": 5,
+    "lifetime_value": 8908
+  },
+  {
+    "customer_id": "CUST-095",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-09",
+    "products_owned": 3,
+    "lifetime_value": 2518
+  },
+  {
+    "customer_id": "CUST-096",
+    "persona": "new",
+    "sign_up_date": "2024-07-14",
+    "products_owned": 3,
+    "lifetime_value": 9467
+  },
+  {
+    "customer_id": "CUST-097",
+    "persona": "frustrated",
+    "sign_up_date": "2023-01-01",
+    "products_owned": 2,
+    "lifetime_value": 6250
+  },
+  {
+    "customer_id": "CUST-098",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-25",
+    "products_owned": 5,
+    "lifetime_value": 6510
+  },
+  {
+    "customer_id": "CUST-099",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-11",
+    "products_owned": 3,
+    "lifetime_value": 3469
+  },
+  {
+    "customer_id": "CUST-100",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-05",
+    "products_owned": 5,
+    "lifetime_value": 9063
+  },
+  {
+    "customer_id": "CUST-101",
+    "persona": "satisfied",
+    "sign_up_date": "2025-01-03",
+    "products_owned": 5,
+    "lifetime_value": 7357
+  },
+  {
+    "customer_id": "CUST-102",
+    "persona": "neutral",
+    "sign_up_date": "2023-11-21",
+    "products_owned": 3,
+    "lifetime_value": 9252
+  },
+  {
+    "customer_id": "CUST-103",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-10",
+    "products_owned": 3,
+    "lifetime_value": 9589
+  },
+  {
+    "customer_id": "CUST-104",
+    "persona": "new",
+    "sign_up_date": "2024-04-26",
+    "products_owned": 5,
+    "lifetime_value": 3889
+  },
+  {
+    "customer_id": "CUST-105",
+    "persona": "satisfied",
+    "sign_up_date": "2023-02-03",
+    "products_owned": 1,
+    "lifetime_value": 6379
+  },
+  {
+    "customer_id": "CUST-106",
+    "persona": "neutral",
+    "sign_up_date": "2024-08-25",
+    "products_owned": 3,
+    "lifetime_value": 9819
+  },
+  {
+    "customer_id": "CUST-107",
+    "persona": "new",
+    "sign_up_date": "2024-11-24",
+    "products_owned": 2,
+    "lifetime_value": 1753
+  },
+  {
+    "customer_id": "CUST-108",
+    "persona": "frustrated",
+    "sign_up_date": "2022-10-19",
+    "products_owned": 1,
+    "lifetime_value": 7561
+  },
+  {
+    "customer_id": "CUST-109",
+    "persona": "frustrated",
+    "sign_up_date": "2023-02-22",
+    "products_owned": 3,
+    "lifetime_value": 9852
+  },
+  {
+    "customer_id": "CUST-110",
+    "persona": "mixed",
+    "sign_up_date": "2025-02-17",
+    "products_owned": 3,
+    "lifetime_value": 8927
+  },
+  {
+    "customer_id": "CUST-111",
+    "persona": "mixed",
+    "sign_up_date": "2023-06-09",
+    "products_owned": 3,
+    "lifetime_value": 8074
+  },
+  {
+    "customer_id": "CUST-112",
+    "persona": "satisfied",
+    "sign_up_date": "2024-03-19",
+    "products_owned": 5,
+    "lifetime_value": 9240
+  },
+  {
+    "customer_id": "CUST-113",
+    "persona": "new",
+    "sign_up_date": "2023-01-02",
+    "products_owned": 4,
+    "lifetime_value": 4713
+  },
+  {
+    "customer_id": "CUST-114",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-17",
+    "products_owned": 2,
+    "lifetime_value": 8590
+  },
+  {
+    "customer_id": "CUST-115",
+    "persona": "new",
+    "sign_up_date": "2022-08-18",
+    "products_owned": 4,
+    "lifetime_value": 2633
+  },
+  {
+    "customer_id": "CUST-116",
+    "persona": "neutral",
+    "sign_up_date": "2023-01-29",
+    "products_owned": 2,
+    "lifetime_value": 7337
+  },
+  {
+    "customer_id": "CUST-117",
+    "persona": "mixed",
+    "sign_up_date": "2024-05-17",
+    "products_owned": 2,
+    "lifetime_value": 272
+  },
+  {
+    "customer_id": "CUST-118",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-18",
+    "products_owned": 2,
+    "lifetime_value": 7436
+  },
+  {
+    "customer_id": "CUST-119",
+    "persona": "new",
+    "sign_up_date": "2023-03-19",
+    "products_owned": 5,
+    "lifetime_value": 8395
+  },
+  {
+    "customer_id": "CUST-120",
+    "persona": "mixed",
+    "sign_up_date": "2023-05-18",
+    "products_owned": 1,
+    "lifetime_value": 9098
+  },
+  {
+    "customer_id": "CUST-121",
+    "persona": "satisfied",
+    "sign_up_date": "2023-09-13",
+    "products_owned": 4,
+    "lifetime_value": 3926
+  },
+  {
+    "customer_id": "CUST-122",
+    "persona": "frustrated",
+    "sign_up_date": "2022-07-08",
+    "products_owned": 1,
+    "lifetime_value": 6921
+  },
+  {
+    "customer_id": "CUST-123",
+    "persona": "frustrated",
+    "sign_up_date": "2022-10-06",
+    "products_owned": 1,
+    "lifetime_value": 7892
+  },
+  {
+    "customer_id": "CUST-124",
+    "persona": "new",
+    "sign_up_date": "2022-05-18",
+    "products_owned": 1,
+    "lifetime_value": 4972
+  },
+  {
+    "customer_id": "CUST-125",
+    "persona": "frustrated",
+    "sign_up_date": "2024-03-10",
+    "products_owned": 3,
+    "lifetime_value": 4705
+  },
+  {
+    "customer_id": "CUST-126",
+    "persona": "neutral",
+    "sign_up_date": "2023-02-24",
+    "products_owned": 1,
+    "lifetime_value": 1918
+  },
+  {
+    "customer_id": "CUST-127",
+    "persona": "new",
+    "sign_up_date": "2025-02-17",
+    "products_owned": 1,
+    "lifetime_value": 7879
+  },
+  {
+    "customer_id": "CUST-128",
+    "persona": "mixed",
+    "sign_up_date": "2024-09-28",
+    "products_owned": 3,
+    "lifetime_value": 6405
+  },
+  {
+    "customer_id": "CUST-129",
+    "persona": "neutral",
+    "sign_up_date": "2023-02-26",
+    "products_owned": 2,
+    "lifetime_value": 4158
+  },
+  {
+    "customer_id": "CUST-130",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-25",
+    "products_owned": 4,
+    "lifetime_value": 2557
+  },
+  {
+    "customer_id": "CUST-131",
+    "persona": "mixed",
+    "sign_up_date": "2025-02-19",
+    "products_owned": 4,
+    "lifetime_value": 3045
+  },
+  {
+    "customer_id": "CUST-132",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-27",
+    "products_owned": 3,
+    "lifetime_value": 4564
+  },
+  {
+    "customer_id": "CUST-133",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-21",
+    "products_owned": 1,
+    "lifetime_value": 4781
+  },
+  {
+    "customer_id": "CUST-134",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-20",
+    "products_owned": 3,
+    "lifetime_value": 2137
+  },
+  {
+    "customer_id": "CUST-135",
+    "persona": "mixed",
+    "sign_up_date": "2024-08-21",
+    "products_owned": 3,
+    "lifetime_value": 2851
+  },
+  {
+    "customer_id": "CUST-136",
+    "persona": "neutral",
+    "sign_up_date": "2024-10-08",
+    "products_owned": 5,
+    "lifetime_value": 371
+  },
+  {
+    "customer_id": "CUST-137",
+    "persona": "new",
+    "sign_up_date": "2024-06-16",
+    "products_owned": 4,
+    "lifetime_value": 7512
+  },
+  {
+    "customer_id": "CUST-138",
+    "persona": "new",
+    "sign_up_date": "2022-12-18",
+    "products_owned": 2,
+    "lifetime_value": 2641
+  },
+  {
+    "customer_id": "CUST-139",
+    "persona": "new",
+    "sign_up_date": "2022-11-07",
+    "products_owned": 1,
+    "lifetime_value": 3176
+  },
+  {
+    "customer_id": "CUST-140",
+    "persona": "mixed",
+    "sign_up_date": "2023-02-14",
+    "products_owned": 5,
+    "lifetime_value": 7542
+  },
+  {
+    "customer_id": "CUST-141",
+    "persona": "new",
+    "sign_up_date": "2022-11-18",
+    "products_owned": 3,
+    "lifetime_value": 159
+  },
+  {
+    "customer_id": "CUST-142",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-08",
+    "products_owned": 3,
+    "lifetime_value": 670
+  },
+  {
+    "customer_id": "CUST-143",
+    "persona": "frustrated",
+    "sign_up_date": "2023-08-12",
+    "products_owned": 2,
+    "lifetime_value": 824
+  },
+  {
+    "customer_id": "CUST-144",
+    "persona": "new",
+    "sign_up_date": "2023-02-22",
+    "products_owned": 5,
+    "lifetime_value": 3265
+  },
+  {
+    "customer_id": "CUST-145",
+    "persona": "mixed",
+    "sign_up_date": "2024-10-02",
+    "products_owned": 5,
+    "lifetime_value": 2677
+  },
+  {
+    "customer_id": "CUST-146",
+    "persona": "mixed",
+    "sign_up_date": "2024-04-15",
+    "products_owned": 2,
+    "lifetime_value": 5182
+  },
+  {
+    "customer_id": "CUST-147",
+    "persona": "frustrated",
+    "sign_up_date": "2024-06-25",
+    "products_owned": 3,
+    "lifetime_value": 7495
+  },
+  {
+    "customer_id": "CUST-148",
+    "persona": "new",
+    "sign_up_date": "2022-06-02",
+    "products_owned": 5,
+    "lifetime_value": 4581
+  },
+  {
+    "customer_id": "CUST-149",
+    "persona": "new",
+    "sign_up_date": "2023-09-02",
+    "products_owned": 3,
+    "lifetime_value": 3469
+  },
+  {
+    "customer_id": "CUST-150",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-27",
+    "products_owned": 4,
+    "lifetime_value": 9074
+  },
+  {
+    "customer_id": "CUST-151",
+    "persona": "neutral",
+    "sign_up_date": "2022-05-31",
+    "products_owned": 3,
+    "lifetime_value": 4426
+  },
+  {
+    "customer_id": "CUST-152",
+    "persona": "mixed",
+    "sign_up_date": "2023-03-01",
+    "products_owned": 2,
+    "lifetime_value": 6221
+  },
+  {
+    "customer_id": "CUST-153",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-31",
+    "products_owned": 2,
+    "lifetime_value": 3580
+  },
+  {
+    "customer_id": "CUST-154",
+    "persona": "frustrated",
+    "sign_up_date": "2023-01-30",
+    "products_owned": 5,
+    "lifetime_value": 3647
+  },
+  {
+    "customer_id": "CUST-155",
+    "persona": "mixed",
+    "sign_up_date": "2023-09-13",
+    "products_owned": 4,
+    "lifetime_value": 7123
+  },
+  {
+    "customer_id": "CUST-156",
+    "persona": "frustrated",
+    "sign_up_date": "2024-11-03",
+    "products_owned": 3,
+    "lifetime_value": 1131
+  },
+  {
+    "customer_id": "CUST-157",
+    "persona": "frustrated",
+    "sign_up_date": "2023-06-13",
+    "products_owned": 3,
+    "lifetime_value": 958
+  },
+  {
+    "customer_id": "CUST-158",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-20",
+    "products_owned": 3,
+    "lifetime_value": 6996
+  },
+  {
+    "customer_id": "CUST-159",
+    "persona": "neutral",
+    "sign_up_date": "2024-12-12",
+    "products_owned": 2,
+    "lifetime_value": 5650
+  },
+  {
+    "customer_id": "CUST-160",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-07",
+    "products_owned": 1,
+    "lifetime_value": 3142
+  },
+  {
+    "customer_id": "CUST-161",
+    "persona": "new",
+    "sign_up_date": "2022-12-23",
+    "products_owned": 3,
+    "lifetime_value": 8924
+  },
+  {
+    "customer_id": "CUST-162",
+    "persona": "satisfied",
+    "sign_up_date": "2024-01-01",
+    "products_owned": 5,
+    "lifetime_value": 6033
+  },
+  {
+    "customer_id": "CUST-163",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-01",
+    "products_owned": 4,
+    "lifetime_value": 5973
+  },
+  {
+    "customer_id": "CUST-164",
+    "persona": "mixed",
+    "sign_up_date": "2024-11-04",
+    "products_owned": 1,
+    "lifetime_value": 1369
+  },
+  {
+    "customer_id": "CUST-165",
+    "persona": "mixed",
+    "sign_up_date": "2024-07-17",
+    "products_owned": 5,
+    "lifetime_value": 947
+  },
+  {
+    "customer_id": "CUST-166",
+    "persona": "frustrated",
+    "sign_up_date": "2022-04-08",
+    "products_owned": 4,
+    "lifetime_value": 650
+  },
+  {
+    "customer_id": "CUST-167",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-06",
+    "products_owned": 1,
+    "lifetime_value": 9143
+  },
+  {
+    "customer_id": "CUST-168",
+    "persona": "new",
+    "sign_up_date": "2024-12-15",
+    "products_owned": 1,
+    "lifetime_value": 7534
+  },
+  {
+    "customer_id": "CUST-169",
+    "persona": "neutral",
+    "sign_up_date": "2024-11-17",
+    "products_owned": 4,
+    "lifetime_value": 9332
+  },
+  {
+    "customer_id": "CUST-170",
+    "persona": "mixed",
+    "sign_up_date": "2024-06-23",
+    "products_owned": 4,
+    "lifetime_value": 9820
+  },
+  {
+    "customer_id": "CUST-171",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-01",
+    "products_owned": 5,
+    "lifetime_value": 6274
+  },
+  {
+    "customer_id": "CUST-172",
+    "persona": "satisfied",
+    "sign_up_date": "2024-11-04",
+    "products_owned": 5,
+    "lifetime_value": 2657
+  },
+  {
+    "customer_id": "CUST-173",
+    "persona": "new",
+    "sign_up_date": "2024-07-22",
+    "products_owned": 1,
+    "lifetime_value": 3105
+  },
+  {
+    "customer_id": "CUST-174",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-27",
+    "products_owned": 4,
+    "lifetime_value": 6004
+  },
+  {
+    "customer_id": "CUST-175",
+    "persona": "new",
+    "sign_up_date": "2024-06-12",
+    "products_owned": 4,
+    "lifetime_value": 8004
+  },
+  {
+    "customer_id": "CUST-176",
+    "persona": "mixed",
+    "sign_up_date": "2024-09-22",
+    "products_owned": 2,
+    "lifetime_value": 7011
+  },
+  {
+    "customer_id": "CUST-177",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-15",
+    "products_owned": 4,
+    "lifetime_value": 1245
+  },
+  {
+    "customer_id": "CUST-178",
+    "persona": "satisfied",
+    "sign_up_date": "2024-08-02",
+    "products_owned": 4,
+    "lifetime_value": 3536
+  },
+  {
+    "customer_id": "CUST-179",
+    "persona": "mixed",
+    "sign_up_date": "2024-06-14",
+    "products_owned": 1,
+    "lifetime_value": 2124
+  },
+  {
+    "customer_id": "CUST-180",
+    "persona": "satisfied",
+    "sign_up_date": "2023-05-13",
+    "products_owned": 3,
+    "lifetime_value": 7366
+  },
+  {
+    "customer_id": "CUST-181",
+    "persona": "frustrated",
+    "sign_up_date": "2024-02-14",
+    "products_owned": 2,
+    "lifetime_value": 4846
+  },
+  {
+    "customer_id": "CUST-182",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-22",
+    "products_owned": 4,
+    "lifetime_value": 1336
+  },
+  {
+    "customer_id": "CUST-183",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-10",
+    "products_owned": 5,
+    "lifetime_value": 848
+  },
+  {
+    "customer_id": "CUST-184",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-28",
+    "products_owned": 3,
+    "lifetime_value": 9684
+  },
+  {
+    "customer_id": "CUST-185",
+    "persona": "frustrated",
+    "sign_up_date": "2023-03-21",
+    "products_owned": 2,
+    "lifetime_value": 7147
+  },
+  {
+    "customer_id": "CUST-186",
+    "persona": "neutral",
+    "sign_up_date": "2022-05-12",
+    "products_owned": 5,
+    "lifetime_value": 9084
+  },
+  {
+    "customer_id": "CUST-187",
+    "persona": "neutral",
+    "sign_up_date": "2022-06-12",
+    "products_owned": 2,
+    "lifetime_value": 4248
+  },
+  {
+    "customer_id": "CUST-188",
+    "persona": "mixed",
+    "sign_up_date": "2023-06-13",
+    "products_owned": 3,
+    "lifetime_value": 1797
+  },
+  {
+    "customer_id": "CUST-189",
+    "persona": "new",
+    "sign_up_date": "2022-07-17",
+    "products_owned": 5,
+    "lifetime_value": 4081
+  },
+  {
+    "customer_id": "CUST-190",
+    "persona": "mixed",
+    "sign_up_date": "2022-06-19",
+    "products_owned": 3,
+    "lifetime_value": 4371
+  },
+  {
+    "customer_id": "CUST-191",
+    "persona": "neutral",
+    "sign_up_date": "2024-11-16",
+    "products_owned": 4,
+    "lifetime_value": 6375
+  },
+  {
+    "customer_id": "CUST-192",
+    "persona": "neutral",
+    "sign_up_date": "2023-01-06",
+    "products_owned": 1,
+    "lifetime_value": 7332
+  },
+  {
+    "customer_id": "CUST-193",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-29",
+    "products_owned": 3,
+    "lifetime_value": 2919
+  },
+  {
+    "customer_id": "CUST-194",
+    "persona": "new",
+    "sign_up_date": "2024-11-04",
+    "products_owned": 2,
+    "lifetime_value": 688
+  },
+  {
+    "customer_id": "CUST-195",
+    "persona": "frustrated",
+    "sign_up_date": "2024-03-21",
+    "products_owned": 2,
+    "lifetime_value": 6128
+  },
+  {
+    "customer_id": "CUST-196",
+    "persona": "new",
+    "sign_up_date": "2023-02-07",
+    "products_owned": 5,
+    "lifetime_value": 5401
+  },
+  {
+    "customer_id": "CUST-197",
+    "persona": "mixed",
+    "sign_up_date": "2024-04-18",
+    "products_owned": 1,
+    "lifetime_value": 3976
+  },
+  {
+    "customer_id": "CUST-198",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-27",
+    "products_owned": 3,
+    "lifetime_value": 2957
+  },
+  {
+    "customer_id": "CUST-199",
+    "persona": "neutral",
+    "sign_up_date": "2023-09-17",
+    "products_owned": 2,
+    "lifetime_value": 7068
+  },
+  {
+    "customer_id": "CUST-200",
+    "persona": "mixed",
+    "sign_up_date": "2024-05-09",
+    "products_owned": 2,
+    "lifetime_value": 8631
+  },
+  {
+    "customer_id": "CUST-201",
+    "persona": "satisfied",
+    "sign_up_date": "2023-09-14",
+    "products_owned": 1,
+    "lifetime_value": 3878
+  },
+  {
+    "customer_id": "CUST-202",
+    "persona": "new",
+    "sign_up_date": "2023-12-03",
+    "products_owned": 1,
+    "lifetime_value": 8543
+  },
+  {
+    "customer_id": "CUST-203",
+    "persona": "neutral",
+    "sign_up_date": "2022-07-23",
+    "products_owned": 5,
+    "lifetime_value": 3689
+  },
+  {
+    "customer_id": "CUST-204",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-08",
+    "products_owned": 1,
+    "lifetime_value": 1671
+  },
+  {
+    "customer_id": "CUST-205",
+    "persona": "neutral",
+    "sign_up_date": "2023-11-04",
+    "products_owned": 1,
+    "lifetime_value": 7991
+  },
+  {
+    "customer_id": "CUST-206",
+    "persona": "new",
+    "sign_up_date": "2024-04-22",
+    "products_owned": 3,
+    "lifetime_value": 9432
+  },
+  {
+    "customer_id": "CUST-207",
+    "persona": "neutral",
+    "sign_up_date": "2022-10-23",
+    "products_owned": 1,
+    "lifetime_value": 7973
+  },
+  {
+    "customer_id": "CUST-208",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-02",
+    "products_owned": 4,
+    "lifetime_value": 2065
+  },
+  {
+    "customer_id": "CUST-209",
+    "persona": "frustrated",
+    "sign_up_date": "2022-04-14",
+    "products_owned": 4,
+    "lifetime_value": 8763
+  },
+  {
+    "customer_id": "CUST-210",
+    "persona": "frustrated",
+    "sign_up_date": "2023-08-09",
+    "products_owned": 1,
+    "lifetime_value": 9975
+  },
+  {
+    "customer_id": "CUST-211",
+    "persona": "satisfied",
+    "sign_up_date": "2023-11-03",
+    "products_owned": 5,
+    "lifetime_value": 894
+  },
+  {
+    "customer_id": "CUST-212",
+    "persona": "mixed",
+    "sign_up_date": "2025-01-27",
+    "products_owned": 2,
+    "lifetime_value": 6254
+  },
+  {
+    "customer_id": "CUST-213",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-12",
+    "products_owned": 5,
+    "lifetime_value": 2160
+  },
+  {
+    "customer_id": "CUST-214",
+    "persona": "new",
+    "sign_up_date": "2024-03-18",
+    "products_owned": 2,
+    "lifetime_value": 6411
+  },
+  {
+    "customer_id": "CUST-215",
+    "persona": "frustrated",
+    "sign_up_date": "2022-05-30",
+    "products_owned": 4,
+    "lifetime_value": 5376
+  },
+  {
+    "customer_id": "CUST-216",
+    "persona": "new",
+    "sign_up_date": "2023-01-12",
+    "products_owned": 3,
+    "lifetime_value": 8546
+  },
+  {
+    "customer_id": "CUST-217",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-09",
+    "products_owned": 4,
+    "lifetime_value": 5727
+  },
+  {
+    "customer_id": "CUST-218",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-19",
+    "products_owned": 2,
+    "lifetime_value": 9569
+  },
+  {
+    "customer_id": "CUST-219",
+    "persona": "frustrated",
+    "sign_up_date": "2024-06-20",
+    "products_owned": 5,
+    "lifetime_value": 6791
+  },
+  {
+    "customer_id": "CUST-220",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-08",
+    "products_owned": 5,
+    "lifetime_value": 5266
+  },
+  {
+    "customer_id": "CUST-221",
+    "persona": "neutral",
+    "sign_up_date": "2022-06-04",
+    "products_owned": 3,
+    "lifetime_value": 8350
+  },
+  {
+    "customer_id": "CUST-222",
+    "persona": "new",
+    "sign_up_date": "2023-12-15",
+    "products_owned": 1,
+    "lifetime_value": 3016
+  },
+  {
+    "customer_id": "CUST-223",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-04",
+    "products_owned": 3,
+    "lifetime_value": 4987
+  },
+  {
+    "customer_id": "CUST-224",
+    "persona": "new",
+    "sign_up_date": "2024-01-28",
+    "products_owned": 3,
+    "lifetime_value": 3484
+  },
+  {
+    "customer_id": "CUST-225",
+    "persona": "new",
+    "sign_up_date": "2024-11-05",
+    "products_owned": 4,
+    "lifetime_value": 9318
+  },
+  {
+    "customer_id": "CUST-226",
+    "persona": "mixed",
+    "sign_up_date": "2023-01-29",
+    "products_owned": 5,
+    "lifetime_value": 6918
+  },
+  {
+    "customer_id": "CUST-227",
+    "persona": "new",
+    "sign_up_date": "2025-01-28",
+    "products_owned": 3,
+    "lifetime_value": 2997
+  },
+  {
+    "customer_id": "CUST-228",
+    "persona": "new",
+    "sign_up_date": "2025-01-18",
+    "products_owned": 1,
+    "lifetime_value": 7012
+  },
+  {
+    "customer_id": "CUST-229",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-01",
+    "products_owned": 4,
+    "lifetime_value": 3210
+  },
+  {
+    "customer_id": "CUST-230",
+    "persona": "mixed",
+    "sign_up_date": "2023-06-20",
+    "products_owned": 2,
+    "lifetime_value": 6296
+  },
+  {
+    "customer_id": "CUST-231",
+    "persona": "neutral",
+    "sign_up_date": "2022-07-28",
+    "products_owned": 1,
+    "lifetime_value": 6052
+  },
+  {
+    "customer_id": "CUST-232",
+    "persona": "frustrated",
+    "sign_up_date": "2024-02-15",
+    "products_owned": 2,
+    "lifetime_value": 6074
+  },
+  {
+    "customer_id": "CUST-233",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-18",
+    "products_owned": 5,
+    "lifetime_value": 5718
+  },
+  {
+    "customer_id": "CUST-234",
+    "persona": "neutral",
+    "sign_up_date": "2024-10-21",
+    "products_owned": 2,
+    "lifetime_value": 5305
+  },
+  {
+    "customer_id": "CUST-235",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-16",
+    "products_owned": 4,
+    "lifetime_value": 7331
+  },
+  {
+    "customer_id": "CUST-236",
+    "persona": "frustrated",
+    "sign_up_date": "2024-09-25",
+    "products_owned": 1,
+    "lifetime_value": 943
+  },
+  {
+    "customer_id": "CUST-237",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-20",
+    "products_owned": 1,
+    "lifetime_value": 240
+  },
+  {
+    "customer_id": "CUST-238",
+    "persona": "neutral",
+    "sign_up_date": "2023-03-21",
+    "products_owned": 4,
+    "lifetime_value": 4315
+  },
+  {
+    "customer_id": "CUST-239",
+    "persona": "frustrated",
+    "sign_up_date": "2025-02-12",
+    "products_owned": 2,
+    "lifetime_value": 9921
+  },
+  {
+    "customer_id": "CUST-240",
+    "persona": "new",
+    "sign_up_date": "2023-12-10",
+    "products_owned": 4,
+    "lifetime_value": 6175
+  },
+  {
+    "customer_id": "CUST-241",
+    "persona": "frustrated",
+    "sign_up_date": "2022-11-29",
+    "products_owned": 2,
+    "lifetime_value": 2896
+  },
+  {
+    "customer_id": "CUST-242",
+    "persona": "frustrated",
+    "sign_up_date": "2023-04-16",
+    "products_owned": 4,
+    "lifetime_value": 9801
+  },
+  {
+    "customer_id": "CUST-243",
+    "persona": "frustrated",
+    "sign_up_date": "2024-11-15",
+    "products_owned": 4,
+    "lifetime_value": 7260
+  },
+  {
+    "customer_id": "CUST-244",
+    "persona": "mixed",
+    "sign_up_date": "2024-10-13",
+    "products_owned": 2,
+    "lifetime_value": 3253
+  },
+  {
+    "customer_id": "CUST-245",
+    "persona": "frustrated",
+    "sign_up_date": "2024-09-11",
+    "products_owned": 5,
+    "lifetime_value": 3098
+  },
+  {
+    "customer_id": "CUST-246",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-03",
+    "products_owned": 1,
+    "lifetime_value": 2533
+  },
+  {
+    "customer_id": "CUST-247",
+    "persona": "mixed",
+    "sign_up_date": "2022-09-23",
+    "products_owned": 5,
+    "lifetime_value": 4884
+  },
+  {
+    "customer_id": "CUST-248",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-23",
+    "products_owned": 3,
+    "lifetime_value": 6757
+  },
+  {
+    "customer_id": "CUST-249",
+    "persona": "new",
+    "sign_up_date": "2022-12-01",
+    "products_owned": 3,
+    "lifetime_value": 9421
+  },
+  {
+    "customer_id": "CUST-250",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-27",
+    "products_owned": 3,
+    "lifetime_value": 352
+  },
+  {
+    "customer_id": "CUST-251",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-18",
+    "products_owned": 2,
+    "lifetime_value": 2169
+  },
+  {
+    "customer_id": "CUST-252",
+    "persona": "satisfied",
+    "sign_up_date": "2024-08-21",
+    "products_owned": 4,
+    "lifetime_value": 702
+  },
+  {
+    "customer_id": "CUST-253",
+    "persona": "neutral",
+    "sign_up_date": "2024-08-22",
+    "products_owned": 3,
+    "lifetime_value": 1673
+  },
+  {
+    "customer_id": "CUST-254",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-06",
+    "products_owned": 2,
+    "lifetime_value": 6961
+  },
+  {
+    "customer_id": "CUST-255",
+    "persona": "new",
+    "sign_up_date": "2025-02-19",
+    "products_owned": 5,
+    "lifetime_value": 7913
+  },
+  {
+    "customer_id": "CUST-256",
+    "persona": "satisfied",
+    "sign_up_date": "2023-05-31",
+    "products_owned": 5,
+    "lifetime_value": 3633
+  },
+  {
+    "customer_id": "CUST-257",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-22",
+    "products_owned": 4,
+    "lifetime_value": 8848
+  },
+  {
+    "customer_id": "CUST-258",
+    "persona": "satisfied",
+    "sign_up_date": "2024-09-16",
+    "products_owned": 3,
+    "lifetime_value": 3471
+  },
+  {
+    "customer_id": "CUST-259",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-26",
+    "products_owned": 2,
+    "lifetime_value": 6220
+  },
+  {
+    "customer_id": "CUST-260",
+    "persona": "frustrated",
+    "sign_up_date": "2023-01-04",
+    "products_owned": 2,
+    "lifetime_value": 6259
+  },
+  {
+    "customer_id": "CUST-261",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-12",
+    "products_owned": 3,
+    "lifetime_value": 6848
+  },
+  {
+    "customer_id": "CUST-262",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-15",
+    "products_owned": 3,
+    "lifetime_value": 3046
+  },
+  {
+    "customer_id": "CUST-263",
+    "persona": "satisfied",
+    "sign_up_date": "2023-08-17",
+    "products_owned": 1,
+    "lifetime_value": 5092
+  },
+  {
+    "customer_id": "CUST-264",
+    "persona": "neutral",
+    "sign_up_date": "2024-03-02",
+    "products_owned": 1,
+    "lifetime_value": 7893
+  },
+  {
+    "customer_id": "CUST-265",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-11",
+    "products_owned": 5,
+    "lifetime_value": 9550
+  },
+  {
+    "customer_id": "CUST-266",
+    "persona": "neutral",
+    "sign_up_date": "2023-07-21",
+    "products_owned": 4,
+    "lifetime_value": 9024
+  },
+  {
+    "customer_id": "CUST-267",
+    "persona": "neutral",
+    "sign_up_date": "2023-10-26",
+    "products_owned": 1,
+    "lifetime_value": 3370
+  },
+  {
+    "customer_id": "CUST-268",
+    "persona": "new",
+    "sign_up_date": "2023-12-07",
+    "products_owned": 5,
+    "lifetime_value": 8121
+  },
+  {
+    "customer_id": "CUST-269",
+    "persona": "satisfied",
+    "sign_up_date": "2025-02-18",
+    "products_owned": 4,
+    "lifetime_value": 4532
+  },
+  {
+    "customer_id": "CUST-270",
+    "persona": "frustrated",
+    "sign_up_date": "2023-05-12",
+    "products_owned": 3,
+    "lifetime_value": 4099
+  },
+  {
+    "customer_id": "CUST-271",
+    "persona": "neutral",
+    "sign_up_date": "2023-06-30",
+    "products_owned": 4,
+    "lifetime_value": 9361
+  },
+  {
+    "customer_id": "CUST-272",
+    "persona": "satisfied",
+    "sign_up_date": "2024-02-18",
+    "products_owned": 4,
+    "lifetime_value": 3007
+  },
+  {
+    "customer_id": "CUST-273",
+    "persona": "neutral",
+    "sign_up_date": "2024-11-16",
+    "products_owned": 1,
+    "lifetime_value": 4766
+  },
+  {
+    "customer_id": "CUST-274",
+    "persona": "frustrated",
+    "sign_up_date": "2023-03-11",
+    "products_owned": 1,
+    "lifetime_value": 1828
+  },
+  {
+    "customer_id": "CUST-275",
+    "persona": "neutral",
+    "sign_up_date": "2024-05-31",
+    "products_owned": 5,
+    "lifetime_value": 3469
+  },
+  {
+    "customer_id": "CUST-276",
+    "persona": "mixed",
+    "sign_up_date": "2023-03-20",
+    "products_owned": 3,
+    "lifetime_value": 9536
+  },
+  {
+    "customer_id": "CUST-277",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-13",
+    "products_owned": 5,
+    "lifetime_value": 8505
+  },
+  {
+    "customer_id": "CUST-278",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-31",
+    "products_owned": 4,
+    "lifetime_value": 9309
+  },
+  {
+    "customer_id": "CUST-279",
+    "persona": "satisfied",
+    "sign_up_date": "2022-07-08",
+    "products_owned": 4,
+    "lifetime_value": 7596
+  },
+  {
+    "customer_id": "CUST-280",
+    "persona": "new",
+    "sign_up_date": "2022-04-14",
+    "products_owned": 3,
+    "lifetime_value": 2803
+  },
+  {
+    "customer_id": "CUST-281",
+    "persona": "satisfied",
+    "sign_up_date": "2022-06-23",
+    "products_owned": 1,
+    "lifetime_value": 7095
+  },
+  {
+    "customer_id": "CUST-282",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-10",
+    "products_owned": 5,
+    "lifetime_value": 4734
+  },
+  {
+    "customer_id": "CUST-283",
+    "persona": "new",
+    "sign_up_date": "2023-03-10",
+    "products_owned": 3,
+    "lifetime_value": 4365
+  },
+  {
+    "customer_id": "CUST-284",
+    "persona": "new",
+    "sign_up_date": "2024-09-15",
+    "products_owned": 1,
+    "lifetime_value": 3092
+  },
+  {
+    "customer_id": "CUST-285",
+    "persona": "new",
+    "sign_up_date": "2024-07-28",
+    "products_owned": 2,
+    "lifetime_value": 7562
+  },
+  {
+    "customer_id": "CUST-286",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-02",
+    "products_owned": 5,
+    "lifetime_value": 2884
+  },
+  {
+    "customer_id": "CUST-287",
+    "persona": "new",
+    "sign_up_date": "2024-08-17",
+    "products_owned": 5,
+    "lifetime_value": 5282
+  },
+  {
+    "customer_id": "CUST-288",
+    "persona": "new",
+    "sign_up_date": "2023-04-15",
+    "products_owned": 5,
+    "lifetime_value": 5975
+  },
+  {
+    "customer_id": "CUST-289",
+    "persona": "mixed",
+    "sign_up_date": "2023-04-02",
+    "products_owned": 4,
+    "lifetime_value": 2315
+  },
+  {
+    "customer_id": "CUST-290",
+    "persona": "frustrated",
+    "sign_up_date": "2023-11-18",
+    "products_owned": 4,
+    "lifetime_value": 2226
+  },
+  {
+    "customer_id": "CUST-291",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-21",
+    "products_owned": 5,
+    "lifetime_value": 7431
+  },
+  {
+    "customer_id": "CUST-292",
+    "persona": "satisfied",
+    "sign_up_date": "2022-07-03",
+    "products_owned": 3,
+    "lifetime_value": 7896
+  },
+  {
+    "customer_id": "CUST-293",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-28",
+    "products_owned": 3,
+    "lifetime_value": 2055
+  },
+  {
+    "customer_id": "CUST-294",
+    "persona": "new",
+    "sign_up_date": "2022-09-13",
+    "products_owned": 1,
+    "lifetime_value": 4629
+  },
+  {
+    "customer_id": "CUST-295",
+    "persona": "neutral",
+    "sign_up_date": "2023-10-28",
+    "products_owned": 3,
+    "lifetime_value": 2560
+  },
+  {
+    "customer_id": "CUST-296",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-04",
+    "products_owned": 5,
+    "lifetime_value": 6551
+  },
+  {
+    "customer_id": "CUST-297",
+    "persona": "frustrated",
+    "sign_up_date": "2024-10-18",
+    "products_owned": 5,
+    "lifetime_value": 5472
+  },
+  {
+    "customer_id": "CUST-298",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-25",
+    "products_owned": 4,
+    "lifetime_value": 3612
+  },
+  {
+    "customer_id": "CUST-299",
+    "persona": "new",
+    "sign_up_date": "2024-12-08",
+    "products_owned": 5,
+    "lifetime_value": 2057
+  },
+  {
+    "customer_id": "CUST-300",
+    "persona": "mixed",
+    "sign_up_date": "2023-09-02",
+    "products_owned": 2,
+    "lifetime_value": 5289
+  },
+  {
+    "customer_id": "CUST-301",
+    "persona": "new",
+    "sign_up_date": "2022-09-12",
+    "products_owned": 4,
+    "lifetime_value": 7265
+  },
+  {
+    "customer_id": "CUST-302",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-20",
+    "products_owned": 1,
+    "lifetime_value": 3983
+  },
+  {
+    "customer_id": "CUST-303",
+    "persona": "neutral",
+    "sign_up_date": "2023-04-30",
+    "products_owned": 4,
+    "lifetime_value": 918
+  },
+  {
+    "customer_id": "CUST-304",
+    "persona": "new",
+    "sign_up_date": "2023-12-05",
+    "products_owned": 4,
+    "lifetime_value": 1347
+  },
+  {
+    "customer_id": "CUST-305",
+    "persona": "neutral",
+    "sign_up_date": "2024-06-29",
+    "products_owned": 2,
+    "lifetime_value": 9480
+  },
+  {
+    "customer_id": "CUST-306",
+    "persona": "new",
+    "sign_up_date": "2025-03-01",
+    "products_owned": 1,
+    "lifetime_value": 2255
+  },
+  {
+    "customer_id": "CUST-307",
+    "persona": "mixed",
+    "sign_up_date": "2025-02-26",
+    "products_owned": 2,
+    "lifetime_value": 1357
+  },
+  {
+    "customer_id": "CUST-308",
+    "persona": "new",
+    "sign_up_date": "2022-08-09",
+    "products_owned": 3,
+    "lifetime_value": 8046
+  },
+  {
+    "customer_id": "CUST-309",
+    "persona": "mixed",
+    "sign_up_date": "2024-11-09",
+    "products_owned": 2,
+    "lifetime_value": 8498
+  },
+  {
+    "customer_id": "CUST-310",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-30",
+    "products_owned": 5,
+    "lifetime_value": 3505
+  },
+  {
+    "customer_id": "CUST-311",
+    "persona": "satisfied",
+    "sign_up_date": "2023-08-12",
+    "products_owned": 5,
+    "lifetime_value": 8639
+  },
+  {
+    "customer_id": "CUST-312",
+    "persona": "new",
+    "sign_up_date": "2023-07-18",
+    "products_owned": 2,
+    "lifetime_value": 3725
+  },
+  {
+    "customer_id": "CUST-313",
+    "persona": "neutral",
+    "sign_up_date": "2023-06-27",
+    "products_owned": 4,
+    "lifetime_value": 880
+  },
+  {
+    "customer_id": "CUST-314",
+    "persona": "new",
+    "sign_up_date": "2022-08-11",
+    "products_owned": 4,
+    "lifetime_value": 7990
+  },
+  {
+    "customer_id": "CUST-315",
+    "persona": "new",
+    "sign_up_date": "2023-11-17",
+    "products_owned": 4,
+    "lifetime_value": 2937
+  },
+  {
+    "customer_id": "CUST-316",
+    "persona": "mixed",
+    "sign_up_date": "2025-01-08",
+    "products_owned": 5,
+    "lifetime_value": 5499
+  },
+  {
+    "customer_id": "CUST-317",
+    "persona": "mixed",
+    "sign_up_date": "2024-01-05",
+    "products_owned": 2,
+    "lifetime_value": 7505
+  },
+  {
+    "customer_id": "CUST-318",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-06",
+    "products_owned": 1,
+    "lifetime_value": 4204
+  },
+  {
+    "customer_id": "CUST-319",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-03",
+    "products_owned": 2,
+    "lifetime_value": 8994
+  },
+  {
+    "customer_id": "CUST-320",
+    "persona": "frustrated",
+    "sign_up_date": "2022-08-11",
+    "products_owned": 1,
+    "lifetime_value": 9950
+  },
+  {
+    "customer_id": "CUST-321",
+    "persona": "mixed",
+    "sign_up_date": "2023-08-24",
+    "products_owned": 3,
+    "lifetime_value": 5138
+  },
+  {
+    "customer_id": "CUST-322",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-06",
+    "products_owned": 3,
+    "lifetime_value": 9403
+  },
+  {
+    "customer_id": "CUST-323",
+    "persona": "new",
+    "sign_up_date": "2024-10-12",
+    "products_owned": 3,
+    "lifetime_value": 7469
+  },
+  {
+    "customer_id": "CUST-324",
+    "persona": "new",
+    "sign_up_date": "2023-10-20",
+    "products_owned": 4,
+    "lifetime_value": 6240
+  },
+  {
+    "customer_id": "CUST-325",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-16",
+    "products_owned": 4,
+    "lifetime_value": 2941
+  },
+  {
+    "customer_id": "CUST-326",
+    "persona": "satisfied",
+    "sign_up_date": "2022-12-07",
+    "products_owned": 2,
+    "lifetime_value": 2290
+  },
+  {
+    "customer_id": "CUST-327",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-04",
+    "products_owned": 2,
+    "lifetime_value": 3382
+  },
+  {
+    "customer_id": "CUST-328",
+    "persona": "new",
+    "sign_up_date": "2024-04-20",
+    "products_owned": 4,
+    "lifetime_value": 474
+  },
+  {
+    "customer_id": "CUST-329",
+    "persona": "mixed",
+    "sign_up_date": "2024-09-18",
+    "products_owned": 3,
+    "lifetime_value": 8292
+  },
+  {
+    "customer_id": "CUST-330",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-15",
+    "products_owned": 2,
+    "lifetime_value": 8966
+  },
+  {
+    "customer_id": "CUST-331",
+    "persona": "mixed",
+    "sign_up_date": "2023-01-26",
+    "products_owned": 2,
+    "lifetime_value": 3095
+  },
+  {
+    "customer_id": "CUST-332",
+    "persona": "satisfied",
+    "sign_up_date": "2023-06-20",
+    "products_owned": 5,
+    "lifetime_value": 799
+  },
+  {
+    "customer_id": "CUST-333",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-13",
+    "products_owned": 2,
+    "lifetime_value": 794
+  },
+  {
+    "customer_id": "CUST-334",
+    "persona": "mixed",
+    "sign_up_date": "2022-07-13",
+    "products_owned": 4,
+    "lifetime_value": 8236
+  },
+  {
+    "customer_id": "CUST-335",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-26",
+    "products_owned": 2,
+    "lifetime_value": 3848
+  },
+  {
+    "customer_id": "CUST-336",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-06",
+    "products_owned": 1,
+    "lifetime_value": 8708
+  },
+  {
+    "customer_id": "CUST-337",
+    "persona": "frustrated",
+    "sign_up_date": "2024-11-20",
+    "products_owned": 2,
+    "lifetime_value": 4185
+  },
+  {
+    "customer_id": "CUST-338",
+    "persona": "mixed",
+    "sign_up_date": "2022-08-17",
+    "products_owned": 5,
+    "lifetime_value": 8566
+  },
+  {
+    "customer_id": "CUST-339",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-19",
+    "products_owned": 3,
+    "lifetime_value": 211
+  },
+  {
+    "customer_id": "CUST-340",
+    "persona": "frustrated",
+    "sign_up_date": "2024-09-13",
+    "products_owned": 2,
+    "lifetime_value": 8050
+  },
+  {
+    "customer_id": "CUST-341",
+    "persona": "frustrated",
+    "sign_up_date": "2023-06-22",
+    "products_owned": 3,
+    "lifetime_value": 830
+  },
+  {
+    "customer_id": "CUST-342",
+    "persona": "satisfied",
+    "sign_up_date": "2024-02-24",
+    "products_owned": 4,
+    "lifetime_value": 7512
+  },
+  {
+    "customer_id": "CUST-343",
+    "persona": "satisfied",
+    "sign_up_date": "2024-01-28",
+    "products_owned": 5,
+    "lifetime_value": 906
+  },
+  {
+    "customer_id": "CUST-344",
+    "persona": "frustrated",
+    "sign_up_date": "2023-08-09",
+    "products_owned": 5,
+    "lifetime_value": 975
+  },
+  {
+    "customer_id": "CUST-345",
+    "persona": "mixed",
+    "sign_up_date": "2024-03-17",
+    "products_owned": 4,
+    "lifetime_value": 6978
+  },
+  {
+    "customer_id": "CUST-346",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-12",
+    "products_owned": 1,
+    "lifetime_value": 3599
+  },
+  {
+    "customer_id": "CUST-347",
+    "persona": "frustrated",
+    "sign_up_date": "2025-02-25",
+    "products_owned": 2,
+    "lifetime_value": 975
+  },
+  {
+    "customer_id": "CUST-348",
+    "persona": "mixed",
+    "sign_up_date": "2023-01-17",
+    "products_owned": 5,
+    "lifetime_value": 6006
+  },
+  {
+    "customer_id": "CUST-349",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-29",
+    "products_owned": 3,
+    "lifetime_value": 1223
+  },
+  {
+    "customer_id": "CUST-350",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-08",
+    "products_owned": 3,
+    "lifetime_value": 8186
+  },
+  {
+    "customer_id": "CUST-351",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-04",
+    "products_owned": 4,
+    "lifetime_value": 8124
+  },
+  {
+    "customer_id": "CUST-352",
+    "persona": "new",
+    "sign_up_date": "2024-07-17",
+    "products_owned": 1,
+    "lifetime_value": 2222
+  },
+  {
+    "customer_id": "CUST-353",
+    "persona": "satisfied",
+    "sign_up_date": "2024-02-09",
+    "products_owned": 4,
+    "lifetime_value": 1626
+  },
+  {
+    "customer_id": "CUST-354",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-13",
+    "products_owned": 3,
+    "lifetime_value": 1594
+  },
+  {
+    "customer_id": "CUST-355",
+    "persona": "frustrated",
+    "sign_up_date": "2024-06-03",
+    "products_owned": 5,
+    "lifetime_value": 2177
+  },
+  {
+    "customer_id": "CUST-356",
+    "persona": "satisfied",
+    "sign_up_date": "2023-12-03",
+    "products_owned": 3,
+    "lifetime_value": 7343
+  },
+  {
+    "customer_id": "CUST-357",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-24",
+    "products_owned": 5,
+    "lifetime_value": 5448
+  },
+  {
+    "customer_id": "CUST-358",
+    "persona": "mixed",
+    "sign_up_date": "2023-12-06",
+    "products_owned": 4,
+    "lifetime_value": 1324
+  },
+  {
+    "customer_id": "CUST-359",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-24",
+    "products_owned": 4,
+    "lifetime_value": 9670
+  },
+  {
+    "customer_id": "CUST-360",
+    "persona": "new",
+    "sign_up_date": "2023-08-28",
+    "products_owned": 5,
+    "lifetime_value": 5668
+  },
+  {
+    "customer_id": "CUST-361",
+    "persona": "mixed",
+    "sign_up_date": "2024-03-25",
+    "products_owned": 2,
+    "lifetime_value": 3157
+  },
+  {
+    "customer_id": "CUST-362",
+    "persona": "frustrated",
+    "sign_up_date": "2024-05-02",
+    "products_owned": 1,
+    "lifetime_value": 3049
+  },
+  {
+    "customer_id": "CUST-363",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-29",
+    "products_owned": 1,
+    "lifetime_value": 1235
+  },
+  {
+    "customer_id": "CUST-364",
+    "persona": "neutral",
+    "sign_up_date": "2023-02-10",
+    "products_owned": 5,
+    "lifetime_value": 2104
+  },
+  {
+    "customer_id": "CUST-365",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-16",
+    "products_owned": 2,
+    "lifetime_value": 3660
+  },
+  {
+    "customer_id": "CUST-366",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-14",
+    "products_owned": 1,
+    "lifetime_value": 6197
+  },
+  {
+    "customer_id": "CUST-367",
+    "persona": "frustrated",
+    "sign_up_date": "2024-09-26",
+    "products_owned": 5,
+    "lifetime_value": 2966
+  },
+  {
+    "customer_id": "CUST-368",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-24",
+    "products_owned": 3,
+    "lifetime_value": 7181
+  },
+  {
+    "customer_id": "CUST-369",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-02",
+    "products_owned": 2,
+    "lifetime_value": 4015
+  },
+  {
+    "customer_id": "CUST-370",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-31",
+    "products_owned": 2,
+    "lifetime_value": 5409
+  },
+  {
+    "customer_id": "CUST-371",
+    "persona": "frustrated",
+    "sign_up_date": "2024-05-21",
+    "products_owned": 1,
+    "lifetime_value": 2042
+  },
+  {
+    "customer_id": "CUST-372",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-06",
+    "products_owned": 5,
+    "lifetime_value": 187
+  },
+  {
+    "customer_id": "CUST-373",
+    "persona": "neutral",
+    "sign_up_date": "2023-07-08",
+    "products_owned": 1,
+    "lifetime_value": 1410
+  },
+  {
+    "customer_id": "CUST-374",
+    "persona": "frustrated",
+    "sign_up_date": "2024-11-17",
+    "products_owned": 2,
+    "lifetime_value": 4958
+  },
+  {
+    "customer_id": "CUST-375",
+    "persona": "neutral",
+    "sign_up_date": "2023-06-23",
+    "products_owned": 5,
+    "lifetime_value": 2165
+  },
+  {
+    "customer_id": "CUST-376",
+    "persona": "mixed",
+    "sign_up_date": "2023-02-18",
+    "products_owned": 4,
+    "lifetime_value": 9895
+  },
+  {
+    "customer_id": "CUST-377",
+    "persona": "new",
+    "sign_up_date": "2023-04-07",
+    "products_owned": 1,
+    "lifetime_value": 8827
+  },
+  {
+    "customer_id": "CUST-378",
+    "persona": "frustrated",
+    "sign_up_date": "2024-06-28",
+    "products_owned": 1,
+    "lifetime_value": 5054
+  },
+  {
+    "customer_id": "CUST-379",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-31",
+    "products_owned": 5,
+    "lifetime_value": 8085
+  },
+  {
+    "customer_id": "CUST-380",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-30",
+    "products_owned": 3,
+    "lifetime_value": 8303
+  },
+  {
+    "customer_id": "CUST-381",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-19",
+    "products_owned": 4,
+    "lifetime_value": 6275
+  },
+  {
+    "customer_id": "CUST-382",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-02",
+    "products_owned": 4,
+    "lifetime_value": 9113
+  },
+  {
+    "customer_id": "CUST-383",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-23",
+    "products_owned": 3,
+    "lifetime_value": 633
+  },
+  {
+    "customer_id": "CUST-384",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-07",
+    "products_owned": 5,
+    "lifetime_value": 5373
+  },
+  {
+    "customer_id": "CUST-385",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-19",
+    "products_owned": 3,
+    "lifetime_value": 5163
+  },
+  {
+    "customer_id": "CUST-386",
+    "persona": "satisfied",
+    "sign_up_date": "2025-02-02",
+    "products_owned": 2,
+    "lifetime_value": 3319
+  },
+  {
+    "customer_id": "CUST-387",
+    "persona": "satisfied",
+    "sign_up_date": "2022-09-15",
+    "products_owned": 4,
+    "lifetime_value": 530
+  },
+  {
+    "customer_id": "CUST-388",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-24",
+    "products_owned": 1,
+    "lifetime_value": 1260
+  },
+  {
+    "customer_id": "CUST-389",
+    "persona": "frustrated",
+    "sign_up_date": "2023-03-29",
+    "products_owned": 3,
+    "lifetime_value": 4289
+  },
+  {
+    "customer_id": "CUST-390",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-06",
+    "products_owned": 3,
+    "lifetime_value": 5409
+  },
+  {
+    "customer_id": "CUST-391",
+    "persona": "mixed",
+    "sign_up_date": "2024-08-21",
+    "products_owned": 3,
+    "lifetime_value": 198
+  },
+  {
+    "customer_id": "CUST-392",
+    "persona": "mixed",
+    "sign_up_date": "2022-06-01",
+    "products_owned": 1,
+    "lifetime_value": 3123
+  },
+  {
+    "customer_id": "CUST-393",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-28",
+    "products_owned": 4,
+    "lifetime_value": 8513
+  },
+  {
+    "customer_id": "CUST-394",
+    "persona": "new",
+    "sign_up_date": "2024-12-15",
+    "products_owned": 5,
+    "lifetime_value": 1808
+  },
+  {
+    "customer_id": "CUST-395",
+    "persona": "frustrated",
+    "sign_up_date": "2025-01-29",
+    "products_owned": 4,
+    "lifetime_value": 5929
+  },
+  {
+    "customer_id": "CUST-396",
+    "persona": "neutral",
+    "sign_up_date": "2024-04-05",
+    "products_owned": 4,
+    "lifetime_value": 4041
+  },
+  {
+    "customer_id": "CUST-397",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-05",
+    "products_owned": 4,
+    "lifetime_value": 5747
+  },
+  {
+    "customer_id": "CUST-398",
+    "persona": "neutral",
+    "sign_up_date": "2023-11-17",
+    "products_owned": 3,
+    "lifetime_value": 9485
+  },
+  {
+    "customer_id": "CUST-399",
+    "persona": "mixed",
+    "sign_up_date": "2023-01-26",
+    "products_owned": 2,
+    "lifetime_value": 5912
+  },
+  {
+    "customer_id": "CUST-400",
+    "persona": "neutral",
+    "sign_up_date": "2024-04-05",
+    "products_owned": 5,
+    "lifetime_value": 4837
+  },
+  {
+    "customer_id": "CUST-401",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-12",
+    "products_owned": 5,
+    "lifetime_value": 7632
+  },
+  {
+    "customer_id": "CUST-402",
+    "persona": "satisfied",
+    "sign_up_date": "2023-02-11",
+    "products_owned": 2,
+    "lifetime_value": 3007
+  },
+  {
+    "customer_id": "CUST-403",
+    "persona": "mixed",
+    "sign_up_date": "2022-09-17",
+    "products_owned": 2,
+    "lifetime_value": 3622
+  },
+  {
+    "customer_id": "CUST-404",
+    "persona": "new",
+    "sign_up_date": "2022-10-16",
+    "products_owned": 4,
+    "lifetime_value": 1224
+  },
+  {
+    "customer_id": "CUST-405",
+    "persona": "neutral",
+    "sign_up_date": "2024-06-06",
+    "products_owned": 1,
+    "lifetime_value": 2734
+  },
+  {
+    "customer_id": "CUST-406",
+    "persona": "frustrated",
+    "sign_up_date": "2023-03-23",
+    "products_owned": 1,
+    "lifetime_value": 2916
+  },
+  {
+    "customer_id": "CUST-407",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-05",
+    "products_owned": 3,
+    "lifetime_value": 2317
+  },
+  {
+    "customer_id": "CUST-408",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-16",
+    "products_owned": 5,
+    "lifetime_value": 6830
+  },
+  {
+    "customer_id": "CUST-409",
+    "persona": "mixed",
+    "sign_up_date": "2023-05-28",
+    "products_owned": 1,
+    "lifetime_value": 8221
+  },
+  {
+    "customer_id": "CUST-410",
+    "persona": "new",
+    "sign_up_date": "2024-12-19",
+    "products_owned": 2,
+    "lifetime_value": 5691
+  },
+  {
+    "customer_id": "CUST-411",
+    "persona": "neutral",
+    "sign_up_date": "2024-12-07",
+    "products_owned": 1,
+    "lifetime_value": 3258
+  },
+  {
+    "customer_id": "CUST-412",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-06",
+    "products_owned": 3,
+    "lifetime_value": 3373
+  },
+  {
+    "customer_id": "CUST-413",
+    "persona": "mixed",
+    "sign_up_date": "2024-08-03",
+    "products_owned": 4,
+    "lifetime_value": 2080
+  },
+  {
+    "customer_id": "CUST-414",
+    "persona": "new",
+    "sign_up_date": "2022-10-20",
+    "products_owned": 4,
+    "lifetime_value": 8210
+  },
+  {
+    "customer_id": "CUST-415",
+    "persona": "new",
+    "sign_up_date": "2024-01-31",
+    "products_owned": 3,
+    "lifetime_value": 8198
+  },
+  {
+    "customer_id": "CUST-416",
+    "persona": "neutral",
+    "sign_up_date": "2023-03-21",
+    "products_owned": 3,
+    "lifetime_value": 1036
+  },
+  {
+    "customer_id": "CUST-417",
+    "persona": "neutral",
+    "sign_up_date": "2024-09-13",
+    "products_owned": 1,
+    "lifetime_value": 1254
+  },
+  {
+    "customer_id": "CUST-418",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-12",
+    "products_owned": 5,
+    "lifetime_value": 8311
+  },
+  {
+    "customer_id": "CUST-419",
+    "persona": "mixed",
+    "sign_up_date": "2024-09-13",
+    "products_owned": 3,
+    "lifetime_value": 2438
+  },
+  {
+    "customer_id": "CUST-420",
+    "persona": "mixed",
+    "sign_up_date": "2023-01-16",
+    "products_owned": 2,
+    "lifetime_value": 5144
+  },
+  {
+    "customer_id": "CUST-421",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-07",
+    "products_owned": 5,
+    "lifetime_value": 8275
+  },
+  {
+    "customer_id": "CUST-422",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-28",
+    "products_owned": 3,
+    "lifetime_value": 5159
+  },
+  {
+    "customer_id": "CUST-423",
+    "persona": "satisfied",
+    "sign_up_date": "2022-09-30",
+    "products_owned": 1,
+    "lifetime_value": 722
+  },
+  {
+    "customer_id": "CUST-424",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-23",
+    "products_owned": 3,
+    "lifetime_value": 8577
+  },
+  {
+    "customer_id": "CUST-425",
+    "persona": "mixed",
+    "sign_up_date": "2024-01-05",
+    "products_owned": 1,
+    "lifetime_value": 7095
+  },
+  {
+    "customer_id": "CUST-426",
+    "persona": "mixed",
+    "sign_up_date": "2023-08-08",
+    "products_owned": 3,
+    "lifetime_value": 6753
+  },
+  {
+    "customer_id": "CUST-427",
+    "persona": "new",
+    "sign_up_date": "2024-06-24",
+    "products_owned": 5,
+    "lifetime_value": 229
+  },
+  {
+    "customer_id": "CUST-428",
+    "persona": "new",
+    "sign_up_date": "2024-04-09",
+    "products_owned": 1,
+    "lifetime_value": 8563
+  },
+  {
+    "customer_id": "CUST-429",
+    "persona": "neutral",
+    "sign_up_date": "2022-07-04",
+    "products_owned": 2,
+    "lifetime_value": 9230
+  },
+  {
+    "customer_id": "CUST-430",
+    "persona": "neutral",
+    "sign_up_date": "2023-08-17",
+    "products_owned": 1,
+    "lifetime_value": 9336
+  },
+  {
+    "customer_id": "CUST-431",
+    "persona": "neutral",
+    "sign_up_date": "2023-06-17",
+    "products_owned": 4,
+    "lifetime_value": 4918
+  },
+  {
+    "customer_id": "CUST-432",
+    "persona": "neutral",
+    "sign_up_date": "2023-08-30",
+    "products_owned": 4,
+    "lifetime_value": 381
+  },
+  {
+    "customer_id": "CUST-433",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-16",
+    "products_owned": 1,
+    "lifetime_value": 6182
+  },
+  {
+    "customer_id": "CUST-434",
+    "persona": "neutral",
+    "sign_up_date": "2022-06-29",
+    "products_owned": 1,
+    "lifetime_value": 4185
+  },
+  {
+    "customer_id": "CUST-435",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-30",
+    "products_owned": 2,
+    "lifetime_value": 591
+  },
+  {
+    "customer_id": "CUST-436",
+    "persona": "new",
+    "sign_up_date": "2023-07-01",
+    "products_owned": 5,
+    "lifetime_value": 4063
+  },
+  {
+    "customer_id": "CUST-437",
+    "persona": "neutral",
+    "sign_up_date": "2022-07-20",
+    "products_owned": 5,
+    "lifetime_value": 7557
+  },
+  {
+    "customer_id": "CUST-438",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-22",
+    "products_owned": 1,
+    "lifetime_value": 1441
+  },
+  {
+    "customer_id": "CUST-439",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-20",
+    "products_owned": 4,
+    "lifetime_value": 1780
+  },
+  {
+    "customer_id": "CUST-440",
+    "persona": "frustrated",
+    "sign_up_date": "2023-04-25",
+    "products_owned": 4,
+    "lifetime_value": 810
+  },
+  {
+    "customer_id": "CUST-441",
+    "persona": "neutral",
+    "sign_up_date": "2022-10-04",
+    "products_owned": 4,
+    "lifetime_value": 1576
+  },
+  {
+    "customer_id": "CUST-442",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-20",
+    "products_owned": 5,
+    "lifetime_value": 9980
+  },
+  {
+    "customer_id": "CUST-443",
+    "persona": "mixed",
+    "sign_up_date": "2023-03-14",
+    "products_owned": 5,
+    "lifetime_value": 7024
+  },
+  {
+    "customer_id": "CUST-444",
+    "persona": "satisfied",
+    "sign_up_date": "2024-12-09",
+    "products_owned": 3,
+    "lifetime_value": 8336
+  },
+  {
+    "customer_id": "CUST-445",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-18",
+    "products_owned": 3,
+    "lifetime_value": 8217
+  },
+  {
+    "customer_id": "CUST-446",
+    "persona": "new",
+    "sign_up_date": "2023-04-29",
+    "products_owned": 5,
+    "lifetime_value": 7695
+  },
+  {
+    "customer_id": "CUST-447",
+    "persona": "new",
+    "sign_up_date": "2023-12-03",
+    "products_owned": 3,
+    "lifetime_value": 7203
+  },
+  {
+    "customer_id": "CUST-448",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-05",
+    "products_owned": 4,
+    "lifetime_value": 5480
+  },
+  {
+    "customer_id": "CUST-449",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-25",
+    "products_owned": 2,
+    "lifetime_value": 1694
+  },
+  {
+    "customer_id": "CUST-450",
+    "persona": "mixed",
+    "sign_up_date": "2023-02-07",
+    "products_owned": 4,
+    "lifetime_value": 6155
+  },
+  {
+    "customer_id": "CUST-451",
+    "persona": "new",
+    "sign_up_date": "2024-05-13",
+    "products_owned": 3,
+    "lifetime_value": 9806
+  },
+  {
+    "customer_id": "CUST-452",
+    "persona": "satisfied",
+    "sign_up_date": "2024-11-08",
+    "products_owned": 1,
+    "lifetime_value": 9698
+  },
+  {
+    "customer_id": "CUST-453",
+    "persona": "frustrated",
+    "sign_up_date": "2024-09-20",
+    "products_owned": 5,
+    "lifetime_value": 804
+  },
+  {
+    "customer_id": "CUST-454",
+    "persona": "new",
+    "sign_up_date": "2024-04-26",
+    "products_owned": 4,
+    "lifetime_value": 782
+  },
+  {
+    "customer_id": "CUST-455",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-27",
+    "products_owned": 2,
+    "lifetime_value": 5744
+  },
+  {
+    "customer_id": "CUST-456",
+    "persona": "new",
+    "sign_up_date": "2024-10-19",
+    "products_owned": 2,
+    "lifetime_value": 9204
+  },
+  {
+    "customer_id": "CUST-457",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-25",
+    "products_owned": 5,
+    "lifetime_value": 8752
+  },
+  {
+    "customer_id": "CUST-458",
+    "persona": "satisfied",
+    "sign_up_date": "2022-07-08",
+    "products_owned": 4,
+    "lifetime_value": 5424
+  },
+  {
+    "customer_id": "CUST-459",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-01",
+    "products_owned": 2,
+    "lifetime_value": 2188
+  },
+  {
+    "customer_id": "CUST-460",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-05",
+    "products_owned": 1,
+    "lifetime_value": 543
+  },
+  {
+    "customer_id": "CUST-461",
+    "persona": "new",
+    "sign_up_date": "2022-09-01",
+    "products_owned": 2,
+    "lifetime_value": 4680
+  },
+  {
+    "customer_id": "CUST-462",
+    "persona": "mixed",
+    "sign_up_date": "2024-04-30",
+    "products_owned": 1,
+    "lifetime_value": 9892
+  },
+  {
+    "customer_id": "CUST-463",
+    "persona": "new",
+    "sign_up_date": "2024-02-17",
+    "products_owned": 3,
+    "lifetime_value": 4071
+  },
+  {
+    "customer_id": "CUST-464",
+    "persona": "new",
+    "sign_up_date": "2024-10-11",
+    "products_owned": 1,
+    "lifetime_value": 821
+  },
+  {
+    "customer_id": "CUST-465",
+    "persona": "mixed",
+    "sign_up_date": "2024-03-18",
+    "products_owned": 2,
+    "lifetime_value": 4517
+  },
+  {
+    "customer_id": "CUST-466",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-01",
+    "products_owned": 2,
+    "lifetime_value": 8269
+  },
+  {
+    "customer_id": "CUST-467",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-31",
+    "products_owned": 3,
+    "lifetime_value": 2582
+  },
+  {
+    "customer_id": "CUST-468",
+    "persona": "satisfied",
+    "sign_up_date": "2023-06-14",
+    "products_owned": 4,
+    "lifetime_value": 8757
+  },
+  {
+    "customer_id": "CUST-469",
+    "persona": "mixed",
+    "sign_up_date": "2024-11-05",
+    "products_owned": 5,
+    "lifetime_value": 6570
+  },
+  {
+    "customer_id": "CUST-470",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-06",
+    "products_owned": 2,
+    "lifetime_value": 6034
+  },
+  {
+    "customer_id": "CUST-471",
+    "persona": "frustrated",
+    "sign_up_date": "2022-07-01",
+    "products_owned": 4,
+    "lifetime_value": 8579
+  },
+  {
+    "customer_id": "CUST-472",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-22",
+    "products_owned": 5,
+    "lifetime_value": 9630
+  },
+  {
+    "customer_id": "CUST-473",
+    "persona": "mixed",
+    "sign_up_date": "2024-02-11",
+    "products_owned": 1,
+    "lifetime_value": 6470
+  },
+  {
+    "customer_id": "CUST-474",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-03",
+    "products_owned": 2,
+    "lifetime_value": 1017
+  },
+  {
+    "customer_id": "CUST-475",
+    "persona": "satisfied",
+    "sign_up_date": "2024-06-12",
+    "products_owned": 4,
+    "lifetime_value": 8191
+  },
+  {
+    "customer_id": "CUST-476",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-17",
+    "products_owned": 2,
+    "lifetime_value": 4423
+  },
+  {
+    "customer_id": "CUST-477",
+    "persona": "frustrated",
+    "sign_up_date": "2024-07-20",
+    "products_owned": 5,
+    "lifetime_value": 5446
+  },
+  {
+    "customer_id": "CUST-478",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-06",
+    "products_owned": 4,
+    "lifetime_value": 5501
+  },
+  {
+    "customer_id": "CUST-479",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-07",
+    "products_owned": 2,
+    "lifetime_value": 9779
+  },
+  {
+    "customer_id": "CUST-480",
+    "persona": "mixed",
+    "sign_up_date": "2023-09-26",
+    "products_owned": 2,
+    "lifetime_value": 5650
+  },
+  {
+    "customer_id": "CUST-481",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-13",
+    "products_owned": 3,
+    "lifetime_value": 9385
+  },
+  {
+    "customer_id": "CUST-482",
+    "persona": "mixed",
+    "sign_up_date": "2022-07-27",
+    "products_owned": 3,
+    "lifetime_value": 6079
+  },
+  {
+    "customer_id": "CUST-483",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-13",
+    "products_owned": 1,
+    "lifetime_value": 9870
+  },
+  {
+    "customer_id": "CUST-484",
+    "persona": "mixed",
+    "sign_up_date": "2023-06-04",
+    "products_owned": 4,
+    "lifetime_value": 7383
+  },
+  {
+    "customer_id": "CUST-485",
+    "persona": "satisfied",
+    "sign_up_date": "2023-08-29",
+    "products_owned": 2,
+    "lifetime_value": 5142
+  },
+  {
+    "customer_id": "CUST-486",
+    "persona": "new",
+    "sign_up_date": "2024-10-27",
+    "products_owned": 5,
+    "lifetime_value": 6089
+  },
+  {
+    "customer_id": "CUST-487",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-07",
+    "products_owned": 1,
+    "lifetime_value": 3381
+  },
+  {
+    "customer_id": "CUST-488",
+    "persona": "mixed",
+    "sign_up_date": "2023-06-27",
+    "products_owned": 2,
+    "lifetime_value": 2627
+  },
+  {
+    "customer_id": "CUST-489",
+    "persona": "neutral",
+    "sign_up_date": "2023-06-08",
+    "products_owned": 1,
+    "lifetime_value": 6107
+  },
+  {
+    "customer_id": "CUST-490",
+    "persona": "mixed",
+    "sign_up_date": "2025-01-24",
+    "products_owned": 5,
+    "lifetime_value": 2770
+  },
+  {
+    "customer_id": "CUST-491",
+    "persona": "mixed",
+    "sign_up_date": "2023-05-25",
+    "products_owned": 5,
+    "lifetime_value": 7617
+  },
+  {
+    "customer_id": "CUST-492",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-28",
+    "products_owned": 1,
+    "lifetime_value": 3652
+  },
+  {
+    "customer_id": "CUST-493",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-02",
+    "products_owned": 5,
+    "lifetime_value": 277
+  },
+  {
+    "customer_id": "CUST-494",
+    "persona": "frustrated",
+    "sign_up_date": "2023-08-19",
+    "products_owned": 4,
+    "lifetime_value": 7067
+  },
+  {
+    "customer_id": "CUST-495",
+    "persona": "neutral",
+    "sign_up_date": "2023-01-09",
+    "products_owned": 4,
+    "lifetime_value": 5123
+  },
+  {
+    "customer_id": "CUST-496",
+    "persona": "mixed",
+    "sign_up_date": "2024-04-03",
+    "products_owned": 4,
+    "lifetime_value": 8531
+  },
+  {
+    "customer_id": "CUST-497",
+    "persona": "new",
+    "sign_up_date": "2024-01-31",
+    "products_owned": 4,
+    "lifetime_value": 1831
+  },
+  {
+    "customer_id": "CUST-498",
+    "persona": "neutral",
+    "sign_up_date": "2024-04-30",
+    "products_owned": 2,
+    "lifetime_value": 5011
+  },
+  {
+    "customer_id": "CUST-499",
+    "persona": "satisfied",
+    "sign_up_date": "2022-06-18",
+    "products_owned": 4,
+    "lifetime_value": 9221
+  },
+  {
+    "customer_id": "CUST-500",
+    "persona": "new",
+    "sign_up_date": "2024-11-18",
+    "products_owned": 5,
+    "lifetime_value": 1419
+  },
+  {
+    "customer_id": "CUST-501",
+    "persona": "frustrated",
+    "sign_up_date": "2023-08-25",
+    "products_owned": 1,
+    "lifetime_value": 1973
+  },
+  {
+    "customer_id": "CUST-502",
+    "persona": "mixed",
+    "sign_up_date": "2023-07-05",
+    "products_owned": 5,
+    "lifetime_value": 8092
+  },
+  {
+    "customer_id": "CUST-503",
+    "persona": "new",
+    "sign_up_date": "2023-03-29",
+    "products_owned": 1,
+    "lifetime_value": 7595
+  },
+  {
+    "customer_id": "CUST-504",
+    "persona": "new",
+    "sign_up_date": "2024-02-17",
+    "products_owned": 5,
+    "lifetime_value": 7823
+  },
+  {
+    "customer_id": "CUST-505",
+    "persona": "mixed",
+    "sign_up_date": "2023-05-18",
+    "products_owned": 1,
+    "lifetime_value": 8395
+  },
+  {
+    "customer_id": "CUST-506",
+    "persona": "new",
+    "sign_up_date": "2024-07-24",
+    "products_owned": 1,
+    "lifetime_value": 9708
+  },
+  {
+    "customer_id": "CUST-507",
+    "persona": "new",
+    "sign_up_date": "2022-07-02",
+    "products_owned": 2,
+    "lifetime_value": 8041
+  },
+  {
+    "customer_id": "CUST-508",
+    "persona": "neutral",
+    "sign_up_date": "2022-09-13",
+    "products_owned": 3,
+    "lifetime_value": 4809
+  },
+  {
+    "customer_id": "CUST-509",
+    "persona": "new",
+    "sign_up_date": "2024-12-07",
+    "products_owned": 2,
+    "lifetime_value": 3112
+  },
+  {
+    "customer_id": "CUST-510",
+    "persona": "new",
+    "sign_up_date": "2023-09-01",
+    "products_owned": 4,
+    "lifetime_value": 348
+  },
+  {
+    "customer_id": "CUST-511",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-11",
+    "products_owned": 2,
+    "lifetime_value": 8104
+  },
+  {
+    "customer_id": "CUST-512",
+    "persona": "satisfied",
+    "sign_up_date": "2023-08-04",
+    "products_owned": 1,
+    "lifetime_value": 3292
+  },
+  {
+    "customer_id": "CUST-513",
+    "persona": "mixed",
+    "sign_up_date": "2023-11-07",
+    "products_owned": 4,
+    "lifetime_value": 8028
+  },
+  {
+    "customer_id": "CUST-514",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-21",
+    "products_owned": 2,
+    "lifetime_value": 474
+  },
+  {
+    "customer_id": "CUST-515",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-29",
+    "products_owned": 2,
+    "lifetime_value": 1448
+  },
+  {
+    "customer_id": "CUST-516",
+    "persona": "neutral",
+    "sign_up_date": "2023-05-27",
+    "products_owned": 4,
+    "lifetime_value": 1237
+  },
+  {
+    "customer_id": "CUST-517",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-14",
+    "products_owned": 3,
+    "lifetime_value": 2770
+  },
+  {
+    "customer_id": "CUST-518",
+    "persona": "satisfied",
+    "sign_up_date": "2024-12-13",
+    "products_owned": 3,
+    "lifetime_value": 6937
+  },
+  {
+    "customer_id": "CUST-519",
+    "persona": "new",
+    "sign_up_date": "2023-05-05",
+    "products_owned": 1,
+    "lifetime_value": 3753
+  },
+  {
+    "customer_id": "CUST-520",
+    "persona": "mixed",
+    "sign_up_date": "2023-11-12",
+    "products_owned": 2,
+    "lifetime_value": 8965
+  },
+  {
+    "customer_id": "CUST-521",
+    "persona": "mixed",
+    "sign_up_date": "2022-06-10",
+    "products_owned": 3,
+    "lifetime_value": 6162
+  },
+  {
+    "customer_id": "CUST-522",
+    "persona": "new",
+    "sign_up_date": "2024-10-25",
+    "products_owned": 2,
+    "lifetime_value": 863
+  },
+  {
+    "customer_id": "CUST-523",
+    "persona": "neutral",
+    "sign_up_date": "2024-10-31",
+    "products_owned": 2,
+    "lifetime_value": 6808
+  },
+  {
+    "customer_id": "CUST-524",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-14",
+    "products_owned": 2,
+    "lifetime_value": 6981
+  },
+  {
+    "customer_id": "CUST-525",
+    "persona": "new",
+    "sign_up_date": "2025-01-19",
+    "products_owned": 2,
+    "lifetime_value": 3207
+  },
+  {
+    "customer_id": "CUST-526",
+    "persona": "frustrated",
+    "sign_up_date": "2024-05-18",
+    "products_owned": 4,
+    "lifetime_value": 3949
+  },
+  {
+    "customer_id": "CUST-527",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-30",
+    "products_owned": 1,
+    "lifetime_value": 4904
+  },
+  {
+    "customer_id": "CUST-528",
+    "persona": "neutral",
+    "sign_up_date": "2024-05-19",
+    "products_owned": 2,
+    "lifetime_value": 596
+  },
+  {
+    "customer_id": "CUST-529",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-13",
+    "products_owned": 4,
+    "lifetime_value": 8881
+  },
+  {
+    "customer_id": "CUST-530",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-03",
+    "products_owned": 2,
+    "lifetime_value": 9885
+  },
+  {
+    "customer_id": "CUST-531",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-31",
+    "products_owned": 3,
+    "lifetime_value": 5783
+  },
+  {
+    "customer_id": "CUST-532",
+    "persona": "satisfied",
+    "sign_up_date": "2025-01-18",
+    "products_owned": 3,
+    "lifetime_value": 7491
+  },
+  {
+    "customer_id": "CUST-533",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-04",
+    "products_owned": 3,
+    "lifetime_value": 7004
+  },
+  {
+    "customer_id": "CUST-534",
+    "persona": "neutral",
+    "sign_up_date": "2024-04-14",
+    "products_owned": 5,
+    "lifetime_value": 5999
+  },
+  {
+    "customer_id": "CUST-535",
+    "persona": "mixed",
+    "sign_up_date": "2025-02-26",
+    "products_owned": 2,
+    "lifetime_value": 5087
+  },
+  {
+    "customer_id": "CUST-536",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-30",
+    "products_owned": 3,
+    "lifetime_value": 7247
+  },
+  {
+    "customer_id": "CUST-537",
+    "persona": "frustrated",
+    "sign_up_date": "2025-02-09",
+    "products_owned": 3,
+    "lifetime_value": 8554
+  },
+  {
+    "customer_id": "CUST-538",
+    "persona": "new",
+    "sign_up_date": "2024-08-07",
+    "products_owned": 3,
+    "lifetime_value": 3853
+  },
+  {
+    "customer_id": "CUST-539",
+    "persona": "new",
+    "sign_up_date": "2024-04-19",
+    "products_owned": 5,
+    "lifetime_value": 939
+  },
+  {
+    "customer_id": "CUST-540",
+    "persona": "new",
+    "sign_up_date": "2025-01-01",
+    "products_owned": 3,
+    "lifetime_value": 223
+  },
+  {
+    "customer_id": "CUST-541",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-11",
+    "products_owned": 2,
+    "lifetime_value": 4322
+  },
+  {
+    "customer_id": "CUST-542",
+    "persona": "new",
+    "sign_up_date": "2024-06-30",
+    "products_owned": 4,
+    "lifetime_value": 508
+  },
+  {
+    "customer_id": "CUST-543",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-17",
+    "products_owned": 3,
+    "lifetime_value": 6506
+  },
+  {
+    "customer_id": "CUST-544",
+    "persona": "frustrated",
+    "sign_up_date": "2024-02-07",
+    "products_owned": 1,
+    "lifetime_value": 4170
+  },
+  {
+    "customer_id": "CUST-545",
+    "persona": "mixed",
+    "sign_up_date": "2024-09-13",
+    "products_owned": 3,
+    "lifetime_value": 8513
+  },
+  {
+    "customer_id": "CUST-546",
+    "persona": "mixed",
+    "sign_up_date": "2022-09-22",
+    "products_owned": 4,
+    "lifetime_value": 5456
+  },
+  {
+    "customer_id": "CUST-547",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-07",
+    "products_owned": 5,
+    "lifetime_value": 9179
+  },
+  {
+    "customer_id": "CUST-548",
+    "persona": "satisfied",
+    "sign_up_date": "2024-01-05",
+    "products_owned": 3,
+    "lifetime_value": 4382
+  },
+  {
+    "customer_id": "CUST-549",
+    "persona": "satisfied",
+    "sign_up_date": "2023-12-20",
+    "products_owned": 5,
+    "lifetime_value": 3940
+  },
+  {
+    "customer_id": "CUST-550",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-26",
+    "products_owned": 5,
+    "lifetime_value": 1539
+  },
+  {
+    "customer_id": "CUST-551",
+    "persona": "frustrated",
+    "sign_up_date": "2023-11-02",
+    "products_owned": 1,
+    "lifetime_value": 4150
+  },
+  {
+    "customer_id": "CUST-552",
+    "persona": "new",
+    "sign_up_date": "2025-01-06",
+    "products_owned": 3,
+    "lifetime_value": 613
+  },
+  {
+    "customer_id": "CUST-553",
+    "persona": "neutral",
+    "sign_up_date": "2024-07-16",
+    "products_owned": 2,
+    "lifetime_value": 619
+  },
+  {
+    "customer_id": "CUST-554",
+    "persona": "new",
+    "sign_up_date": "2022-09-28",
+    "products_owned": 3,
+    "lifetime_value": 6603
+  },
+  {
+    "customer_id": "CUST-555",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-29",
+    "products_owned": 3,
+    "lifetime_value": 1990
+  },
+  {
+    "customer_id": "CUST-556",
+    "persona": "mixed",
+    "sign_up_date": "2023-11-16",
+    "products_owned": 5,
+    "lifetime_value": 9133
+  },
+  {
+    "customer_id": "CUST-557",
+    "persona": "new",
+    "sign_up_date": "2023-04-04",
+    "products_owned": 2,
+    "lifetime_value": 4331
+  },
+  {
+    "customer_id": "CUST-558",
+    "persona": "neutral",
+    "sign_up_date": "2024-12-24",
+    "products_owned": 2,
+    "lifetime_value": 7081
+  },
+  {
+    "customer_id": "CUST-559",
+    "persona": "mixed",
+    "sign_up_date": "2023-05-11",
+    "products_owned": 3,
+    "lifetime_value": 5946
+  },
+  {
+    "customer_id": "CUST-560",
+    "persona": "satisfied",
+    "sign_up_date": "2022-06-29",
+    "products_owned": 2,
+    "lifetime_value": 1777
+  },
+  {
+    "customer_id": "CUST-561",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-28",
+    "products_owned": 2,
+    "lifetime_value": 8041
+  },
+  {
+    "customer_id": "CUST-562",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-16",
+    "products_owned": 2,
+    "lifetime_value": 9848
+  },
+  {
+    "customer_id": "CUST-563",
+    "persona": "frustrated",
+    "sign_up_date": "2025-01-20",
+    "products_owned": 1,
+    "lifetime_value": 3572
+  },
+  {
+    "customer_id": "CUST-564",
+    "persona": "mixed",
+    "sign_up_date": "2023-06-03",
+    "products_owned": 1,
+    "lifetime_value": 5901
+  },
+  {
+    "customer_id": "CUST-565",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-08",
+    "products_owned": 2,
+    "lifetime_value": 7123
+  },
+  {
+    "customer_id": "CUST-566",
+    "persona": "new",
+    "sign_up_date": "2024-04-07",
+    "products_owned": 5,
+    "lifetime_value": 3400
+  },
+  {
+    "customer_id": "CUST-567",
+    "persona": "frustrated",
+    "sign_up_date": "2024-05-31",
+    "products_owned": 5,
+    "lifetime_value": 2329
+  },
+  {
+    "customer_id": "CUST-568",
+    "persona": "frustrated",
+    "sign_up_date": "2024-09-10",
+    "products_owned": 4,
+    "lifetime_value": 6693
+  },
+  {
+    "customer_id": "CUST-569",
+    "persona": "new",
+    "sign_up_date": "2024-09-19",
+    "products_owned": 4,
+    "lifetime_value": 1329
+  },
+  {
+    "customer_id": "CUST-570",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-09",
+    "products_owned": 2,
+    "lifetime_value": 9895
+  },
+  {
+    "customer_id": "CUST-571",
+    "persona": "new",
+    "sign_up_date": "2024-05-09",
+    "products_owned": 2,
+    "lifetime_value": 3082
+  },
+  {
+    "customer_id": "CUST-572",
+    "persona": "neutral",
+    "sign_up_date": "2023-03-24",
+    "products_owned": 2,
+    "lifetime_value": 4275
+  },
+  {
+    "customer_id": "CUST-573",
+    "persona": "satisfied",
+    "sign_up_date": "2023-11-20",
+    "products_owned": 3,
+    "lifetime_value": 3272
+  },
+  {
+    "customer_id": "CUST-574",
+    "persona": "neutral",
+    "sign_up_date": "2024-09-22",
+    "products_owned": 2,
+    "lifetime_value": 4623
+  },
+  {
+    "customer_id": "CUST-575",
+    "persona": "frustrated",
+    "sign_up_date": "2023-08-26",
+    "products_owned": 2,
+    "lifetime_value": 4536
+  },
+  {
+    "customer_id": "CUST-576",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-13",
+    "products_owned": 2,
+    "lifetime_value": 4158
+  },
+  {
+    "customer_id": "CUST-577",
+    "persona": "frustrated",
+    "sign_up_date": "2023-01-26",
+    "products_owned": 4,
+    "lifetime_value": 5791
+  },
+  {
+    "customer_id": "CUST-578",
+    "persona": "new",
+    "sign_up_date": "2023-10-05",
+    "products_owned": 2,
+    "lifetime_value": 4724
+  },
+  {
+    "customer_id": "CUST-579",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-03",
+    "products_owned": 4,
+    "lifetime_value": 1998
+  },
+  {
+    "customer_id": "CUST-580",
+    "persona": "new",
+    "sign_up_date": "2022-04-11",
+    "products_owned": 4,
+    "lifetime_value": 7665
+  },
+  {
+    "customer_id": "CUST-581",
+    "persona": "new",
+    "sign_up_date": "2023-01-27",
+    "products_owned": 4,
+    "lifetime_value": 5514
+  },
+  {
+    "customer_id": "CUST-582",
+    "persona": "new",
+    "sign_up_date": "2024-07-31",
+    "products_owned": 1,
+    "lifetime_value": 9732
+  },
+  {
+    "customer_id": "CUST-583",
+    "persona": "satisfied",
+    "sign_up_date": "2023-12-25",
+    "products_owned": 1,
+    "lifetime_value": 4936
+  },
+  {
+    "customer_id": "CUST-584",
+    "persona": "frustrated",
+    "sign_up_date": "2023-01-14",
+    "products_owned": 4,
+    "lifetime_value": 577
+  },
+  {
+    "customer_id": "CUST-585",
+    "persona": "new",
+    "sign_up_date": "2022-04-05",
+    "products_owned": 2,
+    "lifetime_value": 442
+  },
+  {
+    "customer_id": "CUST-586",
+    "persona": "new",
+    "sign_up_date": "2024-05-01",
+    "products_owned": 4,
+    "lifetime_value": 4501
+  },
+  {
+    "customer_id": "CUST-587",
+    "persona": "mixed",
+    "sign_up_date": "2024-10-30",
+    "products_owned": 4,
+    "lifetime_value": 5482
+  },
+  {
+    "customer_id": "CUST-588",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-03",
+    "products_owned": 5,
+    "lifetime_value": 210
+  },
+  {
+    "customer_id": "CUST-589",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-22",
+    "products_owned": 2,
+    "lifetime_value": 1067
+  },
+  {
+    "customer_id": "CUST-590",
+    "persona": "mixed",
+    "sign_up_date": "2023-11-08",
+    "products_owned": 3,
+    "lifetime_value": 4004
+  },
+  {
+    "customer_id": "CUST-591",
+    "persona": "frustrated",
+    "sign_up_date": "2025-01-03",
+    "products_owned": 1,
+    "lifetime_value": 3593
+  },
+  {
+    "customer_id": "CUST-592",
+    "persona": "mixed",
+    "sign_up_date": "2024-02-06",
+    "products_owned": 4,
+    "lifetime_value": 8797
+  },
+  {
+    "customer_id": "CUST-593",
+    "persona": "new",
+    "sign_up_date": "2022-08-04",
+    "products_owned": 1,
+    "lifetime_value": 4071
+  },
+  {
+    "customer_id": "CUST-594",
+    "persona": "satisfied",
+    "sign_up_date": "2024-06-18",
+    "products_owned": 4,
+    "lifetime_value": 8818
+  },
+  {
+    "customer_id": "CUST-595",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-08",
+    "products_owned": 5,
+    "lifetime_value": 4384
+  },
+  {
+    "customer_id": "CUST-596",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-02",
+    "products_owned": 4,
+    "lifetime_value": 7087
+  },
+  {
+    "customer_id": "CUST-597",
+    "persona": "neutral",
+    "sign_up_date": "2024-03-15",
+    "products_owned": 5,
+    "lifetime_value": 2877
+  },
+  {
+    "customer_id": "CUST-598",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-09",
+    "products_owned": 1,
+    "lifetime_value": 2412
+  },
+  {
+    "customer_id": "CUST-599",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-01",
+    "products_owned": 3,
+    "lifetime_value": 6803
+  },
+  {
+    "customer_id": "CUST-600",
+    "persona": "mixed",
+    "sign_up_date": "2022-12-14",
+    "products_owned": 5,
+    "lifetime_value": 361
+  },
+  {
+    "customer_id": "CUST-601",
+    "persona": "new",
+    "sign_up_date": "2024-03-20",
+    "products_owned": 2,
+    "lifetime_value": 749
+  },
+  {
+    "customer_id": "CUST-602",
+    "persona": "neutral",
+    "sign_up_date": "2024-03-18",
+    "products_owned": 2,
+    "lifetime_value": 930
+  },
+  {
+    "customer_id": "CUST-603",
+    "persona": "mixed",
+    "sign_up_date": "2022-06-27",
+    "products_owned": 5,
+    "lifetime_value": 8300
+  },
+  {
+    "customer_id": "CUST-604",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-19",
+    "products_owned": 5,
+    "lifetime_value": 577
+  },
+  {
+    "customer_id": "CUST-605",
+    "persona": "neutral",
+    "sign_up_date": "2022-10-23",
+    "products_owned": 3,
+    "lifetime_value": 7155
+  },
+  {
+    "customer_id": "CUST-606",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-31",
+    "products_owned": 3,
+    "lifetime_value": 9269
+  },
+  {
+    "customer_id": "CUST-607",
+    "persona": "frustrated",
+    "sign_up_date": "2022-11-14",
+    "products_owned": 5,
+    "lifetime_value": 148
+  },
+  {
+    "customer_id": "CUST-608",
+    "persona": "satisfied",
+    "sign_up_date": "2025-02-23",
+    "products_owned": 3,
+    "lifetime_value": 7426
+  },
+  {
+    "customer_id": "CUST-609",
+    "persona": "neutral",
+    "sign_up_date": "2024-12-19",
+    "products_owned": 5,
+    "lifetime_value": 821
+  },
+  {
+    "customer_id": "CUST-610",
+    "persona": "neutral",
+    "sign_up_date": "2024-11-06",
+    "products_owned": 5,
+    "lifetime_value": 8871
+  },
+  {
+    "customer_id": "CUST-611",
+    "persona": "neutral",
+    "sign_up_date": "2024-12-30",
+    "products_owned": 2,
+    "lifetime_value": 2932
+  },
+  {
+    "customer_id": "CUST-612",
+    "persona": "satisfied",
+    "sign_up_date": "2024-08-26",
+    "products_owned": 2,
+    "lifetime_value": 8869
+  },
+  {
+    "customer_id": "CUST-613",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-25",
+    "products_owned": 5,
+    "lifetime_value": 3361
+  },
+  {
+    "customer_id": "CUST-614",
+    "persona": "new",
+    "sign_up_date": "2024-06-29",
+    "products_owned": 3,
+    "lifetime_value": 134
+  },
+  {
+    "customer_id": "CUST-615",
+    "persona": "frustrated",
+    "sign_up_date": "2022-08-11",
+    "products_owned": 5,
+    "lifetime_value": 658
+  },
+  {
+    "customer_id": "CUST-616",
+    "persona": "satisfied",
+    "sign_up_date": "2024-11-27",
+    "products_owned": 2,
+    "lifetime_value": 8134
+  },
+  {
+    "customer_id": "CUST-617",
+    "persona": "new",
+    "sign_up_date": "2023-08-05",
+    "products_owned": 2,
+    "lifetime_value": 1768
+  },
+  {
+    "customer_id": "CUST-618",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-20",
+    "products_owned": 5,
+    "lifetime_value": 3982
+  },
+  {
+    "customer_id": "CUST-619",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-25",
+    "products_owned": 4,
+    "lifetime_value": 5612
+  },
+  {
+    "customer_id": "CUST-620",
+    "persona": "neutral",
+    "sign_up_date": "2023-07-11",
+    "products_owned": 5,
+    "lifetime_value": 6849
+  },
+  {
+    "customer_id": "CUST-621",
+    "persona": "frustrated",
+    "sign_up_date": "2024-10-22",
+    "products_owned": 3,
+    "lifetime_value": 8851
+  },
+  {
+    "customer_id": "CUST-622",
+    "persona": "satisfied",
+    "sign_up_date": "2023-12-21",
+    "products_owned": 4,
+    "lifetime_value": 6986
+  },
+  {
+    "customer_id": "CUST-623",
+    "persona": "neutral",
+    "sign_up_date": "2023-08-16",
+    "products_owned": 4,
+    "lifetime_value": 4304
+  },
+  {
+    "customer_id": "CUST-624",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-22",
+    "products_owned": 4,
+    "lifetime_value": 5591
+  },
+  {
+    "customer_id": "CUST-625",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-17",
+    "products_owned": 5,
+    "lifetime_value": 3387
+  },
+  {
+    "customer_id": "CUST-626",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-25",
+    "products_owned": 5,
+    "lifetime_value": 2053
+  },
+  {
+    "customer_id": "CUST-627",
+    "persona": "new",
+    "sign_up_date": "2023-10-24",
+    "products_owned": 5,
+    "lifetime_value": 3032
+  },
+  {
+    "customer_id": "CUST-628",
+    "persona": "mixed",
+    "sign_up_date": "2023-07-04",
+    "products_owned": 2,
+    "lifetime_value": 3491
+  },
+  {
+    "customer_id": "CUST-629",
+    "persona": "satisfied",
+    "sign_up_date": "2023-12-17",
+    "products_owned": 2,
+    "lifetime_value": 213
+  },
+  {
+    "customer_id": "CUST-630",
+    "persona": "frustrated",
+    "sign_up_date": "2023-04-26",
+    "products_owned": 4,
+    "lifetime_value": 5381
+  },
+  {
+    "customer_id": "CUST-631",
+    "persona": "new",
+    "sign_up_date": "2025-02-13",
+    "products_owned": 1,
+    "lifetime_value": 3593
+  },
+  {
+    "customer_id": "CUST-632",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-09",
+    "products_owned": 1,
+    "lifetime_value": 534
+  },
+  {
+    "customer_id": "CUST-633",
+    "persona": "new",
+    "sign_up_date": "2022-04-07",
+    "products_owned": 2,
+    "lifetime_value": 9394
+  },
+  {
+    "customer_id": "CUST-634",
+    "persona": "frustrated",
+    "sign_up_date": "2023-12-05",
+    "products_owned": 5,
+    "lifetime_value": 3473
+  },
+  {
+    "customer_id": "CUST-635",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-23",
+    "products_owned": 4,
+    "lifetime_value": 3434
+  },
+  {
+    "customer_id": "CUST-636",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-25",
+    "products_owned": 3,
+    "lifetime_value": 6133
+  },
+  {
+    "customer_id": "CUST-637",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-10",
+    "products_owned": 4,
+    "lifetime_value": 4578
+  },
+  {
+    "customer_id": "CUST-638",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-17",
+    "products_owned": 5,
+    "lifetime_value": 5146
+  },
+  {
+    "customer_id": "CUST-639",
+    "persona": "frustrated",
+    "sign_up_date": "2024-10-18",
+    "products_owned": 1,
+    "lifetime_value": 7449
+  },
+  {
+    "customer_id": "CUST-640",
+    "persona": "satisfied",
+    "sign_up_date": "2024-11-30",
+    "products_owned": 4,
+    "lifetime_value": 520
+  },
+  {
+    "customer_id": "CUST-641",
+    "persona": "mixed",
+    "sign_up_date": "2025-01-11",
+    "products_owned": 1,
+    "lifetime_value": 6008
+  },
+  {
+    "customer_id": "CUST-642",
+    "persona": "new",
+    "sign_up_date": "2024-12-21",
+    "products_owned": 2,
+    "lifetime_value": 4025
+  },
+  {
+    "customer_id": "CUST-643",
+    "persona": "mixed",
+    "sign_up_date": "2022-04-13",
+    "products_owned": 5,
+    "lifetime_value": 8153
+  },
+  {
+    "customer_id": "CUST-644",
+    "persona": "neutral",
+    "sign_up_date": "2022-10-12",
+    "products_owned": 1,
+    "lifetime_value": 7273
+  },
+  {
+    "customer_id": "CUST-645",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-18",
+    "products_owned": 2,
+    "lifetime_value": 4867
+  },
+  {
+    "customer_id": "CUST-646",
+    "persona": "frustrated",
+    "sign_up_date": "2022-05-23",
+    "products_owned": 2,
+    "lifetime_value": 6706
+  },
+  {
+    "customer_id": "CUST-647",
+    "persona": "mixed",
+    "sign_up_date": "2023-07-28",
+    "products_owned": 1,
+    "lifetime_value": 260
+  },
+  {
+    "customer_id": "CUST-648",
+    "persona": "neutral",
+    "sign_up_date": "2024-05-15",
+    "products_owned": 5,
+    "lifetime_value": 1747
+  },
+  {
+    "customer_id": "CUST-649",
+    "persona": "satisfied",
+    "sign_up_date": "2023-02-19",
+    "products_owned": 3,
+    "lifetime_value": 6254
+  },
+  {
+    "customer_id": "CUST-650",
+    "persona": "mixed",
+    "sign_up_date": "2023-07-27",
+    "products_owned": 5,
+    "lifetime_value": 6525
+  },
+  {
+    "customer_id": "CUST-651",
+    "persona": "new",
+    "sign_up_date": "2023-05-22",
+    "products_owned": 4,
+    "lifetime_value": 1703
+  },
+  {
+    "customer_id": "CUST-652",
+    "persona": "mixed",
+    "sign_up_date": "2023-07-11",
+    "products_owned": 1,
+    "lifetime_value": 6349
+  },
+  {
+    "customer_id": "CUST-653",
+    "persona": "frustrated",
+    "sign_up_date": "2025-02-27",
+    "products_owned": 2,
+    "lifetime_value": 5407
+  },
+  {
+    "customer_id": "CUST-654",
+    "persona": "new",
+    "sign_up_date": "2024-05-16",
+    "products_owned": 4,
+    "lifetime_value": 1606
+  },
+  {
+    "customer_id": "CUST-655",
+    "persona": "new",
+    "sign_up_date": "2024-10-11",
+    "products_owned": 4,
+    "lifetime_value": 9613
+  },
+  {
+    "customer_id": "CUST-656",
+    "persona": "frustrated",
+    "sign_up_date": "2022-06-04",
+    "products_owned": 3,
+    "lifetime_value": 8365
+  },
+  {
+    "customer_id": "CUST-657",
+    "persona": "new",
+    "sign_up_date": "2022-08-25",
+    "products_owned": 5,
+    "lifetime_value": 1124
+  },
+  {
+    "customer_id": "CUST-658",
+    "persona": "satisfied",
+    "sign_up_date": "2024-08-11",
+    "products_owned": 3,
+    "lifetime_value": 1557
+  },
+  {
+    "customer_id": "CUST-659",
+    "persona": "neutral",
+    "sign_up_date": "2022-10-26",
+    "products_owned": 3,
+    "lifetime_value": 1179
+  },
+  {
+    "customer_id": "CUST-660",
+    "persona": "new",
+    "sign_up_date": "2024-09-07",
+    "products_owned": 3,
+    "lifetime_value": 2401
+  },
+  {
+    "customer_id": "CUST-661",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-06",
+    "products_owned": 3,
+    "lifetime_value": 5900
+  },
+  {
+    "customer_id": "CUST-662",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-11",
+    "products_owned": 2,
+    "lifetime_value": 3996
+  },
+  {
+    "customer_id": "CUST-663",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-08",
+    "products_owned": 1,
+    "lifetime_value": 1475
+  },
+  {
+    "customer_id": "CUST-664",
+    "persona": "neutral",
+    "sign_up_date": "2024-06-18",
+    "products_owned": 5,
+    "lifetime_value": 9653
+  },
+  {
+    "customer_id": "CUST-665",
+    "persona": "new",
+    "sign_up_date": "2024-07-21",
+    "products_owned": 4,
+    "lifetime_value": 3879
+  },
+  {
+    "customer_id": "CUST-666",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-31",
+    "products_owned": 3,
+    "lifetime_value": 6599
+  },
+  {
+    "customer_id": "CUST-667",
+    "persona": "frustrated",
+    "sign_up_date": "2024-08-27",
+    "products_owned": 1,
+    "lifetime_value": 3453
+  },
+  {
+    "customer_id": "CUST-668",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-06",
+    "products_owned": 4,
+    "lifetime_value": 7202
+  },
+  {
+    "customer_id": "CUST-669",
+    "persona": "mixed",
+    "sign_up_date": "2023-03-30",
+    "products_owned": 2,
+    "lifetime_value": 2811
+  },
+  {
+    "customer_id": "CUST-670",
+    "persona": "neutral",
+    "sign_up_date": "2024-12-04",
+    "products_owned": 5,
+    "lifetime_value": 7922
+  },
+  {
+    "customer_id": "CUST-671",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-24",
+    "products_owned": 4,
+    "lifetime_value": 7630
+  },
+  {
+    "customer_id": "CUST-672",
+    "persona": "mixed",
+    "sign_up_date": "2024-07-07",
+    "products_owned": 2,
+    "lifetime_value": 1121
+  },
+  {
+    "customer_id": "CUST-673",
+    "persona": "satisfied",
+    "sign_up_date": "2024-11-08",
+    "products_owned": 3,
+    "lifetime_value": 5299
+  },
+  {
+    "customer_id": "CUST-674",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-30",
+    "products_owned": 4,
+    "lifetime_value": 1577
+  },
+  {
+    "customer_id": "CUST-675",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-10",
+    "products_owned": 5,
+    "lifetime_value": 3439
+  },
+  {
+    "customer_id": "CUST-676",
+    "persona": "mixed",
+    "sign_up_date": "2023-09-15",
+    "products_owned": 4,
+    "lifetime_value": 618
+  },
+  {
+    "customer_id": "CUST-677",
+    "persona": "satisfied",
+    "sign_up_date": "2022-08-11",
+    "products_owned": 4,
+    "lifetime_value": 401
+  },
+  {
+    "customer_id": "CUST-678",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-13",
+    "products_owned": 3,
+    "lifetime_value": 6734
+  },
+  {
+    "customer_id": "CUST-679",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-28",
+    "products_owned": 4,
+    "lifetime_value": 6983
+  },
+  {
+    "customer_id": "CUST-680",
+    "persona": "neutral",
+    "sign_up_date": "2023-03-06",
+    "products_owned": 5,
+    "lifetime_value": 6682
+  },
+  {
+    "customer_id": "CUST-681",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-30",
+    "products_owned": 3,
+    "lifetime_value": 2402
+  },
+  {
+    "customer_id": "CUST-682",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-19",
+    "products_owned": 3,
+    "lifetime_value": 4730
+  },
+  {
+    "customer_id": "CUST-683",
+    "persona": "neutral",
+    "sign_up_date": "2024-08-12",
+    "products_owned": 3,
+    "lifetime_value": 6078
+  },
+  {
+    "customer_id": "CUST-684",
+    "persona": "frustrated",
+    "sign_up_date": "2022-10-01",
+    "products_owned": 2,
+    "lifetime_value": 3142
+  },
+  {
+    "customer_id": "CUST-685",
+    "persona": "frustrated",
+    "sign_up_date": "2022-08-31",
+    "products_owned": 2,
+    "lifetime_value": 4950
+  },
+  {
+    "customer_id": "CUST-686",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-29",
+    "products_owned": 5,
+    "lifetime_value": 8566
+  },
+  {
+    "customer_id": "CUST-687",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-21",
+    "products_owned": 4,
+    "lifetime_value": 8562
+  },
+  {
+    "customer_id": "CUST-688",
+    "persona": "neutral",
+    "sign_up_date": "2024-07-29",
+    "products_owned": 4,
+    "lifetime_value": 2589
+  },
+  {
+    "customer_id": "CUST-689",
+    "persona": "mixed",
+    "sign_up_date": "2023-05-19",
+    "products_owned": 4,
+    "lifetime_value": 5398
+  },
+  {
+    "customer_id": "CUST-690",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-27",
+    "products_owned": 1,
+    "lifetime_value": 6693
+  },
+  {
+    "customer_id": "CUST-691",
+    "persona": "satisfied",
+    "sign_up_date": "2023-05-24",
+    "products_owned": 2,
+    "lifetime_value": 7966
+  },
+  {
+    "customer_id": "CUST-692",
+    "persona": "frustrated",
+    "sign_up_date": "2024-07-08",
+    "products_owned": 2,
+    "lifetime_value": 684
+  },
+  {
+    "customer_id": "CUST-693",
+    "persona": "satisfied",
+    "sign_up_date": "2023-09-29",
+    "products_owned": 3,
+    "lifetime_value": 5563
+  },
+  {
+    "customer_id": "CUST-694",
+    "persona": "satisfied",
+    "sign_up_date": "2024-12-26",
+    "products_owned": 2,
+    "lifetime_value": 7103
+  },
+  {
+    "customer_id": "CUST-695",
+    "persona": "frustrated",
+    "sign_up_date": "2023-04-18",
+    "products_owned": 3,
+    "lifetime_value": 6746
+  },
+  {
+    "customer_id": "CUST-696",
+    "persona": "neutral",
+    "sign_up_date": "2022-07-24",
+    "products_owned": 5,
+    "lifetime_value": 8663
+  },
+  {
+    "customer_id": "CUST-697",
+    "persona": "mixed",
+    "sign_up_date": "2023-04-25",
+    "products_owned": 2,
+    "lifetime_value": 5716
+  },
+  {
+    "customer_id": "CUST-698",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-12",
+    "products_owned": 4,
+    "lifetime_value": 8660
+  },
+  {
+    "customer_id": "CUST-699",
+    "persona": "mixed",
+    "sign_up_date": "2024-04-14",
+    "products_owned": 3,
+    "lifetime_value": 6446
+  },
+  {
+    "customer_id": "CUST-700",
+    "persona": "satisfied",
+    "sign_up_date": "2024-09-24",
+    "products_owned": 5,
+    "lifetime_value": 7854
+  },
+  {
+    "customer_id": "CUST-701",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-17",
+    "products_owned": 3,
+    "lifetime_value": 6811
+  },
+  {
+    "customer_id": "CUST-702",
+    "persona": "frustrated",
+    "sign_up_date": "2024-11-14",
+    "products_owned": 5,
+    "lifetime_value": 1897
+  },
+  {
+    "customer_id": "CUST-703",
+    "persona": "mixed",
+    "sign_up_date": "2025-01-30",
+    "products_owned": 3,
+    "lifetime_value": 3901
+  },
+  {
+    "customer_id": "CUST-704",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-21",
+    "products_owned": 5,
+    "lifetime_value": 6633
+  },
+  {
+    "customer_id": "CUST-705",
+    "persona": "new",
+    "sign_up_date": "2023-06-03",
+    "products_owned": 1,
+    "lifetime_value": 2357
+  },
+  {
+    "customer_id": "CUST-706",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-07",
+    "products_owned": 3,
+    "lifetime_value": 1277
+  },
+  {
+    "customer_id": "CUST-707",
+    "persona": "frustrated",
+    "sign_up_date": "2023-02-21",
+    "products_owned": 3,
+    "lifetime_value": 9513
+  },
+  {
+    "customer_id": "CUST-708",
+    "persona": "mixed",
+    "sign_up_date": "2022-06-19",
+    "products_owned": 2,
+    "lifetime_value": 2969
+  },
+  {
+    "customer_id": "CUST-709",
+    "persona": "new",
+    "sign_up_date": "2023-06-15",
+    "products_owned": 2,
+    "lifetime_value": 9191
+  },
+  {
+    "customer_id": "CUST-710",
+    "persona": "satisfied",
+    "sign_up_date": "2025-01-08",
+    "products_owned": 1,
+    "lifetime_value": 7876
+  },
+  {
+    "customer_id": "CUST-711",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-18",
+    "products_owned": 1,
+    "lifetime_value": 9604
+  },
+  {
+    "customer_id": "CUST-712",
+    "persona": "neutral",
+    "sign_up_date": "2022-04-24",
+    "products_owned": 3,
+    "lifetime_value": 1200
+  },
+  {
+    "customer_id": "CUST-713",
+    "persona": "neutral",
+    "sign_up_date": "2022-05-14",
+    "products_owned": 2,
+    "lifetime_value": 4250
+  },
+  {
+    "customer_id": "CUST-714",
+    "persona": "neutral",
+    "sign_up_date": "2022-09-23",
+    "products_owned": 1,
+    "lifetime_value": 6280
+  },
+  {
+    "customer_id": "CUST-715",
+    "persona": "new",
+    "sign_up_date": "2023-11-08",
+    "products_owned": 1,
+    "lifetime_value": 5491
+  },
+  {
+    "customer_id": "CUST-716",
+    "persona": "satisfied",
+    "sign_up_date": "2024-02-24",
+    "products_owned": 4,
+    "lifetime_value": 3221
+  },
+  {
+    "customer_id": "CUST-717",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-28",
+    "products_owned": 4,
+    "lifetime_value": 4796
+  },
+  {
+    "customer_id": "CUST-718",
+    "persona": "frustrated",
+    "sign_up_date": "2023-02-17",
+    "products_owned": 5,
+    "lifetime_value": 4377
+  },
+  {
+    "customer_id": "CUST-719",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-23",
+    "products_owned": 3,
+    "lifetime_value": 4844
+  },
+  {
+    "customer_id": "CUST-720",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-05",
+    "products_owned": 2,
+    "lifetime_value": 1524
+  },
+  {
+    "customer_id": "CUST-721",
+    "persona": "mixed",
+    "sign_up_date": "2025-02-09",
+    "products_owned": 5,
+    "lifetime_value": 9636
+  },
+  {
+    "customer_id": "CUST-722",
+    "persona": "new",
+    "sign_up_date": "2024-03-03",
+    "products_owned": 1,
+    "lifetime_value": 1950
+  },
+  {
+    "customer_id": "CUST-723",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-24",
+    "products_owned": 4,
+    "lifetime_value": 8957
+  },
+  {
+    "customer_id": "CUST-724",
+    "persona": "new",
+    "sign_up_date": "2024-11-19",
+    "products_owned": 2,
+    "lifetime_value": 4555
+  },
+  {
+    "customer_id": "CUST-725",
+    "persona": "satisfied",
+    "sign_up_date": "2025-01-31",
+    "products_owned": 4,
+    "lifetime_value": 7814
+  },
+  {
+    "customer_id": "CUST-726",
+    "persona": "new",
+    "sign_up_date": "2022-05-20",
+    "products_owned": 3,
+    "lifetime_value": 8226
+  },
+  {
+    "customer_id": "CUST-727",
+    "persona": "mixed",
+    "sign_up_date": "2022-09-23",
+    "products_owned": 3,
+    "lifetime_value": 4370
+  },
+  {
+    "customer_id": "CUST-728",
+    "persona": "mixed",
+    "sign_up_date": "2022-09-02",
+    "products_owned": 5,
+    "lifetime_value": 8589
+  },
+  {
+    "customer_id": "CUST-729",
+    "persona": "mixed",
+    "sign_up_date": "2023-03-01",
+    "products_owned": 1,
+    "lifetime_value": 4671
+  },
+  {
+    "customer_id": "CUST-730",
+    "persona": "new",
+    "sign_up_date": "2022-07-23",
+    "products_owned": 4,
+    "lifetime_value": 3740
+  },
+  {
+    "customer_id": "CUST-731",
+    "persona": "new",
+    "sign_up_date": "2023-03-30",
+    "products_owned": 1,
+    "lifetime_value": 9840
+  },
+  {
+    "customer_id": "CUST-732",
+    "persona": "frustrated",
+    "sign_up_date": "2023-12-04",
+    "products_owned": 1,
+    "lifetime_value": 5905
+  },
+  {
+    "customer_id": "CUST-733",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-05",
+    "products_owned": 5,
+    "lifetime_value": 6778
+  },
+  {
+    "customer_id": "CUST-734",
+    "persona": "frustrated",
+    "sign_up_date": "2023-12-31",
+    "products_owned": 1,
+    "lifetime_value": 5166
+  },
+  {
+    "customer_id": "CUST-735",
+    "persona": "mixed",
+    "sign_up_date": "2024-05-03",
+    "products_owned": 4,
+    "lifetime_value": 2986
+  },
+  {
+    "customer_id": "CUST-736",
+    "persona": "frustrated",
+    "sign_up_date": "2023-06-11",
+    "products_owned": 5,
+    "lifetime_value": 5387
+  },
+  {
+    "customer_id": "CUST-737",
+    "persona": "mixed",
+    "sign_up_date": "2023-08-27",
+    "products_owned": 4,
+    "lifetime_value": 378
+  },
+  {
+    "customer_id": "CUST-738",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-27",
+    "products_owned": 1,
+    "lifetime_value": 1808
+  },
+  {
+    "customer_id": "CUST-739",
+    "persona": "neutral",
+    "sign_up_date": "2024-12-27",
+    "products_owned": 2,
+    "lifetime_value": 9904
+  },
+  {
+    "customer_id": "CUST-740",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-16",
+    "products_owned": 1,
+    "lifetime_value": 787
+  },
+  {
+    "customer_id": "CUST-741",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-27",
+    "products_owned": 2,
+    "lifetime_value": 3341
+  },
+  {
+    "customer_id": "CUST-742",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-12",
+    "products_owned": 5,
+    "lifetime_value": 350
+  },
+  {
+    "customer_id": "CUST-743",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-20",
+    "products_owned": 4,
+    "lifetime_value": 4955
+  },
+  {
+    "customer_id": "CUST-744",
+    "persona": "satisfied",
+    "sign_up_date": "2024-02-16",
+    "products_owned": 4,
+    "lifetime_value": 7904
+  },
+  {
+    "customer_id": "CUST-745",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-23",
+    "products_owned": 3,
+    "lifetime_value": 8534
+  },
+  {
+    "customer_id": "CUST-746",
+    "persona": "frustrated",
+    "sign_up_date": "2023-10-18",
+    "products_owned": 1,
+    "lifetime_value": 2584
+  },
+  {
+    "customer_id": "CUST-747",
+    "persona": "satisfied",
+    "sign_up_date": "2022-06-24",
+    "products_owned": 1,
+    "lifetime_value": 6169
+  },
+  {
+    "customer_id": "CUST-748",
+    "persona": "frustrated",
+    "sign_up_date": "2024-07-30",
+    "products_owned": 3,
+    "lifetime_value": 4387
+  },
+  {
+    "customer_id": "CUST-749",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-17",
+    "products_owned": 3,
+    "lifetime_value": 2329
+  },
+  {
+    "customer_id": "CUST-750",
+    "persona": "new",
+    "sign_up_date": "2022-06-15",
+    "products_owned": 4,
+    "lifetime_value": 8145
+  },
+  {
+    "customer_id": "CUST-751",
+    "persona": "satisfied",
+    "sign_up_date": "2023-06-27",
+    "products_owned": 5,
+    "lifetime_value": 7791
+  },
+  {
+    "customer_id": "CUST-752",
+    "persona": "satisfied",
+    "sign_up_date": "2022-12-18",
+    "products_owned": 4,
+    "lifetime_value": 3937
+  },
+  {
+    "customer_id": "CUST-753",
+    "persona": "frustrated",
+    "sign_up_date": "2022-07-10",
+    "products_owned": 2,
+    "lifetime_value": 2374
+  },
+  {
+    "customer_id": "CUST-754",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-27",
+    "products_owned": 1,
+    "lifetime_value": 1206
+  },
+  {
+    "customer_id": "CUST-755",
+    "persona": "new",
+    "sign_up_date": "2024-01-04",
+    "products_owned": 1,
+    "lifetime_value": 2992
+  },
+  {
+    "customer_id": "CUST-756",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-17",
+    "products_owned": 1,
+    "lifetime_value": 2781
+  },
+  {
+    "customer_id": "CUST-757",
+    "persona": "new",
+    "sign_up_date": "2023-04-16",
+    "products_owned": 2,
+    "lifetime_value": 6911
+  },
+  {
+    "customer_id": "CUST-758",
+    "persona": "new",
+    "sign_up_date": "2022-11-20",
+    "products_owned": 1,
+    "lifetime_value": 3886
+  },
+  {
+    "customer_id": "CUST-759",
+    "persona": "neutral",
+    "sign_up_date": "2025-01-06",
+    "products_owned": 5,
+    "lifetime_value": 9885
+  },
+  {
+    "customer_id": "CUST-760",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-10",
+    "products_owned": 3,
+    "lifetime_value": 9452
+  },
+  {
+    "customer_id": "CUST-761",
+    "persona": "neutral",
+    "sign_up_date": "2022-06-28",
+    "products_owned": 5,
+    "lifetime_value": 6619
+  },
+  {
+    "customer_id": "CUST-762",
+    "persona": "frustrated",
+    "sign_up_date": "2022-07-17",
+    "products_owned": 3,
+    "lifetime_value": 1554
+  },
+  {
+    "customer_id": "CUST-763",
+    "persona": "frustrated",
+    "sign_up_date": "2023-10-10",
+    "products_owned": 1,
+    "lifetime_value": 4834
+  },
+  {
+    "customer_id": "CUST-764",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-23",
+    "products_owned": 2,
+    "lifetime_value": 6165
+  },
+  {
+    "customer_id": "CUST-765",
+    "persona": "mixed",
+    "sign_up_date": "2024-08-05",
+    "products_owned": 4,
+    "lifetime_value": 2887
+  },
+  {
+    "customer_id": "CUST-766",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-14",
+    "products_owned": 2,
+    "lifetime_value": 5438
+  },
+  {
+    "customer_id": "CUST-767",
+    "persona": "neutral",
+    "sign_up_date": "2024-04-28",
+    "products_owned": 4,
+    "lifetime_value": 8905
+  },
+  {
+    "customer_id": "CUST-768",
+    "persona": "neutral",
+    "sign_up_date": "2023-07-17",
+    "products_owned": 4,
+    "lifetime_value": 9205
+  },
+  {
+    "customer_id": "CUST-769",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-03",
+    "products_owned": 4,
+    "lifetime_value": 2489
+  },
+  {
+    "customer_id": "CUST-770",
+    "persona": "frustrated",
+    "sign_up_date": "2023-02-01",
+    "products_owned": 4,
+    "lifetime_value": 398
+  },
+  {
+    "customer_id": "CUST-771",
+    "persona": "mixed",
+    "sign_up_date": "2024-05-23",
+    "products_owned": 2,
+    "lifetime_value": 7498
+  },
+  {
+    "customer_id": "CUST-772",
+    "persona": "new",
+    "sign_up_date": "2022-12-30",
+    "products_owned": 2,
+    "lifetime_value": 8348
+  },
+  {
+    "customer_id": "CUST-773",
+    "persona": "mixed",
+    "sign_up_date": "2022-09-30",
+    "products_owned": 4,
+    "lifetime_value": 1903
+  },
+  {
+    "customer_id": "CUST-774",
+    "persona": "new",
+    "sign_up_date": "2022-05-23",
+    "products_owned": 2,
+    "lifetime_value": 4687
+  },
+  {
+    "customer_id": "CUST-775",
+    "persona": "mixed",
+    "sign_up_date": "2024-10-15",
+    "products_owned": 4,
+    "lifetime_value": 9485
+  },
+  {
+    "customer_id": "CUST-776",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-28",
+    "products_owned": 1,
+    "lifetime_value": 6881
+  },
+  {
+    "customer_id": "CUST-777",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-24",
+    "products_owned": 4,
+    "lifetime_value": 3473
+  },
+  {
+    "customer_id": "CUST-778",
+    "persona": "neutral",
+    "sign_up_date": "2022-12-11",
+    "products_owned": 3,
+    "lifetime_value": 7274
+  },
+  {
+    "customer_id": "CUST-779",
+    "persona": "neutral",
+    "sign_up_date": "2024-08-26",
+    "products_owned": 1,
+    "lifetime_value": 7413
+  },
+  {
+    "customer_id": "CUST-780",
+    "persona": "new",
+    "sign_up_date": "2024-12-31",
+    "products_owned": 3,
+    "lifetime_value": 5257
+  },
+  {
+    "customer_id": "CUST-781",
+    "persona": "neutral",
+    "sign_up_date": "2023-09-06",
+    "products_owned": 2,
+    "lifetime_value": 5588
+  },
+  {
+    "customer_id": "CUST-782",
+    "persona": "new",
+    "sign_up_date": "2023-01-29",
+    "products_owned": 1,
+    "lifetime_value": 3140
+  },
+  {
+    "customer_id": "CUST-783",
+    "persona": "mixed",
+    "sign_up_date": "2023-11-10",
+    "products_owned": 2,
+    "lifetime_value": 7545
+  },
+  {
+    "customer_id": "CUST-784",
+    "persona": "new",
+    "sign_up_date": "2022-08-06",
+    "products_owned": 4,
+    "lifetime_value": 2640
+  },
+  {
+    "customer_id": "CUST-785",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-23",
+    "products_owned": 3,
+    "lifetime_value": 2047
+  },
+  {
+    "customer_id": "CUST-786",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-11",
+    "products_owned": 4,
+    "lifetime_value": 5626
+  },
+  {
+    "customer_id": "CUST-787",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-28",
+    "products_owned": 5,
+    "lifetime_value": 485
+  },
+  {
+    "customer_id": "CUST-788",
+    "persona": "satisfied",
+    "sign_up_date": "2023-11-30",
+    "products_owned": 3,
+    "lifetime_value": 5508
+  },
+  {
+    "customer_id": "CUST-789",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-30",
+    "products_owned": 4,
+    "lifetime_value": 5798
+  },
+  {
+    "customer_id": "CUST-790",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-18",
+    "products_owned": 3,
+    "lifetime_value": 5185
+  },
+  {
+    "customer_id": "CUST-791",
+    "persona": "frustrated",
+    "sign_up_date": "2022-04-11",
+    "products_owned": 4,
+    "lifetime_value": 7350
+  },
+  {
+    "customer_id": "CUST-792",
+    "persona": "new",
+    "sign_up_date": "2023-05-21",
+    "products_owned": 2,
+    "lifetime_value": 7636
+  },
+  {
+    "customer_id": "CUST-793",
+    "persona": "frustrated",
+    "sign_up_date": "2024-09-14",
+    "products_owned": 4,
+    "lifetime_value": 4995
+  },
+  {
+    "customer_id": "CUST-794",
+    "persona": "satisfied",
+    "sign_up_date": "2022-12-07",
+    "products_owned": 5,
+    "lifetime_value": 9718
+  },
+  {
+    "customer_id": "CUST-795",
+    "persona": "satisfied",
+    "sign_up_date": "2024-09-09",
+    "products_owned": 2,
+    "lifetime_value": 7010
+  },
+  {
+    "customer_id": "CUST-796",
+    "persona": "frustrated",
+    "sign_up_date": "2024-05-24",
+    "products_owned": 3,
+    "lifetime_value": 3851
+  },
+  {
+    "customer_id": "CUST-797",
+    "persona": "new",
+    "sign_up_date": "2022-05-07",
+    "products_owned": 1,
+    "lifetime_value": 8299
+  },
+  {
+    "customer_id": "CUST-798",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-10",
+    "products_owned": 2,
+    "lifetime_value": 8755
+  },
+  {
+    "customer_id": "CUST-799",
+    "persona": "new",
+    "sign_up_date": "2024-07-11",
+    "products_owned": 1,
+    "lifetime_value": 3273
+  },
+  {
+    "customer_id": "CUST-800",
+    "persona": "neutral",
+    "sign_up_date": "2024-05-01",
+    "products_owned": 3,
+    "lifetime_value": 4925
+  },
+  {
+    "customer_id": "CUST-801",
+    "persona": "satisfied",
+    "sign_up_date": "2023-12-27",
+    "products_owned": 5,
+    "lifetime_value": 9643
+  },
+  {
+    "customer_id": "CUST-802",
+    "persona": "mixed",
+    "sign_up_date": "2025-02-27",
+    "products_owned": 1,
+    "lifetime_value": 7416
+  },
+  {
+    "customer_id": "CUST-803",
+    "persona": "mixed",
+    "sign_up_date": "2022-07-11",
+    "products_owned": 4,
+    "lifetime_value": 4970
+  },
+  {
+    "customer_id": "CUST-804",
+    "persona": "frustrated",
+    "sign_up_date": "2022-11-29",
+    "products_owned": 4,
+    "lifetime_value": 6487
+  },
+  {
+    "customer_id": "CUST-805",
+    "persona": "mixed",
+    "sign_up_date": "2024-04-14",
+    "products_owned": 4,
+    "lifetime_value": 2869
+  },
+  {
+    "customer_id": "CUST-806",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-25",
+    "products_owned": 1,
+    "lifetime_value": 4058
+  },
+  {
+    "customer_id": "CUST-807",
+    "persona": "mixed",
+    "sign_up_date": "2022-06-06",
+    "products_owned": 4,
+    "lifetime_value": 9504
+  },
+  {
+    "customer_id": "CUST-808",
+    "persona": "mixed",
+    "sign_up_date": "2024-01-28",
+    "products_owned": 4,
+    "lifetime_value": 7067
+  },
+  {
+    "customer_id": "CUST-809",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-24",
+    "products_owned": 2,
+    "lifetime_value": 5906
+  },
+  {
+    "customer_id": "CUST-810",
+    "persona": "neutral",
+    "sign_up_date": "2023-07-29",
+    "products_owned": 2,
+    "lifetime_value": 6788
+  },
+  {
+    "customer_id": "CUST-811",
+    "persona": "mixed",
+    "sign_up_date": "2023-09-10",
+    "products_owned": 4,
+    "lifetime_value": 6634
+  },
+  {
+    "customer_id": "CUST-812",
+    "persona": "new",
+    "sign_up_date": "2024-03-21",
+    "products_owned": 3,
+    "lifetime_value": 6877
+  },
+  {
+    "customer_id": "CUST-813",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-05",
+    "products_owned": 3,
+    "lifetime_value": 7190
+  },
+  {
+    "customer_id": "CUST-814",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-11",
+    "products_owned": 5,
+    "lifetime_value": 2898
+  },
+  {
+    "customer_id": "CUST-815",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-15",
+    "products_owned": 2,
+    "lifetime_value": 3125
+  },
+  {
+    "customer_id": "CUST-816",
+    "persona": "neutral",
+    "sign_up_date": "2023-09-18",
+    "products_owned": 3,
+    "lifetime_value": 488
+  },
+  {
+    "customer_id": "CUST-817",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-15",
+    "products_owned": 4,
+    "lifetime_value": 7780
+  },
+  {
+    "customer_id": "CUST-818",
+    "persona": "new",
+    "sign_up_date": "2024-01-20",
+    "products_owned": 4,
+    "lifetime_value": 4556
+  },
+  {
+    "customer_id": "CUST-819",
+    "persona": "neutral",
+    "sign_up_date": "2023-02-09",
+    "products_owned": 3,
+    "lifetime_value": 3511
+  },
+  {
+    "customer_id": "CUST-820",
+    "persona": "new",
+    "sign_up_date": "2024-06-29",
+    "products_owned": 3,
+    "lifetime_value": 395
+  },
+  {
+    "customer_id": "CUST-821",
+    "persona": "frustrated",
+    "sign_up_date": "2025-01-25",
+    "products_owned": 5,
+    "lifetime_value": 6305
+  },
+  {
+    "customer_id": "CUST-822",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-20",
+    "products_owned": 1,
+    "lifetime_value": 7300
+  },
+  {
+    "customer_id": "CUST-823",
+    "persona": "frustrated",
+    "sign_up_date": "2023-03-01",
+    "products_owned": 1,
+    "lifetime_value": 6977
+  },
+  {
+    "customer_id": "CUST-824",
+    "persona": "new",
+    "sign_up_date": "2024-08-04",
+    "products_owned": 4,
+    "lifetime_value": 9151
+  },
+  {
+    "customer_id": "CUST-825",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-19",
+    "products_owned": 4,
+    "lifetime_value": 4488
+  },
+  {
+    "customer_id": "CUST-826",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-02",
+    "products_owned": 5,
+    "lifetime_value": 1980
+  },
+  {
+    "customer_id": "CUST-827",
+    "persona": "frustrated",
+    "sign_up_date": "2024-07-09",
+    "products_owned": 1,
+    "lifetime_value": 1119
+  },
+  {
+    "customer_id": "CUST-828",
+    "persona": "new",
+    "sign_up_date": "2023-07-10",
+    "products_owned": 5,
+    "lifetime_value": 2258
+  },
+  {
+    "customer_id": "CUST-829",
+    "persona": "satisfied",
+    "sign_up_date": "2024-03-24",
+    "products_owned": 5,
+    "lifetime_value": 8260
+  },
+  {
+    "customer_id": "CUST-830",
+    "persona": "new",
+    "sign_up_date": "2022-06-11",
+    "products_owned": 5,
+    "lifetime_value": 9353
+  },
+  {
+    "customer_id": "CUST-831",
+    "persona": "mixed",
+    "sign_up_date": "2024-01-05",
+    "products_owned": 2,
+    "lifetime_value": 8972
+  },
+  {
+    "customer_id": "CUST-832",
+    "persona": "new",
+    "sign_up_date": "2024-08-24",
+    "products_owned": 4,
+    "lifetime_value": 4485
+  },
+  {
+    "customer_id": "CUST-833",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-25",
+    "products_owned": 5,
+    "lifetime_value": 7972
+  },
+  {
+    "customer_id": "CUST-834",
+    "persona": "neutral",
+    "sign_up_date": "2024-09-15",
+    "products_owned": 1,
+    "lifetime_value": 7773
+  },
+  {
+    "customer_id": "CUST-835",
+    "persona": "frustrated",
+    "sign_up_date": "2022-11-26",
+    "products_owned": 4,
+    "lifetime_value": 8601
+  },
+  {
+    "customer_id": "CUST-836",
+    "persona": "mixed",
+    "sign_up_date": "2024-02-22",
+    "products_owned": 5,
+    "lifetime_value": 5546
+  },
+  {
+    "customer_id": "CUST-837",
+    "persona": "new",
+    "sign_up_date": "2024-04-12",
+    "products_owned": 4,
+    "lifetime_value": 2821
+  },
+  {
+    "customer_id": "CUST-838",
+    "persona": "satisfied",
+    "sign_up_date": "2022-12-20",
+    "products_owned": 1,
+    "lifetime_value": 8960
+  },
+  {
+    "customer_id": "CUST-839",
+    "persona": "neutral",
+    "sign_up_date": "2023-07-13",
+    "products_owned": 1,
+    "lifetime_value": 2993
+  },
+  {
+    "customer_id": "CUST-840",
+    "persona": "neutral",
+    "sign_up_date": "2024-09-11",
+    "products_owned": 2,
+    "lifetime_value": 5864
+  },
+  {
+    "customer_id": "CUST-841",
+    "persona": "mixed",
+    "sign_up_date": "2022-08-10",
+    "products_owned": 5,
+    "lifetime_value": 4707
+  },
+  {
+    "customer_id": "CUST-842",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-23",
+    "products_owned": 4,
+    "lifetime_value": 8709
+  },
+  {
+    "customer_id": "CUST-843",
+    "persona": "frustrated",
+    "sign_up_date": "2023-03-03",
+    "products_owned": 3,
+    "lifetime_value": 1707
+  },
+  {
+    "customer_id": "CUST-844",
+    "persona": "new",
+    "sign_up_date": "2023-09-05",
+    "products_owned": 5,
+    "lifetime_value": 1055
+  },
+  {
+    "customer_id": "CUST-845",
+    "persona": "satisfied",
+    "sign_up_date": "2022-06-14",
+    "products_owned": 1,
+    "lifetime_value": 7111
+  },
+  {
+    "customer_id": "CUST-846",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-13",
+    "products_owned": 3,
+    "lifetime_value": 6502
+  },
+  {
+    "customer_id": "CUST-847",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-04",
+    "products_owned": 3,
+    "lifetime_value": 8250
+  },
+  {
+    "customer_id": "CUST-848",
+    "persona": "satisfied",
+    "sign_up_date": "2023-04-25",
+    "products_owned": 1,
+    "lifetime_value": 5400
+  },
+  {
+    "customer_id": "CUST-849",
+    "persona": "frustrated",
+    "sign_up_date": "2022-12-09",
+    "products_owned": 2,
+    "lifetime_value": 6807
+  },
+  {
+    "customer_id": "CUST-850",
+    "persona": "new",
+    "sign_up_date": "2024-08-07",
+    "products_owned": 5,
+    "lifetime_value": 3922
+  },
+  {
+    "customer_id": "CUST-851",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-19",
+    "products_owned": 1,
+    "lifetime_value": 7601
+  },
+  {
+    "customer_id": "CUST-852",
+    "persona": "new",
+    "sign_up_date": "2024-04-22",
+    "products_owned": 2,
+    "lifetime_value": 5603
+  },
+  {
+    "customer_id": "CUST-853",
+    "persona": "satisfied",
+    "sign_up_date": "2022-05-16",
+    "products_owned": 4,
+    "lifetime_value": 7139
+  },
+  {
+    "customer_id": "CUST-854",
+    "persona": "mixed",
+    "sign_up_date": "2023-02-10",
+    "products_owned": 5,
+    "lifetime_value": 7465
+  },
+  {
+    "customer_id": "CUST-855",
+    "persona": "frustrated",
+    "sign_up_date": "2023-09-28",
+    "products_owned": 1,
+    "lifetime_value": 7310
+  },
+  {
+    "customer_id": "CUST-856",
+    "persona": "neutral",
+    "sign_up_date": "2022-07-07",
+    "products_owned": 1,
+    "lifetime_value": 183
+  },
+  {
+    "customer_id": "CUST-857",
+    "persona": "frustrated",
+    "sign_up_date": "2022-05-28",
+    "products_owned": 3,
+    "lifetime_value": 7383
+  },
+  {
+    "customer_id": "CUST-858",
+    "persona": "mixed",
+    "sign_up_date": "2024-05-19",
+    "products_owned": 5,
+    "lifetime_value": 269
+  },
+  {
+    "customer_id": "CUST-859",
+    "persona": "satisfied",
+    "sign_up_date": "2024-08-10",
+    "products_owned": 4,
+    "lifetime_value": 3067
+  },
+  {
+    "customer_id": "CUST-860",
+    "persona": "new",
+    "sign_up_date": "2023-01-06",
+    "products_owned": 5,
+    "lifetime_value": 5633
+  },
+  {
+    "customer_id": "CUST-861",
+    "persona": "satisfied",
+    "sign_up_date": "2023-06-12",
+    "products_owned": 1,
+    "lifetime_value": 6620
+  },
+  {
+    "customer_id": "CUST-862",
+    "persona": "frustrated",
+    "sign_up_date": "2022-08-04",
+    "products_owned": 3,
+    "lifetime_value": 7985
+  },
+  {
+    "customer_id": "CUST-863",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-17",
+    "products_owned": 4,
+    "lifetime_value": 7028
+  },
+  {
+    "customer_id": "CUST-864",
+    "persona": "new",
+    "sign_up_date": "2022-07-07",
+    "products_owned": 1,
+    "lifetime_value": 9873
+  },
+  {
+    "customer_id": "CUST-865",
+    "persona": "frustrated",
+    "sign_up_date": "2022-08-30",
+    "products_owned": 4,
+    "lifetime_value": 483
+  },
+  {
+    "customer_id": "CUST-866",
+    "persona": "new",
+    "sign_up_date": "2023-05-07",
+    "products_owned": 2,
+    "lifetime_value": 8523
+  },
+  {
+    "customer_id": "CUST-867",
+    "persona": "neutral",
+    "sign_up_date": "2022-06-15",
+    "products_owned": 1,
+    "lifetime_value": 4778
+  },
+  {
+    "customer_id": "CUST-868",
+    "persona": "frustrated",
+    "sign_up_date": "2023-04-14",
+    "products_owned": 4,
+    "lifetime_value": 7039
+  },
+  {
+    "customer_id": "CUST-869",
+    "persona": "neutral",
+    "sign_up_date": "2023-07-01",
+    "products_owned": 1,
+    "lifetime_value": 4317
+  },
+  {
+    "customer_id": "CUST-870",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-08",
+    "products_owned": 3,
+    "lifetime_value": 6420
+  },
+  {
+    "customer_id": "CUST-871",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-08",
+    "products_owned": 1,
+    "lifetime_value": 4034
+  },
+  {
+    "customer_id": "CUST-872",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-23",
+    "products_owned": 5,
+    "lifetime_value": 218
+  },
+  {
+    "customer_id": "CUST-873",
+    "persona": "neutral",
+    "sign_up_date": "2024-10-28",
+    "products_owned": 2,
+    "lifetime_value": 7503
+  },
+  {
+    "customer_id": "CUST-874",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-26",
+    "products_owned": 4,
+    "lifetime_value": 5043
+  },
+  {
+    "customer_id": "CUST-875",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-20",
+    "products_owned": 4,
+    "lifetime_value": 4992
+  },
+  {
+    "customer_id": "CUST-876",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-23",
+    "products_owned": 1,
+    "lifetime_value": 8346
+  },
+  {
+    "customer_id": "CUST-877",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-08",
+    "products_owned": 5,
+    "lifetime_value": 7084
+  },
+  {
+    "customer_id": "CUST-878",
+    "persona": "mixed",
+    "sign_up_date": "2022-05-22",
+    "products_owned": 3,
+    "lifetime_value": 9254
+  },
+  {
+    "customer_id": "CUST-879",
+    "persona": "frustrated",
+    "sign_up_date": "2022-05-11",
+    "products_owned": 3,
+    "lifetime_value": 9759
+  },
+  {
+    "customer_id": "CUST-880",
+    "persona": "neutral",
+    "sign_up_date": "2024-05-25",
+    "products_owned": 5,
+    "lifetime_value": 931
+  },
+  {
+    "customer_id": "CUST-881",
+    "persona": "neutral",
+    "sign_up_date": "2023-11-20",
+    "products_owned": 4,
+    "lifetime_value": 5132
+  },
+  {
+    "customer_id": "CUST-882",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-10",
+    "products_owned": 3,
+    "lifetime_value": 5492
+  },
+  {
+    "customer_id": "CUST-883",
+    "persona": "neutral",
+    "sign_up_date": "2023-11-14",
+    "products_owned": 3,
+    "lifetime_value": 2817
+  },
+  {
+    "customer_id": "CUST-884",
+    "persona": "frustrated",
+    "sign_up_date": "2023-09-16",
+    "products_owned": 1,
+    "lifetime_value": 9632
+  },
+  {
+    "customer_id": "CUST-885",
+    "persona": "satisfied",
+    "sign_up_date": "2024-02-25",
+    "products_owned": 5,
+    "lifetime_value": 4484
+  },
+  {
+    "customer_id": "CUST-886",
+    "persona": "satisfied",
+    "sign_up_date": "2023-09-05",
+    "products_owned": 2,
+    "lifetime_value": 8108
+  },
+  {
+    "customer_id": "CUST-887",
+    "persona": "neutral",
+    "sign_up_date": "2022-10-23",
+    "products_owned": 2,
+    "lifetime_value": 2661
+  },
+  {
+    "customer_id": "CUST-888",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-30",
+    "products_owned": 3,
+    "lifetime_value": 3492
+  },
+  {
+    "customer_id": "CUST-889",
+    "persona": "satisfied",
+    "sign_up_date": "2023-09-13",
+    "products_owned": 1,
+    "lifetime_value": 4360
+  },
+  {
+    "customer_id": "CUST-890",
+    "persona": "new",
+    "sign_up_date": "2024-12-05",
+    "products_owned": 5,
+    "lifetime_value": 1005
+  },
+  {
+    "customer_id": "CUST-891",
+    "persona": "satisfied",
+    "sign_up_date": "2024-10-23",
+    "products_owned": 3,
+    "lifetime_value": 9707
+  },
+  {
+    "customer_id": "CUST-892",
+    "persona": "neutral",
+    "sign_up_date": "2024-05-05",
+    "products_owned": 1,
+    "lifetime_value": 4201
+  },
+  {
+    "customer_id": "CUST-893",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-10",
+    "products_owned": 4,
+    "lifetime_value": 2226
+  },
+  {
+    "customer_id": "CUST-894",
+    "persona": "mixed",
+    "sign_up_date": "2023-10-09",
+    "products_owned": 4,
+    "lifetime_value": 5658
+  },
+  {
+    "customer_id": "CUST-895",
+    "persona": "new",
+    "sign_up_date": "2024-11-03",
+    "products_owned": 3,
+    "lifetime_value": 3204
+  },
+  {
+    "customer_id": "CUST-896",
+    "persona": "neutral",
+    "sign_up_date": "2024-07-02",
+    "products_owned": 5,
+    "lifetime_value": 2606
+  },
+  {
+    "customer_id": "CUST-897",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-06",
+    "products_owned": 4,
+    "lifetime_value": 738
+  },
+  {
+    "customer_id": "CUST-898",
+    "persona": "mixed",
+    "sign_up_date": "2024-12-29",
+    "products_owned": 4,
+    "lifetime_value": 5615
+  },
+  {
+    "customer_id": "CUST-899",
+    "persona": "neutral",
+    "sign_up_date": "2024-06-16",
+    "products_owned": 5,
+    "lifetime_value": 3681
+  },
+  {
+    "customer_id": "CUST-900",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-06",
+    "products_owned": 2,
+    "lifetime_value": 7745
+  },
+  {
+    "customer_id": "CUST-901",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-10",
+    "products_owned": 4,
+    "lifetime_value": 5621
+  },
+  {
+    "customer_id": "CUST-902",
+    "persona": "new",
+    "sign_up_date": "2023-11-25",
+    "products_owned": 3,
+    "lifetime_value": 2456
+  },
+  {
+    "customer_id": "CUST-903",
+    "persona": "mixed",
+    "sign_up_date": "2022-09-12",
+    "products_owned": 1,
+    "lifetime_value": 3598
+  },
+  {
+    "customer_id": "CUST-904",
+    "persona": "neutral",
+    "sign_up_date": "2024-08-04",
+    "products_owned": 1,
+    "lifetime_value": 8721
+  },
+  {
+    "customer_id": "CUST-905",
+    "persona": "neutral",
+    "sign_up_date": "2024-01-03",
+    "products_owned": 3,
+    "lifetime_value": 5381
+  },
+  {
+    "customer_id": "CUST-906",
+    "persona": "satisfied",
+    "sign_up_date": "2022-10-04",
+    "products_owned": 2,
+    "lifetime_value": 7669
+  },
+  {
+    "customer_id": "CUST-907",
+    "persona": "neutral",
+    "sign_up_date": "2024-08-23",
+    "products_owned": 3,
+    "lifetime_value": 2786
+  },
+  {
+    "customer_id": "CUST-908",
+    "persona": "frustrated",
+    "sign_up_date": "2025-02-18",
+    "products_owned": 3,
+    "lifetime_value": 1387
+  },
+  {
+    "customer_id": "CUST-909",
+    "persona": "satisfied",
+    "sign_up_date": "2023-11-20",
+    "products_owned": 5,
+    "lifetime_value": 3203
+  },
+  {
+    "customer_id": "CUST-910",
+    "persona": "neutral",
+    "sign_up_date": "2024-02-01",
+    "products_owned": 1,
+    "lifetime_value": 7749
+  },
+  {
+    "customer_id": "CUST-911",
+    "persona": "new",
+    "sign_up_date": "2024-08-13",
+    "products_owned": 2,
+    "lifetime_value": 5635
+  },
+  {
+    "customer_id": "CUST-912",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-28",
+    "products_owned": 1,
+    "lifetime_value": 7324
+  },
+  {
+    "customer_id": "CUST-913",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-08",
+    "products_owned": 1,
+    "lifetime_value": 6524
+  },
+  {
+    "customer_id": "CUST-914",
+    "persona": "satisfied",
+    "sign_up_date": "2023-11-24",
+    "products_owned": 4,
+    "lifetime_value": 4275
+  },
+  {
+    "customer_id": "CUST-915",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-19",
+    "products_owned": 2,
+    "lifetime_value": 1834
+  },
+  {
+    "customer_id": "CUST-916",
+    "persona": "new",
+    "sign_up_date": "2024-09-02",
+    "products_owned": 3,
+    "lifetime_value": 5257
+  },
+  {
+    "customer_id": "CUST-917",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-31",
+    "products_owned": 5,
+    "lifetime_value": 1510
+  },
+  {
+    "customer_id": "CUST-918",
+    "persona": "frustrated",
+    "sign_up_date": "2024-04-19",
+    "products_owned": 1,
+    "lifetime_value": 8855
+  },
+  {
+    "customer_id": "CUST-919",
+    "persona": "neutral",
+    "sign_up_date": "2023-10-25",
+    "products_owned": 5,
+    "lifetime_value": 4075
+  },
+  {
+    "customer_id": "CUST-920",
+    "persona": "neutral",
+    "sign_up_date": "2022-10-24",
+    "products_owned": 1,
+    "lifetime_value": 7580
+  },
+  {
+    "customer_id": "CUST-921",
+    "persona": "mixed",
+    "sign_up_date": "2023-11-26",
+    "products_owned": 5,
+    "lifetime_value": 5732
+  },
+  {
+    "customer_id": "CUST-922",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-24",
+    "products_owned": 5,
+    "lifetime_value": 4207
+  },
+  {
+    "customer_id": "CUST-923",
+    "persona": "neutral",
+    "sign_up_date": "2022-06-07",
+    "products_owned": 5,
+    "lifetime_value": 1681
+  },
+  {
+    "customer_id": "CUST-924",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-29",
+    "products_owned": 1,
+    "lifetime_value": 5765
+  },
+  {
+    "customer_id": "CUST-925",
+    "persona": "satisfied",
+    "sign_up_date": "2023-02-18",
+    "products_owned": 1,
+    "lifetime_value": 8155
+  },
+  {
+    "customer_id": "CUST-926",
+    "persona": "mixed",
+    "sign_up_date": "2022-10-24",
+    "products_owned": 5,
+    "lifetime_value": 5028
+  },
+  {
+    "customer_id": "CUST-927",
+    "persona": "new",
+    "sign_up_date": "2024-09-30",
+    "products_owned": 1,
+    "lifetime_value": 5781
+  },
+  {
+    "customer_id": "CUST-928",
+    "persona": "satisfied",
+    "sign_up_date": "2024-07-06",
+    "products_owned": 3,
+    "lifetime_value": 5898
+  },
+  {
+    "customer_id": "CUST-929",
+    "persona": "frustrated",
+    "sign_up_date": "2024-01-12",
+    "products_owned": 2,
+    "lifetime_value": 6468
+  },
+  {
+    "customer_id": "CUST-930",
+    "persona": "new",
+    "sign_up_date": "2024-04-25",
+    "products_owned": 4,
+    "lifetime_value": 7505
+  },
+  {
+    "customer_id": "CUST-931",
+    "persona": "neutral",
+    "sign_up_date": "2022-11-18",
+    "products_owned": 4,
+    "lifetime_value": 1168
+  },
+  {
+    "customer_id": "CUST-932",
+    "persona": "satisfied",
+    "sign_up_date": "2024-05-20",
+    "products_owned": 4,
+    "lifetime_value": 6260
+  },
+  {
+    "customer_id": "CUST-933",
+    "persona": "new",
+    "sign_up_date": "2023-08-05",
+    "products_owned": 3,
+    "lifetime_value": 2064
+  },
+  {
+    "customer_id": "CUST-934",
+    "persona": "neutral",
+    "sign_up_date": "2024-10-20",
+    "products_owned": 2,
+    "lifetime_value": 619
+  },
+  {
+    "customer_id": "CUST-935",
+    "persona": "neutral",
+    "sign_up_date": "2024-09-12",
+    "products_owned": 3,
+    "lifetime_value": 7286
+  },
+  {
+    "customer_id": "CUST-936",
+    "persona": "satisfied",
+    "sign_up_date": "2025-01-27",
+    "products_owned": 3,
+    "lifetime_value": 1195
+  },
+  {
+    "customer_id": "CUST-937",
+    "persona": "neutral",
+    "sign_up_date": "2024-11-21",
+    "products_owned": 1,
+    "lifetime_value": 4298
+  },
+  {
+    "customer_id": "CUST-938",
+    "persona": "new",
+    "sign_up_date": "2022-09-12",
+    "products_owned": 1,
+    "lifetime_value": 534
+  },
+  {
+    "customer_id": "CUST-939",
+    "persona": "mixed",
+    "sign_up_date": "2023-03-16",
+    "products_owned": 3,
+    "lifetime_value": 1920
+  },
+  {
+    "customer_id": "CUST-940",
+    "persona": "frustrated",
+    "sign_up_date": "2024-05-21",
+    "products_owned": 4,
+    "lifetime_value": 9609
+  },
+  {
+    "customer_id": "CUST-941",
+    "persona": "frustrated",
+    "sign_up_date": "2023-02-04",
+    "products_owned": 5,
+    "lifetime_value": 7760
+  },
+  {
+    "customer_id": "CUST-942",
+    "persona": "frustrated",
+    "sign_up_date": "2024-06-09",
+    "products_owned": 1,
+    "lifetime_value": 8377
+  },
+  {
+    "customer_id": "CUST-943",
+    "persona": "satisfied",
+    "sign_up_date": "2024-03-11",
+    "products_owned": 3,
+    "lifetime_value": 6023
+  },
+  {
+    "customer_id": "CUST-944",
+    "persona": "new",
+    "sign_up_date": "2022-09-12",
+    "products_owned": 1,
+    "lifetime_value": 6157
+  },
+  {
+    "customer_id": "CUST-945",
+    "persona": "mixed",
+    "sign_up_date": "2023-02-14",
+    "products_owned": 4,
+    "lifetime_value": 813
+  },
+  {
+    "customer_id": "CUST-946",
+    "persona": "neutral",
+    "sign_up_date": "2023-05-28",
+    "products_owned": 1,
+    "lifetime_value": 577
+  },
+  {
+    "customer_id": "CUST-947",
+    "persona": "new",
+    "sign_up_date": "2024-07-22",
+    "products_owned": 4,
+    "lifetime_value": 7663
+  },
+  {
+    "customer_id": "CUST-948",
+    "persona": "frustrated",
+    "sign_up_date": "2023-06-06",
+    "products_owned": 5,
+    "lifetime_value": 9523
+  },
+  {
+    "customer_id": "CUST-949",
+    "persona": "mixed",
+    "sign_up_date": "2023-04-23",
+    "products_owned": 5,
+    "lifetime_value": 1131
+  },
+  {
+    "customer_id": "CUST-950",
+    "persona": "satisfied",
+    "sign_up_date": "2022-07-28",
+    "products_owned": 4,
+    "lifetime_value": 7416
+  },
+  {
+    "customer_id": "CUST-951",
+    "persona": "mixed",
+    "sign_up_date": "2023-01-03",
+    "products_owned": 2,
+    "lifetime_value": 7877
+  },
+  {
+    "customer_id": "CUST-952",
+    "persona": "neutral",
+    "sign_up_date": "2023-12-09",
+    "products_owned": 1,
+    "lifetime_value": 5878
+  },
+  {
+    "customer_id": "CUST-953",
+    "persona": "satisfied",
+    "sign_up_date": "2025-01-16",
+    "products_owned": 4,
+    "lifetime_value": 1650
+  },
+  {
+    "customer_id": "CUST-954",
+    "persona": "new",
+    "sign_up_date": "2023-01-15",
+    "products_owned": 5,
+    "lifetime_value": 9759
+  },
+  {
+    "customer_id": "CUST-955",
+    "persona": "frustrated",
+    "sign_up_date": "2022-05-06",
+    "products_owned": 1,
+    "lifetime_value": 4320
+  },
+  {
+    "customer_id": "CUST-956",
+    "persona": "frustrated",
+    "sign_up_date": "2022-05-02",
+    "products_owned": 2,
+    "lifetime_value": 5211
+  },
+  {
+    "customer_id": "CUST-957",
+    "persona": "mixed",
+    "sign_up_date": "2024-07-24",
+    "products_owned": 5,
+    "lifetime_value": 909
+  },
+  {
+    "customer_id": "CUST-958",
+    "persona": "neutral",
+    "sign_up_date": "2024-11-28",
+    "products_owned": 5,
+    "lifetime_value": 8303
+  },
+  {
+    "customer_id": "CUST-959",
+    "persona": "satisfied",
+    "sign_up_date": "2023-03-16",
+    "products_owned": 1,
+    "lifetime_value": 2762
+  },
+  {
+    "customer_id": "CUST-960",
+    "persona": "satisfied",
+    "sign_up_date": "2023-05-11",
+    "products_owned": 2,
+    "lifetime_value": 2557
+  },
+  {
+    "customer_id": "CUST-961",
+    "persona": "frustrated",
+    "sign_up_date": "2023-11-04",
+    "products_owned": 2,
+    "lifetime_value": 1182
+  },
+  {
+    "customer_id": "CUST-962",
+    "persona": "mixed",
+    "sign_up_date": "2022-11-23",
+    "products_owned": 5,
+    "lifetime_value": 1781
+  },
+  {
+    "customer_id": "CUST-963",
+    "persona": "mixed",
+    "sign_up_date": "2024-10-08",
+    "products_owned": 1,
+    "lifetime_value": 3050
+  },
+  {
+    "customer_id": "CUST-964",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-18",
+    "products_owned": 1,
+    "lifetime_value": 4156
+  },
+  {
+    "customer_id": "CUST-965",
+    "persona": "satisfied",
+    "sign_up_date": "2023-10-27",
+    "products_owned": 5,
+    "lifetime_value": 5253
+  },
+  {
+    "customer_id": "CUST-966",
+    "persona": "frustrated",
+    "sign_up_date": "2022-09-16",
+    "products_owned": 3,
+    "lifetime_value": 1933
+  },
+  {
+    "customer_id": "CUST-967",
+    "persona": "neutral",
+    "sign_up_date": "2024-04-26",
+    "products_owned": 5,
+    "lifetime_value": 6154
+  },
+  {
+    "customer_id": "CUST-968",
+    "persona": "neutral",
+    "sign_up_date": "2023-01-05",
+    "products_owned": 3,
+    "lifetime_value": 3551
+  },
+  {
+    "customer_id": "CUST-969",
+    "persona": "frustrated",
+    "sign_up_date": "2023-04-15",
+    "products_owned": 4,
+    "lifetime_value": 5622
+  },
+  {
+    "customer_id": "CUST-970",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-07",
+    "products_owned": 3,
+    "lifetime_value": 6105
+  },
+  {
+    "customer_id": "CUST-971",
+    "persona": "new",
+    "sign_up_date": "2023-04-13",
+    "products_owned": 3,
+    "lifetime_value": 932
+  },
+  {
+    "customer_id": "CUST-972",
+    "persona": "frustrated",
+    "sign_up_date": "2023-07-11",
+    "products_owned": 5,
+    "lifetime_value": 8576
+  },
+  {
+    "customer_id": "CUST-973",
+    "persona": "neutral",
+    "sign_up_date": "2022-08-17",
+    "products_owned": 4,
+    "lifetime_value": 6013
+  },
+  {
+    "customer_id": "CUST-974",
+    "persona": "satisfied",
+    "sign_up_date": "2023-02-25",
+    "products_owned": 1,
+    "lifetime_value": 6139
+  },
+  {
+    "customer_id": "CUST-975",
+    "persona": "satisfied",
+    "sign_up_date": "2022-04-19",
+    "products_owned": 5,
+    "lifetime_value": 8026
+  },
+  {
+    "customer_id": "CUST-976",
+    "persona": "frustrated",
+    "sign_up_date": "2024-10-17",
+    "products_owned": 2,
+    "lifetime_value": 2426
+  },
+  {
+    "customer_id": "CUST-977",
+    "persona": "new",
+    "sign_up_date": "2023-02-04",
+    "products_owned": 1,
+    "lifetime_value": 9659
+  },
+  {
+    "customer_id": "CUST-978",
+    "persona": "new",
+    "sign_up_date": "2024-09-14",
+    "products_owned": 5,
+    "lifetime_value": 5280
+  },
+  {
+    "customer_id": "CUST-979",
+    "persona": "new",
+    "sign_up_date": "2022-12-24",
+    "products_owned": 1,
+    "lifetime_value": 8258
+  },
+  {
+    "customer_id": "CUST-980",
+    "persona": "satisfied",
+    "sign_up_date": "2024-04-21",
+    "products_owned": 1,
+    "lifetime_value": 4117
+  },
+  {
+    "customer_id": "CUST-981",
+    "persona": "new",
+    "sign_up_date": "2024-10-24",
+    "products_owned": 2,
+    "lifetime_value": 3368
+  },
+  {
+    "customer_id": "CUST-982",
+    "persona": "new",
+    "sign_up_date": "2024-09-20",
+    "products_owned": 2,
+    "lifetime_value": 3341
+  },
+  {
+    "customer_id": "CUST-983",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-05",
+    "products_owned": 5,
+    "lifetime_value": 3893
+  },
+  {
+    "customer_id": "CUST-984",
+    "persona": "frustrated",
+    "sign_up_date": "2024-12-17",
+    "products_owned": 1,
+    "lifetime_value": 1331
+  },
+  {
+    "customer_id": "CUST-985",
+    "persona": "new",
+    "sign_up_date": "2024-07-30",
+    "products_owned": 2,
+    "lifetime_value": 3412
+  },
+  {
+    "customer_id": "CUST-986",
+    "persona": "mixed",
+    "sign_up_date": "2024-01-07",
+    "products_owned": 5,
+    "lifetime_value": 8192
+  },
+  {
+    "customer_id": "CUST-987",
+    "persona": "frustrated",
+    "sign_up_date": "2024-02-26",
+    "products_owned": 1,
+    "lifetime_value": 8542
+  },
+  {
+    "customer_id": "CUST-988",
+    "persona": "mixed",
+    "sign_up_date": "2022-08-21",
+    "products_owned": 3,
+    "lifetime_value": 9960
+  },
+  {
+    "customer_id": "CUST-989",
+    "persona": "new",
+    "sign_up_date": "2023-03-15",
+    "products_owned": 1,
+    "lifetime_value": 5520
+  },
+  {
+    "customer_id": "CUST-990",
+    "persona": "satisfied",
+    "sign_up_date": "2022-11-26",
+    "products_owned": 1,
+    "lifetime_value": 6037
+  },
+  {
+    "customer_id": "CUST-991",
+    "persona": "neutral",
+    "sign_up_date": "2022-05-25",
+    "products_owned": 2,
+    "lifetime_value": 798
+  },
+  {
+    "customer_id": "CUST-992",
+    "persona": "neutral",
+    "sign_up_date": "2025-02-07",
+    "products_owned": 3,
+    "lifetime_value": 9904
+  },
+  {
+    "customer_id": "CUST-993",
+    "persona": "neutral",
+    "sign_up_date": "2024-07-03",
+    "products_owned": 3,
+    "lifetime_value": 8305
+  },
+  {
+    "customer_id": "CUST-994",
+    "persona": "satisfied",
+    "sign_up_date": "2023-09-29",
+    "products_owned": 3,
+    "lifetime_value": 1806
+  },
+  {
+    "customer_id": "CUST-995",
+    "persona": "frustrated",
+    "sign_up_date": "2023-06-18",
+    "products_owned": 5,
+    "lifetime_value": 9530
+  },
+  {
+    "customer_id": "CUST-996",
+    "persona": "mixed",
+    "sign_up_date": "2022-06-25",
+    "products_owned": 5,
+    "lifetime_value": 4951
+  },
+  {
+    "customer_id": "CUST-997",
+    "persona": "satisfied",
+    "sign_up_date": "2023-01-12",
+    "products_owned": 5,
+    "lifetime_value": 3963
+  },
+  {
+    "customer_id": "CUST-998",
+    "persona": "frustrated",
+    "sign_up_date": "2025-02-08",
+    "products_owned": 5,
+    "lifetime_value": 351
+  },
+  {
+    "customer_id": "CUST-999",
+    "persona": "satisfied",
+    "sign_up_date": "2025-02-23",
+    "products_owned": 2,
+    "lifetime_value": 7979
+  },
+  {
+    "customer_id": "CUST-1000",
+    "persona": "mixed",
+    "sign_up_date": "2023-06-07",
+    "products_owned": 1,
+    "lifetime_value": 2211
+  }
+]

@@ -1,0 +1,106 @@
+version: 2
+
+models:
+  - name: sentiment_analysis
+    description: "Combined sentiment analysis from all customer interactions. Aggregates sentiment scores from interactions, reviews, and support tickets."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - not_null
+      - name: interaction_date
+        description: "Timestamp of the interaction"
+        tests:
+          - not_null
+      - name: sentiment_score
+        description: "AI-generated sentiment score (-1 to 1)"
+        tests:
+          - not_null
+      - name: source_type
+        description: "Type of interaction (interaction, review, ticket)"
+        tests:
+          - not_null
+
+  - name: sentiment_trends
+    description: "Aggregated customer sentiment metrics including trends, volatility, and average sentiment scores."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+      - name: sentiment_history
+        description: "Array of sentiment scores over time"
+      - name: avg_sentiment
+        description: "Average sentiment score across all interactions"
+      - name: min_sentiment
+        description: "Lowest sentiment score recorded"
+      - name: max_sentiment
+        description: "Highest sentiment score recorded"
+      - name: sentiment_volatility
+        description: "Range between min and max sentiment scores"
+      - name: sentiment_trend
+        description: "Change in sentiment from first to last interaction"
+
+  - name: ticket_patterns
+    description: "Patterns and trends in customer support tickets including categorization and priority distribution."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+      - name: ticket_count
+        description: "Total number of support tickets"
+      - name: first_ticket_date
+        description: "Date of first support ticket"
+      - name: most_recent_ticket_date
+        description: "Date of most recent support ticket"
+      - name: ticket_categories
+        description: "Array of ticket categories in chronological order"
+      - name: ticket_priorities
+        description: "Array of ticket priorities in chronological order"
+
+  - name: insight_summaries
+    description: "AI-generated summaries of customer behavior and preferences for business insights."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+      - name: customer_summary
+        description: "AI-generated summary of customer interactions"
+
+  - name: customer_persona_signals
+    description: "Customer segmentation data with derived personas, churn risk, and upsell opportunity indicators."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+      - name: avg_sentiment
+        description: "Average sentiment score across all interactions"
+      - name: sentiment_trend
+        description: "Overall trend in sentiment over time"
+      - name: sentiment_volatility
+        description: "Variability in sentiment scores"
+      - name: overall_sentiment
+        description: "Categorized sentiment (Positive, Neutral, Negative)"
+      - name: ticket_count
+        description: "Total number of support tickets"
+      - name: ticket_categories
+        description: "Array of ticket categories"
+      - name: ticket_priorities
+        description: "Array of ticket priorities"
+      - name: avg_rating
+        description: "Average product review rating"
+      - name: customer_summary
+        description: "AI-generated summary of customer interactions"
+      - name: derived_persona
+        description: "AI-classified customer persona type"
+      - name: churn_risk
+        description: "Predicted risk of customer churn (High, Medium, Low)"
+      - name: upsell_opportunity
+        description: "Predicted opportunity for upselling (High, Medium, Low)" 

@@ -1,0 +1,40 @@
+name: 'dbt_cortex'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_cortex'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_packages"
+
+models:
+  dbt_cortex:
+    +database: DBT_CORTEX_LLMS
+    staging:
+      +schema: STAGE
+      +materialized: view
+    fact:
+      +schema: ANALYTICS
+      +materialized: table
+    analysis:
+      +schema: ANALYTICS
+      +materialized: table
+    semantic:
+      +schema: SEMANTIC_MODELS
+      +materialized: table
+
+vars:
+  dbt_cortex_database: DBT_CORTEX_LLMS
+  raw_schema: STAGE
+  analytics_schema: ANALYTICS
+  semantic_schema: SEMANTIC_MODELS
+  snowflake_warehouse: CORTEX_WH 

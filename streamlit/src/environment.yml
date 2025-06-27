@@ -1,0 +1,19 @@
+name: sf_env
+channels:
+  - snowflake
+dependencies:
+  - streamlit=1.44.1
+  - pandas
+  - numpy
+  - plotly
+  - altair
+  - seaborn
+  - python-dotenv
+  - pyarrow
+  - xlsxwriter
+  - matplotlib
+  - scipy
+  - snowflake-snowpark-python
+  # snowflake-connector-python and snowflake-snowpark-python are typically pre-installed.
+  # Verify availability of other packages like streamlit-extras, kaleido, joypy, etc., on the Snowflake Anaconda channel
+  # and add them here if needed and available. 

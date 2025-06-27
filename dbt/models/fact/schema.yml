@@ -1,0 +1,99 @@
+version: 2
+
+models:
+  - name: fact_customer_interactions
+    description: "Fact table for customer interactions with sentiment analysis. Enriches staging data with AI-generated sentiment scores."
+    columns:
+      - name: interaction_id
+        description: "Unique identifier for each customer interaction"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - not_null
+      - name: interaction_date
+        description: "Timestamp when the interaction occurred"
+        tests:
+          - not_null
+      - name: agent_id
+        description: "Unique identifier for the customer service agent"
+        tests:
+          - not_null
+      - name: interaction_type
+        description: "Type of customer interaction (e.g., call, email, chat)"
+        tests:
+          - not_null
+      - name: interaction_notes
+        description: "Detailed notes or transcript of the interaction"
+      - name: sentiment_score
+        description: "AI-generated sentiment score for the interaction (-1 to 1)"
+
+  - name: fact_product_reviews
+    description: "Fact table for product reviews with sentiment analysis and translations. Enriches staging data with AI-generated sentiment scores and English translations."
+    columns:
+      - name: review_id
+        description: "Unique identifier for each product review"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for the customer who wrote the review"
+        tests:
+          - not_null
+      - name: product_id
+        description: "Unique identifier for the reviewed product"
+        tests:
+          - not_null
+      - name: review_date
+        description: "Timestamp when the review was posted"
+        tests:
+          - not_null
+      - name: review_rating
+        description: "Numeric rating given by the customer (1-5)"
+        tests:
+          - not_null
+      - name: review_text
+        description: "Text content of the product review"
+      - name: review_language
+        description: "Language code of the review text"
+      - name: sentiment_score
+        description: "AI-generated sentiment score for the review (-1 to 1)"
+      - name: review_text_english
+        description: "English translation of the review text"
+
+  - name: fact_support_tickets
+    description: "Fact table for support tickets with sentiment analysis and priority classification. Enriches staging data with AI-generated sentiment scores, priority levels, and customer expectations."
+    columns:
+      - name: ticket_id
+        description: "Unique identifier for each support ticket"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for the customer who created the ticket"
+        tests:
+          - not_null
+      - name: ticket_date
+        description: "Timestamp when the ticket was created"
+        tests:
+          - not_null
+      - name: ticket_status
+        description: "Current status of the support ticket"
+        tests:
+          - not_null
+      - name: ticket_category
+        description: "Category classification of the support ticket"
+        tests:
+          - not_null
+      - name: ticket_description
+        description: "Detailed description of the support issue"
+      - name: sentiment_score
+        description: "AI-generated sentiment score for the ticket (-1 to 1)"
+      - name: priority_level
+        description: "AI-classified priority level (Critical, High, Medium, Low)"
+      - name: expected_resolution_timeframe
+        description: "AI-extracted customer expected resolution timeframe"
+      - name: requested_remedy
+        description: "AI-extracted customer requested compensation or remedy" 

@@ -1,0 +1,110 @@
+version: 2
+
+models:
+  - name: stg_customer_interactions
+    description: "Staging model for customer interactions. Extracts and standardizes customer interaction information from raw JSON data."
+    columns:
+      - name: interaction_id
+        description: "Unique identifier for each customer interaction"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - not_null
+      - name: interaction_date
+        description: "Timestamp when the interaction occurred"
+        tests:
+          - not_null
+      - name: agent_id
+        description: "Unique identifier for the customer service agent"
+        tests:
+          - not_null
+      - name: interaction_type
+        description: "Type of customer interaction (e.g., call, email, chat)"
+        tests:
+          - not_null
+      - name: interaction_notes
+        description: "Detailed notes or transcript of the interaction"
+
+  - name: stg_customers
+    description: "Staging model for customer data. Extracts and standardizes customer information from raw JSON data."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+      - name: persona
+        description: "Customer persona classification"
+        tests:
+          - not_null
+      - name: sign_up_date
+        description: "Date when the customer first registered"
+        tests:
+          - not_null
+      - name: products_owned
+        description: "Number of products owned by the customer"
+        tests:
+          - not_null
+      - name: lifetime_value
+        description: "Total lifetime value of the customer"
+        tests:
+          - not_null
+
+  - name: stg_product_reviews
+    description: "Staging model for product reviews. Extracts and standardizes product review information from raw JSON data."
+    columns:
+      - name: review_id
+        description: "Unique identifier for each product review"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for the customer who wrote the review"
+        tests:
+          - not_null
+      - name: product_id
+        description: "Unique identifier for the reviewed product"
+        tests:
+          - not_null
+      - name: review_date
+        description: "Timestamp when the review was posted"
+        tests:
+          - not_null
+      - name: review_rating
+        description: "Numeric rating given by the customer (1-5)"
+        tests:
+          - not_null
+      - name: review_text
+        description: "Text content of the product review"
+      - name: review_language
+        description: "Language code of the review text"
+
+  - name: stg_support_tickets
+    description: "Staging model for support tickets. Extracts and standardizes support ticket information from raw JSON data."
+    columns:
+      - name: ticket_id
+        description: "Unique identifier for each support ticket"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for the customer who created the ticket"
+        tests:
+          - not_null
+      - name: ticket_date
+        description: "Timestamp when the ticket was created"
+        tests:
+          - not_null
+      - name: ticket_status
+        description: "Current status of the support ticket"
+        tests:
+          - not_null
+      - name: ticket_category
+        description: "Category classification of the support ticket"
+        tests:
+          - not_null
+      - name: ticket_description
+        description: "Detailed description of the support issue" 

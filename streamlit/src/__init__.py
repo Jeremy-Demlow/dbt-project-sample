@@ -1,0 +1,3 @@
+"""
+Customer Analytics Dashboard package.
+""" 
