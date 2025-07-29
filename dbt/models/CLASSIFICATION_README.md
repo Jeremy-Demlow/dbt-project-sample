@@ -14,6 +14,7 @@ This project implements Snowflake data classification profiles using dbt macros 
 6. **Environment-Specific Configurations**: Different settings for dev vs. prod environments
 7. **Immediate Classification**: Option to trigger immediate classification of schemas
 8. **Job Monitoring**: Track classification jobs and retry failed ones
+9. **Model-Specific Monitoring**: Check if your dbt models are being classified
 
 ## Getting Started
 
@@ -128,7 +129,42 @@ dbt run-operation retry_failed_classifications
 
 This gives you the immediate feedback of SYSTEM$CLASSIFY_SCHEMA with the ongoing maintenance of classification profiles.
 
-### 3. Testing Without Executing (Dry Run)
+### 3. Model-Specific Classification Monitoring
+
+To check if your actual dbt models (not just schemas) are being classified:
+
+```bash
+# Check all dbt models in your project
+dbt run-operation check_model_classification_status
+
+# Check models grouped by schema
+dbt run-operation check_models_by_schema
+
+# Check a specific model by name
+dbt run-operation check_specific_model --args '{model_name: "stg_customer_pii"}'
+
+# Test auto-classification on a sample of models
+dbt run-operation test_model_auto_classification
+
+# Get a summary of classification coverage across all models
+dbt run-operation log_model_classification_summary
+```
+
+These macros access the dbt graph to identify your actual models and check if they're being classified, showing:
+- Which specific models have classifications
+- Which columns are classified and what categories were detected
+- Coverage percentage by schema
+- Recommendations for improving coverage
+
+You can add this macro to your on-run-end hooks to get classification statistics after every run:
+
+```yaml
+on-run-end:
+  - "{{ auto_deploy_semantic_views() }}"
+  - "{{ log_model_classification_summary() }}"
+```
+
+### 4. Testing Without Executing (Dry Run)
 
 If you want to see what SQL would be generated without actually executing it:
 
@@ -140,7 +176,7 @@ dbt run-operation dry_run_setup
 dbt run-operation immediate_classify_schemas --args '{dry_run: true}'
 ```
 
-### 4. Analyze Classification Coverage
+### 5. Analyze Classification Coverage
 
 After classification runs (either method), check the results:
 
@@ -164,6 +200,11 @@ dbt run-operation analyze_classification_coverage
 - `immediate_classify_schemas`: Triggers immediate classification of all schemas
 - `check_classification_queue`: Monitors recent classification jobs
 - `retry_failed_classifications`: Automatically retries failed classification jobs
+- `check_model_classification_status`: Checks classification of all dbt models
+- `check_models_by_schema`: Groups and checks models by schema
+- `check_specific_model`: Detailed check of a single model
+- `test_model_auto_classification`: Tests auto-classification on sample models
+- `log_model_classification_summary`: Summarizes model classification coverage
 
 ## Environment-Specific Profiles
 
@@ -201,6 +242,26 @@ The `check_classification_queue` macro provides:
 - Success rate percentage
 - Count of pending and failed jobs
 - Recommendations for next actions
+
+## Model Classification Monitoring
+
+To understand if your dbt models are being classified correctly:
+
+```bash
+# Get a comprehensive summary
+dbt run-operation log_model_classification_summary
+```
+
+The summary provides:
+- Overall percentage of models classified
+- Breakdown by schema with profile assignments
+- Visual indicators (🟢/🔴) showing if schemas have profiles
+- Recommendations based on your coverage level
+
+What to look for:
+- ✅ Models in schemas with assigned profiles should show classifications
+- ⏸️ "Not yet classified" is normal within the first hour
+- ❌ Errors might indicate permission issues or Enterprise Edition limitations
 
 ## Testing a Profile Before Applying
 
@@ -289,5 +350,6 @@ If classification isn't working as expected:
 7. **Try Immediate Classification**: Use `immediate_classify_schemas` if you need results quickly
 8. **Monitor Job Queue**: Use `check_classification_queue` to view job status
 9. **Retry Failed Jobs**: Use `retry_failed_classifications` for automatic recovery
+10. **Monitor Model Coverage**: Use `log_model_classification_summary` to check if models are classified
 
 For more information, see [Snowflake Classification Documentation](https://docs.snowflake.com/en/user-guide/classification) 

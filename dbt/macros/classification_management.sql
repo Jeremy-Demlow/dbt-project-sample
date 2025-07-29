@@ -30,23 +30,13 @@
             {% do log("Triggering immediate classification of schema: " ~ schema_to_try, info=true) %}
             {% do log("Options: auto_tag=true, sample_count=1000", info=true) %}
             
-            {% set classify_success = true %}
-            {% set classify_error = "" %}
-            
-            {% set classify_result = none %}
-            {% set error_message = none %}
-            
-            {% do dbt_utils.safe_run_query(
-              sql = classify_sql,
-              result_var_name = "classify_result",
-              error_message_var_name = "error_message"
-            ) %}
-            
-            {% if error_message != none %}
-              {% do log("❌ Classification failed for schema: " ~ schema_to_try ~ " - " ~ error_message, info=true) %}
-            {% else %}
+            {# Simple error handling - if it fails, dbt will show the error #}
+            {% set classify_result = run_query(classify_sql) %}
+            {% if classify_result and classify_result.rows | length > 0 %}
               {% do log("✅ Classification job submitted for schema: " ~ schema_to_try, info=true) %}
               {% do log("Result: " ~ classify_result.rows[0][0], info=true) %}
+            {% else %}
+              {% do log("⚠️ Classification may have failed for schema: " ~ schema_to_try, info=true) %}
             {% endif %}
           {% endif %}
         {% else %}
@@ -499,31 +489,36 @@
   {% if execute %}
     {% do log("📊 Checking recent classification jobs...", info=true) %}
     
-    {% set queue_sql %}
-      SELECT 
-        classification_name,
-        classification_status,
-        start_time,
-        end_time
-      FROM snowflake.account_usage.classification_history
-      WHERE start_time >= DATEADD(hour, -2, CURRENT_TIMESTAMP())
-      ORDER BY start_time DESC;
+    {# First check if the view exists #}
+    {% set view_check_sql %}
+      SELECT COUNT(*) 
+      FROM snowflake.information_schema.tables
+      WHERE table_schema = 'ACCOUNT_USAGE'
+      AND table_name = 'CLASSIFICATION_HISTORY';
     {% endset %}
     
-    {% set results = none %}
-    {% set error_message = none %}
+    {% set view_exists = false %}
+    {% set view_check_result = run_query(view_check_sql) %}
     
-    {% do dbt_utils.safe_run_query(
-      sql = queue_sql,
-      result_var_name = "results",
-      error_message_var_name = "error_message"
-    ) %}
+    {% if view_check_result and view_check_result.rows | length > 0 and view_check_result.rows[0][0] > 0 %}
+      {% set view_exists = true %}
+    {% endif %}
     
-    {% if error_message != none %}
-      {% do log("❌ Error accessing classification history: " ~ error_message, info=true) %}
-      {% do log("This may be due to permission restrictions or account edition limitations.", info=true) %}
-      {% do log("The snowflake.account_usage.classification_history view requires appropriate access rights.", info=true) %}
-    {% else %}
+    {% if view_exists %}
+      {# Try to query the classification history #}
+      {% set queue_sql %}
+        SELECT 
+          classification_name,
+          classification_status,
+          start_time,
+          end_time
+        FROM snowflake.account_usage.classification_history
+        WHERE start_time >= DATEADD(hour, -2, CURRENT_TIMESTAMP())
+        ORDER BY start_time DESC;
+      {% endset %}
+      
+      {% set results = run_query(queue_sql) %}
+      
       {% if results and results.rows | length > 0 %}
         {% do log("Recent classification jobs:", info=true) %}
         {% do results.print_table() %}
@@ -561,6 +556,13 @@
       {% else %}
         {% do log("No recent classification jobs found in the past 2 hours.", info=true) %}
       {% endif %}
+    {% else %}
+      {% do log("⚠️ The SNOWFLAKE.ACCOUNT_USAGE.CLASSIFICATION_HISTORY view is not accessible.", info=true) %}
+      {% do log("This could be because:", info=true) %}
+      {% do log("  1. You don't have Enterprise Edition features", info=true) %}
+      {% do log("  2. Your role doesn't have access to SNOWFLAKE.ACCOUNT_USAGE", info=true) %}
+      {% do log("  3. The CLASSIFICATION_HISTORY view doesn't exist in your Snowflake account", info=true) %}
+      {% do log("Try using 'check_classification_status' instead to check individual tables.", info=true) %}
     {% endif %}
   {% endif %}
 {% endmacro %}
@@ -569,28 +571,33 @@
   {% if execute %}
     {% do log("🔄 Identifying failed classification jobs...", info=true) %}
     
-    {% set failed_sql %}
-      SELECT DISTINCT 
-        REGEXP_SUBSTR(classification_name, '[^.]+\\.[^.]+$') as schema_name
-      FROM snowflake.account_usage.classification_history
-      WHERE classification_status = 'FAILED'
-      AND start_time >= DATEADD(hour, -24, CURRENT_TIMESTAMP());
+    {# First check if the view exists #}
+    {% set view_check_sql %}
+      SELECT COUNT(*) 
+      FROM snowflake.information_schema.tables
+      WHERE table_schema = 'ACCOUNT_USAGE'
+      AND table_name = 'CLASSIFICATION_HISTORY';
     {% endset %}
     
-    {% set failed_schemas = none %}
-    {% set error_message = none %}
+    {% set view_exists = false %}
+    {% set view_check_result = run_query(view_check_sql) %}
     
-    {% do dbt_utils.safe_run_query(
-      sql = failed_sql,
-      result_var_name = "failed_schemas",
-      error_message_var_name = "error_message"
-    ) %}
+    {% if view_check_result and view_check_result.rows | length > 0 and view_check_result.rows[0][0] > 0 %}
+      {% set view_exists = true %}
+    {% endif %}
     
-    {% if error_message != none %}
-      {% do log("❌ Error accessing classification history: " ~ error_message, info=true) %}
-      {% do log("This may be due to permission restrictions or account edition limitations.", info=true) %}
-      {% do log("The snowflake.account_usage.classification_history view requires appropriate access rights.", info=true) %}
-    {% else %}
+    {% if view_exists %}
+      {# Check for failed classifications #}
+      {% set failed_sql %}
+        SELECT DISTINCT 
+          REGEXP_SUBSTR(classification_name, '[^.]+\\.[^.]+$') as schema_name
+        FROM snowflake.account_usage.classification_history
+        WHERE classification_status = 'FAILED'
+        AND start_time >= DATEADD(hour, -24, CURRENT_TIMESTAMP());
+      {% endset %}
+      
+      {% set failed_schemas = run_query(failed_sql) %}
+      
       {% if failed_schemas and failed_schemas.rows | length > 0 %}
         {% do log("Found " ~ failed_schemas.rows | length ~ " failed schema classifications to retry.", info=true) %}
         
@@ -602,25 +609,23 @@
             CALL SYSTEM$CLASSIFY_SCHEMA('{{ schema_name }}', {'auto_tag': true, 'sample_count': 1000});
           {% endset %}
           
-          {% set retry_result = none %}
-          {% set retry_error = none %}
-          
-          {% do dbt_utils.safe_run_query(
-            sql = classify_sql,
-            result_var_name = "retry_result",
-            error_message_var_name = "retry_error"
-          ) %}
-          
-          {% if retry_error != none %}
-            {% do log("❌ Retry failed for schema: " ~ schema_name ~ " - " ~ retry_error, info=true) %}
-          {% else %}
+          {% set retry_result = run_query(classify_sql) %}
+          {% if retry_result and retry_result.rows | length > 0 %}
             {% do log("✅ Retry job submitted for schema: " ~ schema_name, info=true) %}
             {% do log("Result: " ~ retry_result.rows[0][0], info=true) %}
+          {% else %}
+            {% do log("⚠️ Retry may have failed for schema: " ~ schema_name, info=true) %}
           {% endif %}
         {% endfor %}
       {% else %}
         {% do log("No failed classification jobs found in the past 24 hours.", info=true) %}
       {% endif %}
+    {% else %}
+      {% do log("⚠️ The SNOWFLAKE.ACCOUNT_USAGE.CLASSIFICATION_HISTORY view is not accessible.", info=true) %}
+      {% do log("This could be because:", info=true) %}
+      {% do log("  1. You don't have Enterprise Edition features", info=true) %}
+      {% do log("  2. Your role doesn't have access to SNOWFLAKE.ACCOUNT_USAGE", info=true) %}
+      {% do log("  3. The CLASSIFICATION_HISTORY view doesn't exist in your Snowflake account", info=true) %}
     {% endif %}
   {% endif %}
 {% endmacro %}

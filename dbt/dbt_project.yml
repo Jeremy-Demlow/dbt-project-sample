@@ -141,6 +141,7 @@ vars:
     # Dedicated PII schemas
     RAW_PII: "basic_pii_profile"
     SENSITIVE_DATA: "comprehensive_profile"
+    ANALYTICS_RAW_PII: "basic_pii_profile"
     
     # Standard schemas
     RAW: "standard_profile"

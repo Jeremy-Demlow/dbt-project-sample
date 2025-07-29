@@ -9,39 +9,30 @@
         {% set model_name = node.name %}
         {% set full_table_name = target.database ~ '.' ~ model_schema ~ '.' ~ model_name %}
         
-        {# Check if this table has been classified #}
-        {% set classification_check_sql %}
-          SELECT 
-            table_name,
-            column_name,
-            semantic_category,
-            privacy_category,
-            classification_confidence
-          FROM snowflake.account_usage.data_classification_latest
-          WHERE table_database = '{{ target.database }}'
-          AND table_schema = '{{ model_schema }}'
-          AND table_name = '{{ model_name }}'
-          AND semantic_category IS NOT NULL;
+        {# Check if table exists #}
+        {% set table_exists_sql %}
+          SELECT COUNT(*) FROM {{ target.database }}.information_schema.tables
+          WHERE table_schema = '{{ model_schema }}'
+          AND table_name = '{{ model_name }}';
         {% endset %}
         
-        {% set error_message = none %}
-        {% set results = none %}
-        
-        {% do dbt_utils.safe_run_query(
-          sql = classification_check_sql,
-          result_var_name = "results",
-          error_message_var_name = "error_message"
-        ) %}
-        
-        {% if error_message != none %}
-          {% do log("❌ Error checking " ~ full_table_name ~ ": " ~ error_message, info=true) %}
-        {% elif results and results.rows | length > 0 %}
-          {% do log("✅ " ~ full_table_name ~ " - CLASSIFIED", info=true) %}
-          {% for row in results %}
-            {% do log("    Column: " ~ row[1] ~ " → " ~ row[2] ~ " (" ~ row[3] ~ ")", info=true) %}
-          {% endfor %}
+        {% set exists_result = run_query(table_exists_sql) %}
+        {% if exists_result and exists_result.rows | length > 0 and exists_result.rows[0][0] > 0 %}
+          {# Table exists, check classification #}
+          {% set classification_sql %}
+            CALL SYSTEM$GET_CLASSIFICATION_RESULT('{{ full_table_name }}');
+          {% endset %}
+          
+          {% set results = run_query(classification_sql) %}
+          
+          {% if results and results.rows | length > 0 %}
+            {% do log("✅ " ~ full_table_name ~ " - CLASSIFIED", info=true) %}
+            {% do results.print_table() %}
+          {% else %}
+            {% do log("⏸️  " ~ full_table_name ~ " - NOT YET CLASSIFIED", info=true) %}
+          {% endif %}
         {% else %}
-          {% do log("⏸️  " ~ full_table_name ~ " - NOT YET CLASSIFIED", info=true) %}
+          {% do log("⚠️  " ~ full_table_name ~ " - TABLE DOES NOT EXIST", info=true) %}
         {% endif %}
       {% endif %}
     {% endfor %}
@@ -68,37 +59,43 @@
       {% do log("📊 Schema: " ~ schema ~ " (Profile: " ~ var('schema_classification_profiles', {}).get(schema, 'NONE') ~ ")", info=true) %}
       
       {% if models | length > 0 %}
-        {% set schema_classification_sql %}
-          SELECT 
-            table_name,
-            COUNT(DISTINCT column_name) as classified_columns,
-            LISTAGG(DISTINCT semantic_category, ', ') as categories
-          FROM snowflake.account_usage.data_classification_latest
-          WHERE table_database = '{{ target.database }}'
-          AND table_schema = '{{ schema }}'
-          AND table_name IN ('{{ models | join("', '") }}')
-          AND semantic_category IS NOT NULL
-          GROUP BY table_name;
-        {% endset %}
-        
-        {% set error_message = none %}
-        {% set results = none %}
-        
-        {% do dbt_utils.safe_run_query(
-          sql = schema_classification_sql,
-          result_var_name = "results",
-          error_message_var_name = "error_message"
-        ) %}
-        
-        {% if error_message != none %}
-          {% do log("❌ Error checking schema " ~ schema ~ ": " ~ error_message, info=true) %}
-        {% elif results and results.rows | length > 0 %}
-          {% for row in results %}
-            {% do log("  ✅ " ~ row[0] ~ " - " ~ row[1] ~ " classified columns (" ~ row[2] ~ ")", info=true) %}
-          {% endfor %}
-        {% else %}
-          {% do log("  ⏸️  No models classified yet in this schema", info=true) %}
-        {% endif %}
+        {% for model_name in models %}
+          {# Check if table exists #}
+          {% set table_exists_sql %}
+            SELECT COUNT(*) FROM {{ target.database }}.information_schema.tables
+            WHERE table_schema = '{{ schema }}'
+            AND table_name = '{{ model_name }}';
+          {% endset %}
+          
+          {% set exists_result = run_query(table_exists_sql) %}
+          {% if exists_result and exists_result.rows | length > 0 and exists_result.rows[0][0] > 0 %}
+            {% set full_table = target.database ~ '.' ~ schema ~ '.' ~ model_name %}
+            {% set classification_sql %}
+              CALL SYSTEM$GET_CLASSIFICATION_RESULT('{{ full_table }}');
+            {% endset %}
+            
+            {% set results = run_query(classification_sql) %}
+            
+            {% if results and results.rows | length > 0 %}
+              {% set json_text = results.rows[0][0] %}
+              {% if json_text %}
+                {% set json_result = fromjson(json_text) %}
+                {% if json_result is mapping and json_result.get('classification_results') is sequence and json_result.get('classification_results') | length > 0 %}
+                  {% set count = json_result.get('classification_results') | length %}
+                  {% do log("  ✅ " ~ model_name ~ " - " ~ count ~ " classified columns", info=true) %}
+                {% else %}
+                  {% do log("  ⏸️  " ~ model_name ~ " - No classifications yet", info=true) %}
+                {% endif %}
+              {% else %}
+                {% do log("  ⏸️  " ~ model_name ~ " - No results available", info=true) %}
+              {% endif %}
+            {% else %}
+              {% do log("  ⏸️  " ~ model_name ~ " - No results available", info=true) %}
+            {% endif %}
+          {% else %}
+            {% do log("  ⚠️  " ~ model_name ~ " - Table does not exist", info=true) %}
+          {% endif %}
+        {% endfor %}
       {% else %}
         {% do log("  ⚠️ No models found in this schema", info=true) %}
       {% endif %}
@@ -118,7 +115,7 @@
     
     {% if not model_node %}
       {% do log("❌ Model not found: " ~ model_name, info=true) %}
-      {% return %}
+      {% do return(none) %}
     {% endif %}
     
     {% set model_schema = model_node.schema %}
@@ -134,23 +131,11 @@
       AND table_name = '{{ model_name }}';
     {% endset %}
     
-    {% set error_message = none %}
-    {% set exists_result = none %}
-    
-    {% do dbt_utils.safe_run_query(
-      sql = table_exists_sql,
-      result_var_name = "exists_result",
-      error_message_var_name = "error_message"
-    ) %}
-    
-    {% if error_message != none %}
-      {% do log("❌ Error checking table existence: " ~ error_message, info=true) %}
-      {% return %}
-    {% endif %}
+    {% set exists_result = run_query(table_exists_sql) %}
     
     {% if exists_result.rows[0][0] == 0 %}
       {% do log("❌ Table does not exist. Run 'dbt run --select " ~ model_name ~ "' first.", info=true) %}
-      {% return %}
+      {% do return(none) %}
     {% endif %}
     
     {# Check detailed classification with SYSTEM$GET_CLASSIFICATION_RESULT #}
@@ -158,56 +143,18 @@
       CALL SYSTEM$GET_CLASSIFICATION_RESULT('{{ full_table }}');
     {% endset %}
     
-    {% set error_message = none %}
-    {% set detailed_results = none %}
+    {% do log("Checking detailed classification results...", info=true) %}
+    {% set detailed_results = run_query(classification_sql) %}
     
-    {% do dbt_utils.safe_run_query(
-      sql = classification_sql,
-      result_var_name = "detailed_results",
-      error_message_var_name = "error_message"
-    ) %}
-    
-    {% if error_message != none %}
-      {% do log("❓ No detailed classification results available via SYSTEM$GET_CLASSIFICATION_RESULT", info=true) %}
-    {% elif detailed_results and detailed_results.rows | length > 0 %}
+    {% if detailed_results and detailed_results.rows | length > 0 %}
       {% do log("Detailed classification result:", info=true) %}
       {% do detailed_results.print_table() %}
     {% else %}
       {% do log("No detailed classification results found.", info=true) %}
-    {% endif %}
-    
-    {# Check classification using account_usage view #}
-    {% set account_usage_sql %}
-      SELECT 
-        column_name,
-        semantic_category,
-        privacy_category,
-        classification_confidence
-      FROM snowflake.account_usage.data_classification_latest
-      WHERE table_database = '{{ target.database }}'
-      AND table_schema = '{{ model_schema }}'
-      AND table_name = '{{ model_name }}'
-      AND semantic_category IS NOT NULL
-      ORDER BY classification_confidence DESC;
-    {% endset %}
-    
-    {% set error_message = none %}
-    {% set results = none %}
-    
-    {% do dbt_utils.safe_run_query(
-      sql = account_usage_sql,
-      result_var_name = "results",
-      error_message_var_name = "error_message"
-    ) %}
-    
-    {% if error_message != none %}
-      {% do log("❌ Error checking account_usage.data_classification_latest: " ~ error_message, info=true) %}
-    {% elif results and results.rows | length > 0 %}
-      {% do log("Account usage classification results:", info=true) %}
-      {% do results.print_table() %}
-    {% else %}
-      {% do log("No classification data found in account_usage.data_classification_latest", info=true) %}
-      {% do log("This typically means auto-classification hasn't completed yet (can take 1+ hour)", info=true) %}
+      {% do log("This could mean:", info=true) %}
+      {% do log("  - Classification hasn't run yet (wait 1+ hour after setup)", info=true) %}
+      {% do log("  - No sensitive data detected in this model", info=true) %}
+      {% do log("  - Schema doesn't have a classification profile assigned", info=true) %}
     {% endif %}
   {% endif %}
 {% endmacro %}
@@ -224,6 +171,7 @@
       {% if node.resource_type == 'model' %}
         {% set node_schema = node.schema %}
         {% set schema_in_profiles = false %}
+        {% set profile = 'unknown' %}
         
         {# Check if this schema or any variation is in schema_profiles #}
         {% for schema in schema_profiles.keys() %}
@@ -248,60 +196,65 @@
     
     {% if test_models | length == 0 %}
       {% do log("❌ No models found in classified schemas", info=true) %}
-      {% return %}
+      {% do return(none) %}
     {% endif %}
     
     {% for model in test_models %}
-      {% set full_table = target.database ~ '.' ~ model.schema ~ '.' ~ model.name %}
-      
-      {% do log("Testing: " ~ full_table ~ " (Profile: " ~ model.profile ~ ")", info=true) %}
-      
-      {# Check if it has been auto-classified #}
-      {% set auto_check_sql %}
-        SELECT COUNT(*) as classified_columns
-        FROM snowflake.account_usage.data_classification_latest
-        WHERE table_database = '{{ target.database }}'
-        AND table_schema = '{{ model.schema }}'
-        AND table_name = '{{ model.name }}'
-        AND semantic_category IS NOT NULL;
+      {# Check if table exists #}
+      {% set table_exists_sql %}
+        SELECT COUNT(*) FROM {{ target.database }}.information_schema.tables
+        WHERE table_schema = '{{ model.schema }}'
+        AND table_name = '{{ model.name }}';
       {% endset %}
       
-      {% set error_message = none %}
-      {% set auto_result = none %}
-      
-      {% do dbt_utils.safe_run_query(
-        sql = auto_check_sql,
-        result_var_name = "auto_result",
-        error_message_var_name = "error_message"
-      ) %}
-      
-      {% if error_message != none %}
-        {% do log("  ❌ Error checking auto-classification: " ~ error_message, info=true) %}
-      {% elif auto_result and auto_result.rows | length > 0 and auto_result.rows[0][0] > 0 %}
-        {% do log("  ✅ Auto-classified: " ~ auto_result.rows[0][0] ~ " columns", info=true) %}
-      {% else %}
-        {% do log("  ⏸️  Not yet auto-classified (may need more time)", info=true) %}
+      {% set exists_result = run_query(table_exists_sql) %}
+      {% if exists_result and exists_result.rows | length > 0 and exists_result.rows[0][0] > 0 %}
+        {% set full_table = target.database ~ '.' ~ model.schema ~ '.' ~ model.name %}
         
-        {# Try immediate classification for this model #}
-        {% do log("  🚀 Triggering immediate classification for testing...", info=true) %}
-        {% set immediate_sql %}
-          CALL SYSTEM$CLASSIFY('{{ full_table }}', '{{ target.database }}.governance.{{ model.profile }}');
+        {% do log("Testing: " ~ full_table ~ " (Profile: " ~ model.profile ~ ")", info=true) %}
+        
+        {# Check if it has been auto-classified using SYSTEM$GET_CLASSIFICATION_RESULT #}
+        {% set classification_sql %}
+          CALL SYSTEM$GET_CLASSIFICATION_RESULT('{{ full_table }}');
         {% endset %}
         
-        {% set classify_error = none %}
-        {% set classify_result = none %}
+        {% set classify_result = run_query(classification_sql) %}
         
-        {% do dbt_utils.safe_run_query(
-          sql = immediate_sql,
-          result_var_name = "classify_result",
-          error_message_var_name = "classify_error"
-        ) %}
-        
-        {% if classify_error != none %}
-          {% do log("  ❌ Immediate classification failed: " ~ classify_error, info=true) %}
+        {% if classify_result and classify_result.rows | length > 0 %}
+          {% set json_text = classify_result.rows[0][0] %}
+          {% if json_text %}
+            {% set json_result = fromjson(json_text) %}
+            {% if json_result is mapping and json_result.get('classification_results') is sequence and json_result.get('classification_results') | length > 0 %}
+              {% set count = json_result.get('classification_results') | length %}
+              {% do log("  ✅ Auto-classified: " ~ count ~ " columns", info=true) %}
+            {% else %}
+              {% do log("  ⏸️  Not yet auto-classified (may need more time)", info=true) %}
+              {% do log("  🚀 Triggering immediate classification for testing...", info=true) %}
+              
+              {% set immediate_sql %}
+                CALL SYSTEM$CLASSIFY('{{ full_table }}', '{{ target.database }}.governance.{{ model.profile }}');
+              {% endset %}
+              
+              {% set classify_result = run_query(immediate_sql) %}
+              {% do log("  🔄 Immediate classification triggered, check results in a few minutes", info=true) %}
+            {% endif %}
+          {% else %}
+            {% do log("  ⏸️  Not yet classified (may need more time)", info=true) %}
+          {% endif %}
         {% else %}
+          {% do log("  ⏸️  Not yet classified (may need more time)", info=true) %}
+          
+          {% do log("  🚀 Triggering immediate classification...", info=true) %}
+          {% set immediate_sql %}
+            CALL SYSTEM$CLASSIFY('{{ full_table }}', '{{ target.database }}.governance.{{ model.profile }}');
+          {% endset %}
+          
+          {% set classify_result = run_query(immediate_sql) %}
           {% do log("  🔄 Immediate classification triggered, check results in a few minutes", info=true) %}
         {% endif %}
+      {% else %}
+        {% do log("⚠️ Table does not exist for model: " ~ model.name, info=true) %}
+        {% do log("Run 'dbt run --select " ~ model.name ~ "' to create the table first.", info=true) %}
       {% endif %}
     {% endfor %}
   {% endif %}
@@ -320,6 +273,7 @@
       {% if node.resource_type == 'model' %}
         {% set total_models = total_models + 1 %}
         {% set node_schema = node.schema %}
+        {% set model_name = node.name %}
         
         {# Initialize schema in coverage dict if needed #}
         {% if node_schema not in schema_coverage %}
@@ -329,27 +283,38 @@
         {# Increment schema total #}
         {% do schema_coverage[node_schema].update({'total': schema_coverage[node_schema]['total'] + 1}) %}
         
-        {# Check if classified #}
+        {# Check if the model exists first #}
         {% set check_sql %}
-          SELECT COUNT(*) FROM snowflake.account_usage.data_classification_latest
-          WHERE table_database = '{{ target.database }}'
-          AND table_schema = '{{ node_schema }}'
-          AND table_name = '{{ node.name }}'
-          AND semantic_category IS NOT NULL;
+          SELECT COUNT(*) FROM {{ target.database }}.information_schema.tables
+          WHERE table_schema = '{{ node_schema }}'
+          AND table_name = '{{ model_name }}';
         {% endset %}
         
-        {% set error_message = none %}
-        {% set result = none %}
-        
-        {% do dbt_utils.safe_run_query(
-          sql = check_sql,
-          result_var_name = "result",
-          error_message_var_name = "error_message"
-        ) %}
-        
-        {% if not error_message and result and result.rows[0][0] > 0 %}
-          {% set classified_models = classified_models + 1 %}
-          {% do schema_coverage[node_schema].update({'classified': schema_coverage[node_schema]['classified'] + 1}) %}
+        {% set check_result = run_query(check_sql) %}
+        {% if check_result and check_result.rows | length > 0 and check_result.rows[0][0] > 0 %}
+          {# Check if classified with SYSTEM$GET_CLASSIFICATION_RESULT #}
+          {% set full_table = target.database ~ '.' ~ node_schema ~ '.' ~ model_name %}
+          {% set classification_sql %}
+            CALL SYSTEM$GET_CLASSIFICATION_RESULT('{{ full_table }}');
+          {% endset %}
+          
+          {% set is_classified = false %}
+          {% set result = run_query(classification_sql) %}
+          
+          {% if result and result.rows | length > 0 %}
+            {% set json_text = result.rows[0][0] %}
+            {% if json_text %}
+              {% set json_result = fromjson(json_text) %}
+              {% if json_result is mapping and json_result.get('classification_results') is sequence and json_result.get('classification_results') | length > 0 %}
+                {% set is_classified = true %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+          
+          {% if is_classified %}
+            {% set classified_models = classified_models + 1 %}
+            {% do schema_coverage[node_schema].update({'classified': schema_coverage[node_schema]['classified'] + 1}) %}
+          {% endif %}
         {% endif %}
       {% endif %}
     {% endfor %}
