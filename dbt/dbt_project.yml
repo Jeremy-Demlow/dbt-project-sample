@@ -20,7 +20,7 @@ models:
   dbt_cortex:
     +database: DBT_CORTEX_LLMS
     staging:
-      +schema: STAGE
+      +schema: RAW
       +materialized: view
     fact:
       +schema: ANALYTICS
@@ -31,10 +31,63 @@ models:
     semantic:
       +schema: SEMANTIC_MODELS
       +materialized: table
+    # New schemas for PII classification
+    staging_pii:
+      +schema: RAW_PII
+      +materialized: table
+    marts_sensitive:
+      +schema: SENSITIVE_DATA
+      +materialized: table
 
 vars:
   dbt_cortex_database: DBT_CORTEX_LLMS
-  raw_schema: STAGE
+  raw_schema: RAW
   analytics_schema: ANALYTICS
   semantic_schema: SEMANTIC_MODELS
-  snowflake_warehouse: CORTEX_WH 
+  snowflake_warehouse: CORTEX_WH
+  
+  # Classification tags definition
+  classification_tags:
+    pii_tag:
+      comment: 'Tag for PII data classification'
+  
+  # Classification profile definitions
+  classification_profiles:
+    basic_pii_profile:
+      minimum_object_age_for_classification_days: 1
+      maximum_classification_validity_days: 30
+      auto_tag: true
+    
+    comprehensive_profile:
+      minimum_object_age_for_classification_days: 0
+      maximum_classification_validity_days: 7
+      auto_tag: true
+      tag_map:
+        column_tag_map:
+          - tag_name: "DBT_CORTEX_LLMS.governance.pii_tag"
+            tag_value: "sensitive"
+            semantic_categories: ["NAME", "EMAIL"]
+          - tag_name: "DBT_CORTEX_LLMS.governance.pii_tag"
+            tag_value: "highly_sensitive"
+            semantic_categories: ["NATIONAL_IDENTIFIER", "CREDIT_CARD", "PASSWORD"]
+  
+  # Example custom classifiers 
+  # Note: These need to be created in Snowflake first before they can be used
+  custom_classifiers:
+    comprehensive_profile:
+      medical_codes: >
+        {
+          "pattern": "\\b[A-Z]\\d{2}(\\.\\d+)?\\b", 
+          "semantic_category": "ICD_10_CODE",
+          "privacy_category": "QUASI_IDENTIFIER"
+        }
+  
+  # Schema to profile mapping
+  schema_classification_profiles:
+    RAW_PII: "basic_pii_profile"
+    SENSITIVE_DATA: "comprehensive_profile"
+
+on-run-end:
+  - "{{ auto_deploy_semantic_views() }}"
+  # Uncomment to apply classification profiles on each run
+  # - "{{ assign_classification_profiles() }}" 

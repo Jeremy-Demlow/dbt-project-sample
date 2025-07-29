@@ -5,8 +5,8 @@
     {%- if custom_schema_name is none -%}
         {{ default_schema }}
     {%- else -%}
-        {%- if custom_schema_name == 'STAGE' -%}
-            STAGE
+        {%- if custom_schema_name == 'RAW' -%}
+            RAW
         {%- elif custom_schema_name == 'ANALYTICS' -%}
             ANALYTICS
         {%- elif custom_schema_name == 'SEMANTIC_MODELS' -%}

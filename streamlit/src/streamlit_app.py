@@ -84,19 +84,54 @@ with st.sidebar:
     st.markdown("<div style='text-align: center; margin-bottom: 0;'><h4>Powered by</h4></div>", unsafe_allow_html=True)
     
     # Create logo container with links
-    st.markdown("""
-        <div class="logo-container" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-            <a href="https://www.snowflake.com" target="_blank" class="logo-link">
-                <img src="data:image/png;base64,{}" alt="Snowflake">
-            </a>
-            <a href="https://www.getdbt.com" target="_blank" class="logo-link">
-                <img src="data:image/svg+xml;base64,{}" alt="dbt">
-            </a>
-        </div>
-    """.format(
-        base64.b64encode(open("assets/snowflake-logo.png", "rb").read()).decode(),
-        base64.b64encode(open("assets/dbt-labs-signature_tm_light.svg" if st.session_state.theme['dark_mode'] else "assets/dbt-labs-logo.svg", "rb").read()).decode()
-    ), unsafe_allow_html=True)
+    try:
+        import os
+        # Get the directory of the current file
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        assets_dir = os.path.join(current_dir, "assets")
+        
+        # Load images safely
+        snowflake_logo_path = os.path.join(assets_dir, "snowflake-logo.png")
+        dbt_logo_path = os.path.join(assets_dir, "dbt-labs-signature_tm_light.svg" if st.session_state.theme['dark_mode'] else "dbt-labs-logo.svg")
+        
+        snowflake_b64 = ""
+        dbt_b64 = ""
+        
+        if os.path.exists(snowflake_logo_path):
+            with open(snowflake_logo_path, "rb") as f:
+                snowflake_b64 = base64.b64encode(f.read()).decode()
+        
+        if os.path.exists(dbt_logo_path):
+            with open(dbt_logo_path, "rb") as f:
+                dbt_b64 = base64.b64encode(f.read()).decode()
+        
+        st.markdown("""
+            <div class="logo-container" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <a href="https://www.snowflake.com" target="_blank" class="logo-link">
+                    <img src="data:image/png;base64,{}" alt="Snowflake" style="max-width: 120px;">
+                </a>
+                <a href="https://www.getdbt.com" target="_blank" class="logo-link">
+                    <img src="data:image/svg+xml;base64,{}" alt="dbt" style="max-width: 120px;">
+                </a>
+            </div>
+        """.format(snowflake_b64, dbt_b64), unsafe_allow_html=True)
+        
+    except Exception as e:
+        # Fallback: Show text-based logos if images fail to load
+        st.markdown("""
+            <div class="logo-container" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <a href="https://www.snowflake.com" target="_blank" style="text-decoration: none;">
+                    <div style="font-size: 1.2em; font-weight: bold; color: #29B5E8;">❄️ Snowflake</div>
+                </a>
+                <a href="https://www.getdbt.com" target="_blank" style="text-decoration: none;">
+                    <div style="font-size: 1.2em; font-weight: bold; color: #FF694B;">🔧 dbt</div>
+                </a>
+            </div>
+        """, unsafe_allow_html=True)
+        
+        # Log the error if debug mode is enabled
+        if st.session_state.debug['enabled']:
+            st.error(f"Logo loading error: {str(e)}")
 
 # Add spacing before tabs
 st.markdown('<div style="margin: var(--space-md) 0;"></div>', unsafe_allow_html=True)

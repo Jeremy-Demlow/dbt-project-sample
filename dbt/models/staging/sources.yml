@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: raw
     database: DBT_CORTEX_LLMS
-    schema: STAGE
+    schema: RAW
     tables:
       - name: customer_interactions
         description: "Raw customer interactions data in JSON format"

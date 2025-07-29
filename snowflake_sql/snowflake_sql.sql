@@ -81,16 +81,16 @@ CREATE OR REPLACE FILE FORMAT RAW.JSON_FORMAT
 CREATE OR REPLACE STAGE RAW.RAW_DATA_STAGE;
 
 -- Upload customer interactions
-PUT file://data/customer_interactions.json @RAW.RAW_DATA_STAGE;
+PUT file://data/samples/1000_Customers/customer_interactions.json @RAW.RAW_DATA_STAGE;
 
 -- Upload product reviews
-PUT file://data/product_reviews.json @RAW.RAW_DATA_STAGE;
+PUT file://data/samples/1000_Customers/product_reviews.json @RAW.RAW_DATA_STAGE;
 
 -- Upload support tickets
-PUT file://data/support_tickets.json @RAW.RAW_DATA_STAGE;
+PUT file://data/samples/1000_Customers/support_tickets.json @RAW.RAW_DATA_STAGE;
 
 -- Upload customers
-PUT file://data/customers.json @RAW.RAW_DATA_STAGE;
+PUT file://data/samples/1000_Customers/customers.json @RAW.RAW_DATA_STAGE;
 
 -- 🎯 Raw Data Tables - The foundation of our data castle
 CREATE OR REPLACE TRANSIENT TABLE RAW.CUSTOMER_INTERACTIONS (data VARIANT);

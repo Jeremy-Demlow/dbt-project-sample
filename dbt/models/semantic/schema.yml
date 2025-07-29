@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: customer_intelligence_semantic_view
+    description: "Comprehensive semantic view for customer intelligence analytics, enabling natural language queries through Cortex Analyst about customer behavior, sentiment, support issues, and business opportunities. This is deployed using the deploy_semantic_view macro."
+    
+    meta:
+      semantic_view: true
+      cortex_analyst_enabled: true
+      business_domain: customer_analytics
+      deployment_method: macro
+    
+    # Note: Semantic views don't have traditional columns like regular tables
+    # Instead, they define logical business entities (tables), relationships, facts, dimensions, and metrics
+    
+  - name: test_semantic_view
+    description: "Test queries for validating the customer intelligence semantic view functionality."
+    config:
+      materialized: ephemeral
+    
+    meta:
+      test_model: true 

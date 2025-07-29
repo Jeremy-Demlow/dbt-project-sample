@@ -1,23 +1,31 @@
-streamlit>=1.33
+# Core Streamlit and Snowflake packages
+streamlit
 snowflake-connector-python
 snowflake-snowpark-python
+
+# Data processing
 pandas
 numpy
+pyarrow<19.0.0
+
+# Visualization
 plotly>=5
 altair>=5
-seaborn
-streamlit-extras
-python-dotenv==1.0.1
-pyarrow<19.0.0
-xlsxwriter
-altair
-kaleido>=0.2.1
-joypy
-pywaffle
-bar_chart_race
-streamlit-lottie
-pydeck
 matplotlib
-plotly
+seaborn
+
+# Utilities
+python-dotenv==1.0.1
+xlsxwriter
 scipy
 scikit-learn
+
+# Optional packages (may not be available in Snowflake environment)
+# Uncomment if needed and available in Snowflake Anaconda channel
+# streamlit-extras
+# kaleido>=0.2.1
+# joypy
+# pywaffle
+# bar_chart_race
+# streamlit-lottie
+# pydeck

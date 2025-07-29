@@ -154,6 +154,7 @@ checklink/cookies.txt
 /_spark_test_output/
 config.yml
 .streamlit/
+streamlit/output/*
 
 spcs-deploy.sh
 setup.sql

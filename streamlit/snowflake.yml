@@ -1,0 +1,28 @@
+definition_version: 2
+entities:
+  customer_intelligence_hub:
+    type: streamlit
+    identifier: customer_intelligence_hub
+    stage: streamlit_app_stage
+    query_warehouse: CORTEX_WH
+    main_file: streamlit_app.py
+    title: "Customer Intelligence Hub"
+    comment: "Comprehensive customer analytics dashboard with sentiment analysis, segmentation, and Cortex Analyst integration"
+    artifacts:
+      # Main application files
+      - src/streamlit_app.py
+      - src/__init__.py
+      - src/environment.yml
+      - src/requirements.txt
+      
+      # Components directory - all component files
+      - src/components/
+      
+      # Utils directory - all utility files  
+      - src/utils/
+      
+      # SQL directory - all SQL query files
+      - src/sql/
+      
+      # Assets directory - all static files
+      - src/assets/ 
