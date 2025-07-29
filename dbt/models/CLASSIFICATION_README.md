@@ -185,6 +185,48 @@ After classification runs (either method), check the results:
 dbt run-operation analyze_classification_coverage
 ```
 
+## Enhanced Workflow
+
+## Quick Verification Test Plan
+
+Want to quickly verify that your classification setup is working? Here's a simple test plan:
+
+```bash
+# Step 1: Check what schemas and tables exist
+dbt run-operation get_schema_info
+
+# Step 2: Run your models first to ensure data exists
+dbt run
+
+# Step 3: Set up classification profiles and assign to schemas
+dbt run-operation setup_classification
+
+# Step 4: Check if profiles are actually assigned
+dbt run-operation run_sql_query --args '{sql: "SELECT SYSTEM$SHOW_SENSITIVE_DATA_MONITORED_ENTITIES();"}'
+
+# Step 5: Test classification on a specific PII table
+dbt run-operation test_classification --args '{table_name: "ANALYTICS_RAW_PII.stg_customer_pii", profile_name: "comprehensive_profile"}'
+
+# Step 6: Check classification status across schemas
+dbt run-operation check_classification_status
+
+# Step 7: Trigger immediate classification on all schemas
+dbt run-operation immediate_classify_schemas
+
+# Step 8: Get a summary of model classification coverage
+dbt run-operation log_model_classification_summary
+```
+
+This test plan provides a step-by-step verification that:
+1. Your schemas exist and are accessible
+2. Your models are deployed and contain data
+3. Classification profiles are created and assigned correctly
+4. The Snowflake classification system recognizes the assignments
+5. Individual tables can be classified on demand
+6. Classification status can be checked across schemas
+7. Immediate classification works for all schemas
+8. Model classification coverage can be monitored
+
 ## Available Macros
 
 - `create_classification_profiles`: Creates profiles in Snowflake
