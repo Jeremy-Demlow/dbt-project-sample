@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_customer_pii
+    description: "Customer PII data for testing classification"
+    columns:
+      - name: id
+        description: "Unique identifier for the customer"
+        tests:
+          - not_null
+          - unique
+      - name: name
+        description: "Customer's full name"
+      - name: email
+        description: "Customer's email address"
+      - name: phone
+        description: "Customer's phone number"
+      - name: address
+        description: "Customer's physical address"
+      - name: credit_card
+        description: "Customer's credit card number"
+      - name: ssn
+        description: "Customer's social security number" 

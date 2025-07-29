@@ -70,6 +70,60 @@ vars:
           - tag_name: "DBT_CORTEX_LLMS.governance.pii_tag"
             tag_value: "highly_sensitive"
             semantic_categories: ["NATIONAL_IDENTIFIER", "CREDIT_CARD", "PASSWORD"]
+            
+    standard_profile:
+      minimum_object_age_for_classification_days: 1
+      maximum_classification_validity_days: 14
+      auto_tag: true
+  
+  # Environment-specific profiles
+  dev_classification_profiles:
+    basic_pii_profile:
+      minimum_object_age_for_classification_days: 0  # Immediate for testing
+      maximum_classification_validity_days: 1        # Daily refresh for dev
+      auto_tag: true
+    
+    comprehensive_profile:
+      minimum_object_age_for_classification_days: 0  # Immediate for testing
+      maximum_classification_validity_days: 1        # Daily refresh for dev
+      auto_tag: true
+      tag_map:
+        column_tag_map:
+          - tag_name: "DBT_CORTEX_LLMS.governance.pii_tag"
+            tag_value: "sensitive"
+            semantic_categories: ["NAME", "EMAIL"]
+          - tag_name: "DBT_CORTEX_LLMS.governance.pii_tag"
+            tag_value: "highly_sensitive"
+            semantic_categories: ["NATIONAL_IDENTIFIER", "CREDIT_CARD", "PASSWORD"]
+            
+    standard_profile:
+      minimum_object_age_for_classification_days: 0  # Immediate for testing
+      maximum_classification_validity_days: 1        # Daily refresh for dev
+      auto_tag: true
+  
+  prod_classification_profiles:
+    basic_pii_profile:
+      minimum_object_age_for_classification_days: 1   # More conservative for prod
+      maximum_classification_validity_days: 30        # Monthly refresh for prod
+      auto_tag: true
+    
+    comprehensive_profile:
+      minimum_object_age_for_classification_days: 1   # More conservative for prod
+      maximum_classification_validity_days: 14        # Bi-weekly refresh for sensitive data
+      auto_tag: true
+      tag_map:
+        column_tag_map:
+          - tag_name: "DBT_CORTEX_LLMS.governance.pii_tag"
+            tag_value: "sensitive"
+            semantic_categories: ["NAME", "EMAIL"]
+          - tag_name: "DBT_CORTEX_LLMS.governance.pii_tag"
+            tag_value: "highly_sensitive"
+            semantic_categories: ["NATIONAL_IDENTIFIER", "CREDIT_CARD", "PASSWORD"]
+            
+    standard_profile:
+      minimum_object_age_for_classification_days: 1   # More conservative for prod  
+      maximum_classification_validity_days: 14        # Bi-weekly refresh
+      auto_tag: true
   
   # Example custom classifiers 
   # Note: These need to be created in Snowflake first before they can be used
@@ -84,8 +138,14 @@ vars:
   
   # Schema to profile mapping
   schema_classification_profiles:
+    # Dedicated PII schemas
     RAW_PII: "basic_pii_profile"
     SENSITIVE_DATA: "comprehensive_profile"
+    
+    # Standard schemas
+    RAW: "standard_profile"
+    ANALYTICS: "standard_profile"
+    SEMANTIC_MODELS: "standard_profile"
 
 on-run-end:
   - "{{ auto_deploy_semantic_views() }}"
